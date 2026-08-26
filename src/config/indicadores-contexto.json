@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tasa_informalidad",
+    "nombre": "Tasa de informalidad del empleo",
+    "territorio": "General",
+    "valor": null,
+    "unidad": "%",
+    "fuente": "DANE",
+    "fecha": "2023"
+  },
+  {
+    "id": "desempleo_ptoboyaca",
+    "nombre": "Tasa de desempleo",
+    "territorio": "Puerto Boyacá",
+    "valor": null,
+    "unidad": "%",
+    "fuente": "DANE",
+    "fecha": "2023"
+  },
+  {
+    "id": "desempleo_ptoserviez",
+    "nombre": "Tasa de desempleo",
+    "territorio": "Puerto Serviez",
+    "valor": null,
+    "unidad": "%",
+    "fuente": "DANE (Proyección)",
+    "fecha": "2023"
+  },
+  {
+    "id": "poblacion_joven_municipio",
+    "nombre": "Tasa de población joven",
+    "territorio": "Puerto Boyacá",
+    "valor": null,
+    "unidad": "%",
+    "fuente": "DANE (Censo/Proyecciones)",
+    "fecha": "2023"
+  },
+  {
+    "id": "poblacion_joven_referencia",
+    "nombre": "Tasa de población joven",
+    "territorio": "Departamento (Por definir)",
+    "valor": null,
+    "unidad": "%",
+    "fuente": "DANE (Censo/Proyecciones)",
+    "fecha": "2023"
+  }
+]

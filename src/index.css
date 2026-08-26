@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+@media print {
+  /* Hide sidebar */
+  aside, nav {
+    display: none !important;
+  }
+  
+  /* Reset background and padding for printing */
+  body, main {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Force charts to print background colors and avoid breaking */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+  
+  .page-break-after {
+    page-break-after: always;
+  }
+  
+  /* Hide UI elements that shouldn't be printed */
+  button, select {
+    display: none !important;
+  }
+}
