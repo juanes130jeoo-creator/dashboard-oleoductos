@@ -41,7 +41,7 @@ export const config = {
     "Dimensión 4 — por definir": "Dim 4"
   },
   sociodemograficoConfig: {
-    edadRangos: ["18-25 años", "26-35 años", "36-45 años", "46-55 años", "56+ años", "Sin dato"],
+    edadRangos: ["15-17", "18-21", "22-25", "26-28", "29+", "Sin dato"],
     sexoCategorias: ["Femenino", "Masculino", "Sin dato"],
     zonaCategorias: ["Urbana", "Rural", "Sin dato"],
     jefeHogarCategorias: ["Si", "No", "Sin dato"],

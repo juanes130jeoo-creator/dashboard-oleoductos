@@ -16,11 +16,17 @@ def get_edad_rango(edad):
     except:
         return "Sin dato"
         
-    if edad <= 25: return "18-25 años"
-    elif edad <= 35: return "26-35 años"
-    elif edad <= 45: return "36-45 años"
-    elif edad <= 55: return "46-55 años"
-    else: return "56+ años"
+    if edad <= 17: return "15-17"
+    elif edad <= 21: return "18-21"
+    elif edad <= 25: return "22-25"
+    elif edad <= 28: return "26-28"
+    else: return "29+"
+
+def get_sexo_label(s):
+    s = clean_str(s).upper()
+    if s == 'F': return "Femenino"
+    if s == 'M': return "Masculino"
+    return "Sin dato"
 
 def has_observation(obs_val):
     val = clean_str(obs_val).lower().strip()
@@ -51,16 +57,6 @@ def main():
     indicadores = []
     if 'datos' in wb.sheetnames:
         sheet_datos = wb['datos']
-        # Mapeo manual basado en las filas conocidas del excel y territorios
-        # 2: Desempleo juvenil en Colombia
-        # 3: Jóvenes que no estudian ni trabajan
-        # 4: Informalidad laboral nacional
-        # 5: Informalidad laboral juvenil
-        # 6: Actividad empresarial temprana en Colombia
-        # 7: Informalidad zonas rurales en Boyacá
-        # 8: Población juvenil en Boyacá
-        # 9: Informalidad laboral en el departamento de Boyacá
-        
         map_indicadores = [
             {"row": 2, "id": "desempleo_juv_col", "nombre": "Desempleo juvenil (15-28 años)", "territorio": "Colombia"},
             {"row": 3, "id": "ninis", "nombre": "Jóvenes que no estudian ni trabajan", "territorio": "Colombia"},
@@ -101,9 +97,9 @@ def main():
         
     sheet = wb[sheet_name]
     
-    # Índices de columnas (1-based en openpyxl)
     COL_TERRITORIO = 1
     COL_NOMBRES = 2
+    COL_APELLIDOS = 3
     COL_EDAD = 11
     COL_SEXO = 12
     COL_JEFE_HOGAR = 15
@@ -116,9 +112,7 @@ def main():
     participantes_list = []
     control_gestion = []
     
-    # Contenedores anidados por territorio (y "Todos")
-    # Estructura: { "Todos": {rango: val}, "Puerto Boyacá": {rango: val} }
-    edad_counts = {"Todos": {}}
+    piramide_counts = {"Todos": {}}
     sexo_counts = {"Todos": {}}
     zona_counts = {"Todos": {}}
     jefe_counts = {"Todos": {}}
@@ -134,7 +128,7 @@ def main():
             
         total_filas += 1
         
-        # Detección dinámica de exclusión: revisamos que la celda de la columna 'Nombres' (2) esté en rojo
+        # Detección dinámica de exclusión por color rojo en la columna de Nombres (2)
         fill_color = sheet.cell(row=row_idx, column=COL_NOMBRES).fill.start_color.index
         if fill_color == 'FFFF0000':
             excluidos_rojo += 1
@@ -143,8 +137,8 @@ def main():
         codigo_anonimo = f"P-{len(participantes_list) + 1:02d}"
         territorio = clean_str(terr_val)
         
-        if territorio not in edad_counts:
-            edad_counts[territorio] = {}
+        if territorio not in piramide_counts:
+            piramide_counts[territorio] = {}
             sexo_counts[territorio] = {}
             zona_counts[territorio] = {}
             jefe_counts[territorio] = {}
@@ -153,18 +147,30 @@ def main():
         def add_count(dic, terr, val):
             dic["Todos"][val] = dic["Todos"].get(val, 0) + 1
             dic[terr][val] = dic[terr].get(val, 0) + 1
+            
+        def add_piramide(terr, r_edad, val_sexo):
+            if r_edad not in piramide_counts["Todos"]:
+                piramide_counts["Todos"][r_edad] = {"Femenino": 0, "Masculino": 0, "Sin dato": 0}
+            if r_edad not in piramide_counts[terr]:
+                piramide_counts[terr][r_edad] = {"Femenino": 0, "Masculino": 0, "Sin dato": 0}
+            piramide_counts["Todos"][r_edad][val_sexo] = piramide_counts["Todos"][r_edad].get(val_sexo, 0) + 1
+            piramide_counts[terr][r_edad][val_sexo] = piramide_counts[terr][r_edad].get(val_sexo, 0) + 1
         
         edad_val = sheet.cell(row=row_idx, column=COL_EDAD).value
         rango_edad = get_edad_rango(edad_val)
-        add_count(edad_counts, territorio, rango_edad)
+        sexo_val = get_sexo_label(sheet.cell(row=row_idx, column=COL_SEXO).value)
         
-        sexo_val = clean_str(sheet.cell(row=row_idx, column=COL_SEXO).value) or "Sin dato"
+        add_piramide(territorio, rango_edad, sexo_val)
         add_count(sexo_counts, territorio, sexo_val)
         
         zona_val = clean_str(sheet.cell(row=row_idx, column=COL_ZONA).value) or "Sin dato"
         add_count(zona_counts, territorio, zona_val)
         
         jefe_val = clean_str(sheet.cell(row=row_idx, column=COL_JEFE_HOGAR).value) or "Sin dato"
+        if jefe_val.lower() == 'si' or jefe_val.lower() == 'sí':
+            jefe_val = 'Si'
+        elif jefe_val.lower() == 'no':
+            jefe_val = 'No'
         add_count(jefe_counts, territorio, jefe_val)
         
         estado_sop_val = clean_str(sheet.cell(row=row_idx, column=COL_SOPORTES).value) or "Sin dato"
@@ -172,7 +178,10 @@ def main():
         
         obs_val = sheet.cell(row=row_idx, column=COL_OBS).value
         
-        # 1. Participante anónimo para gráficas y métricas
+        nombres = clean_str(sheet.cell(row=row_idx, column=COL_NOMBRES).value)
+        apellidos = clean_str(sheet.cell(row=row_idx, column=COL_APELLIDOS).value)
+        nombre_completo = f"{nombres} {apellidos}".strip()
+        
         participantes_list.append({
             "id": codigo_anonimo,
             "territorio": territorio,
@@ -182,9 +191,9 @@ def main():
             }
         })
         
-        # 2. Registro para Control de Gestión (solo PII anónima)
         control_gestion.append({
             "codigo": codigo_anonimo,
+            "nombre": nombre_completo,
             "territorio": territorio,
             "formato_1": clean_str(sheet.cell(row=row_idx, column=COL_F1).value),
             "formato_2": clean_str(sheet.cell(row=row_idx, column=COL_F2).value),
@@ -192,17 +201,16 @@ def main():
             "tiene_observacion": has_observation(obs_val)
         })
 
-    # Cargar JSON o crear base
     final_data = {
         "metadata": {
-            "excluidos_criterio": "filas_rojas",
+            "excluidos_criterio": "filas_rojas_dinamico",
             "excluidos_cantidad": excluidos_rojo,
             "total_registros_brutos": total_filas
         },
         "poblaciones": {
             "emprendedores": {
                 "sociodemografico": {
-                    "edad": edad_counts,
+                    "piramide": piramide_counts,
                     "sexo": sexo_counts,
                     "zona": zona_counts,
                     "jefe_hogar": jefe_counts,

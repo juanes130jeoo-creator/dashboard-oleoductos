@@ -1,46 +1,117 @@
 {
   "metadata": {
-    "excluidos_criterio": "filas_rojas",
+    "excluidos_criterio": "filas_rojas_dinamico",
     "excluidos_cantidad": 3,
     "total_registros_brutos": 66
   },
   "poblaciones": {
     "emprendedores": {
       "sociodemografico": {
-        "edad": {
+        "piramide": {
           "Todos": {
-            "26-35 años": 13,
-            "18-25 años": 39,
-            "Sin dato": 8,
-            "36-45 años": 2,
-            "46-55 años": 1
+            "26-28": {
+              "Femenino": 7,
+              "Masculino": 4,
+              "Sin dato": 0
+            },
+            "22-25": {
+              "Femenino": 6,
+              "Masculino": 3,
+              "Sin dato": 0
+            },
+            "18-21": {
+              "Femenino": 9,
+              "Masculino": 4,
+              "Sin dato": 0
+            },
+            "15-17": {
+              "Femenino": 7,
+              "Masculino": 10,
+              "Sin dato": 0
+            },
+            "Sin dato": {
+              "Femenino": 7,
+              "Masculino": 1,
+              "Sin dato": 0
+            },
+            "29+": {
+              "Femenino": 5,
+              "Masculino": 0,
+              "Sin dato": 0
+            }
           },
           "Puerto Boyacá": {
-            "26-35 años": 12,
-            "18-25 años": 22,
-            "Sin dato": 5,
-            "36-45 años": 1
+            "26-28": {
+              "Femenino": 7,
+              "Masculino": 4,
+              "Sin dato": 0
+            },
+            "22-25": {
+              "Femenino": 6,
+              "Masculino": 2,
+              "Sin dato": 0
+            },
+            "18-21": {
+              "Femenino": 8,
+              "Masculino": 2,
+              "Sin dato": 0
+            },
+            "15-17": {
+              "Femenino": 3,
+              "Masculino": 1,
+              "Sin dato": 0
+            },
+            "Sin dato": {
+              "Femenino": 4,
+              "Masculino": 1,
+              "Sin dato": 0
+            },
+            "29+": {
+              "Femenino": 2,
+              "Masculino": 0,
+              "Sin dato": 0
+            }
           },
           "Puerto Serviez": {
-            "26-35 años": 1,
-            "36-45 años": 1,
-            "18-25 años": 17,
-            "46-55 años": 1,
-            "Sin dato": 3
+            "29+": {
+              "Femenino": 3,
+              "Masculino": 0,
+              "Sin dato": 0
+            },
+            "22-25": {
+              "Femenino": 0,
+              "Masculino": 1,
+              "Sin dato": 0
+            },
+            "Sin dato": {
+              "Femenino": 3,
+              "Masculino": 0,
+              "Sin dato": 0
+            },
+            "15-17": {
+              "Femenino": 4,
+              "Masculino": 9,
+              "Sin dato": 0
+            },
+            "18-21": {
+              "Femenino": 1,
+              "Masculino": 2,
+              "Sin dato": 0
+            }
           }
         },
         "sexo": {
           "Todos": {
-            "F": 41,
-            "M": 22
+            "Femenino": 41,
+            "Masculino": 22
           },
           "Puerto Boyacá": {
-            "F": 30,
-            "M": 10
+            "Femenino": 30,
+            "Masculino": 10
           },
           "Puerto Serviez": {
-            "F": 11,
-            "M": 12
+            "Femenino": 11,
+            "Masculino": 12
           }
         },
         "zona": {
@@ -57,11 +128,11 @@
         },
         "jefe_hogar": {
           "Todos": {
-            "Sí": 7,
+            "Si": 7,
             "No": 56
           },
           "Puerto Boyacá": {
-            "Sí": 7,
+            "Si": 7,
             "No": 33
           },
           "Puerto Serviez": {
@@ -86,6 +157,7 @@
       "control_gestion": [
         {
           "codigo": "P-01",
+          "nombre": "ADRIANA LUCÍA LOAIZA LOAIZA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -94,6 +166,7 @@
         },
         {
           "codigo": "P-02",
+          "nombre": "ANDRÉS BERNAL MONTAÑA",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -102,6 +175,7 @@
         },
         {
           "codigo": "P-03",
+          "nombre": "ANGELA MARÍA MARTÍNEZ CALDERON",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -110,6 +184,7 @@
         },
         {
           "codigo": "P-04",
+          "nombre": "ASLLYE TATIANA LOPEZ ARISTIZABAL",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -118,6 +193,7 @@
         },
         {
           "codigo": "P-05",
+          "nombre": "BRENDA MICHELL GUZMÁN ROJAS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -126,6 +202,7 @@
         },
         {
           "codigo": "P-06",
+          "nombre": "CHAROL DAYANA TASCON TREJOS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -134,6 +211,7 @@
         },
         {
           "codigo": "P-07",
+          "nombre": "CRISTIAN ANDRÉS DÍAZ QUIÑONES",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -142,6 +220,7 @@
         },
         {
           "codigo": "P-08",
+          "nombre": "DANIEL ARLEY VARGAS MURCIA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -150,6 +229,7 @@
         },
         {
           "codigo": "P-09",
+          "nombre": "DENNIS OMAIRA LUGO MOSQUERA",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -158,6 +238,7 @@
         },
         {
           "codigo": "P-10",
+          "nombre": "DÍANA CAROLINA RAMIREZ OSORIO",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -166,6 +247,7 @@
         },
         {
           "codigo": "P-11",
+          "nombre": "ELIANA ALEJANDRA CAÑAS ROMERO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -174,6 +256,7 @@
         },
         {
           "codigo": "P-12",
+          "nombre": "ERIKA QUIROGA PIEDRAHITA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -182,6 +265,7 @@
         },
         {
           "codigo": "P-13",
+          "nombre": "FREDY GONZALO CASTAÑO SÁNCHEZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -190,6 +274,7 @@
         },
         {
           "codigo": "P-14",
+          "nombre": "HARY MICHELLE SUTANEME",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -198,6 +283,7 @@
         },
         {
           "codigo": "P-15",
+          "nombre": "HEINER DUVAN NABARRETE ORTIZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -206,6 +292,7 @@
         },
         {
           "codigo": "P-16",
+          "nombre": "HILLARY STELLA DIAZ BARRIGA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -214,6 +301,7 @@
         },
         {
           "codigo": "P-17",
+          "nombre": "JHON STIVEN OROZCO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -222,6 +310,7 @@
         },
         {
           "codigo": "P-18",
+          "nombre": "JUAN CARLOS PALOMO RENGIFO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -230,6 +319,7 @@
         },
         {
           "codigo": "P-19",
+          "nombre": "KAREN LORENA RUIZ CERVERA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -238,6 +328,7 @@
         },
         {
           "codigo": "P-20",
+          "nombre": "KATERIN DAYANA GARZON GUERRERO",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -246,6 +337,7 @@
         },
         {
           "codigo": "P-21",
+          "nombre": "KEISCHA VANESSA PLAZA QUICENO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -254,6 +346,7 @@
         },
         {
           "codigo": "P-22",
+          "nombre": "MADELEIENE MONTOYA ORJUELA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -262,6 +355,7 @@
         },
         {
           "codigo": "P-23",
+          "nombre": "MAGNO CESAR BUSTOS VARGAS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -270,6 +364,7 @@
         },
         {
           "codigo": "P-24",
+          "nombre": "MAILEN ANGULO VILORIA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -278,6 +373,7 @@
         },
         {
           "codigo": "P-25",
+          "nombre": "MAIRA ALEJANDRA BENÍTEZ MOSQUERA",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -286,6 +382,7 @@
         },
         {
           "codigo": "P-26",
+          "nombre": "MARIANA TORO LOZANO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -294,6 +391,7 @@
         },
         {
           "codigo": "P-27",
+          "nombre": "MARÍA ROSARIO HERNÁNDEZ DELAGO",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -302,6 +400,7 @@
         },
         {
           "codigo": "P-28",
+          "nombre": "MAYELINE ESPERANZA GONZALEZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -310,6 +409,7 @@
         },
         {
           "codigo": "P-29",
+          "nombre": "MELANY ALEJANDRA BUITRAGO HERRERA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -318,6 +418,7 @@
         },
         {
           "codigo": "P-30",
+          "nombre": "MARYID VANESA LAGUNA CIRO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -326,6 +427,7 @@
         },
         {
           "codigo": "P-31",
+          "nombre": "PAOLA ANDREA VARON MEJIA",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -334,6 +436,7 @@
         },
         {
           "codigo": "P-32",
+          "nombre": "SANTIAGO RAMÍREZ PÉREZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -342,6 +445,7 @@
         },
         {
           "codigo": "P-33",
+          "nombre": "SANTIAGO ROJAS",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -350,6 +454,7 @@
         },
         {
           "codigo": "P-34",
+          "nombre": "VALERIA ORTEGÓN MOSQUERA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -358,6 +463,7 @@
         },
         {
           "codigo": "P-35",
+          "nombre": "VALERIN CRUZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -366,6 +472,7 @@
         },
         {
           "codigo": "P-36",
+          "nombre": "VIVIANA VIDALES ZABALA",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -374,6 +481,7 @@
         },
         {
           "codigo": "P-37",
+          "nombre": "YAIRA YULIANA CORRALES",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -382,6 +490,7 @@
         },
         {
           "codigo": "P-38",
+          "nombre": "YEXIEL AMADO MARTÍNEZ",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -390,6 +499,7 @@
         },
         {
           "codigo": "P-39",
+          "nombre": "YULIANA FERNANDA LOZADA VANEGAS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -398,6 +508,7 @@
         },
         {
           "codigo": "P-40",
+          "nombre": "ZARAY SOFIA GUTIERREZ ROJAS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -406,6 +517,7 @@
         },
         {
           "codigo": "P-41",
+          "nombre": "ANGIE LIZETH PALACIOS LLOREDA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -414,6 +526,7 @@
         },
         {
           "codigo": "P-42",
+          "nombre": "ELIZABETH TRIANA TRIANA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -422,6 +535,7 @@
         },
         {
           "codigo": "P-43",
+          "nombre": "FRANKLIN ANDRÉS VEGA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -430,6 +544,7 @@
         },
         {
           "codigo": "P-44",
+          "nombre": "GLORIA ARCILA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -438,6 +553,7 @@
         },
         {
           "codigo": "P-45",
+          "nombre": "JAZLYN YELINA ATEHORTUA PEÑA",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -446,6 +562,7 @@
         },
         {
           "codigo": "P-46",
+          "nombre": "JUAN ESTEBAN MOLINA GONZALEZ",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -454,6 +571,7 @@
         },
         {
           "codigo": "P-47",
+          "nombre": "JUAN ESTEBAN JIMENEZ CORREA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -462,6 +580,7 @@
         },
         {
           "codigo": "P-48",
+          "nombre": "JUAN JOSÉ TABARES FRANCO",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -470,6 +589,7 @@
         },
         {
           "codigo": "P-49",
+          "nombre": "KAREN DAYANA VILLARREAL CONTRERAS",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -478,6 +598,7 @@
         },
         {
           "codigo": "P-50",
+          "nombre": "MARTHA ZABALA TORRES",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -486,6 +607,7 @@
         },
         {
           "codigo": "P-51",
+          "nombre": "NAYERLY TÁMARA COGOLLO ORJUELA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -494,6 +616,7 @@
         },
         {
           "codigo": "P-52",
+          "nombre": "OSCAR JAINIVER VALLEJO PINZÓN",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -502,6 +625,7 @@
         },
         {
           "codigo": "P-53",
+          "nombre": "SAMUEL ANDRÉS MONTOYA MURILLO",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -510,6 +634,7 @@
         },
         {
           "codigo": "P-54",
+          "nombre": "SARA JULIETH REYES RODRÍGUEZ",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -518,6 +643,7 @@
         },
         {
           "codigo": "P-55",
+          "nombre": "SARA NIKOL ROMERO MARULANDA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -526,6 +652,7 @@
         },
         {
           "codigo": "P-56",
+          "nombre": "BRAYAN STIVEN MUÑOZ SANABRIA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -534,6 +661,7 @@
         },
         {
           "codigo": "P-57",
+          "nombre": "ANDRES FELIPE MOSQUERA MARIN",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -542,6 +670,7 @@
         },
         {
           "codigo": "P-58",
+          "nombre": "OMAR ENRIQUE OYOLA VIDAL",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -550,6 +679,7 @@
         },
         {
           "codigo": "P-59",
+          "nombre": "SULAY ALEJANDRA GAITAN RODRIGUEZ",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -558,6 +688,7 @@
         },
         {
           "codigo": "P-60",
+          "nombre": "LITZY JHOANA ARENAS ZABALA",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -566,6 +697,7 @@
         },
         {
           "codigo": "P-61",
+          "nombre": "CRISTOFER ALEJANDRO ALVAREZ VASQUEZ",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -574,6 +706,7 @@
         },
         {
           "codigo": "P-62",
+          "nombre": "ANDERSON PEROZA ALEGRIAS",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -582,6 +715,7 @@
         },
         {
           "codigo": "P-63",
+          "nombre": "JORGE EDUARDO SANCHEZ CORTES",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",

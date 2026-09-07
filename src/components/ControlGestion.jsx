@@ -31,10 +31,11 @@ export default function ControlGestion() {
 
   const exportCSV = () => {
     if (!hasData) return
-    const headers = ['Código Anónimo', 'Territorio', 'Formato 1', 'Formato 2', 'Estado Soportes', 'Observación Pendiente']
+    const headers = ['Código Anónimo', 'Nombre', 'Territorio', 'Formato 1', 'Formato 2', 'Estado Soportes', 'Observación Pendiente']
     
     const rows = filteredData.map(row => [
       row.codigo,
+      `"${row.nombre}"`,
       `"${row.territorio}"`,
       `"${row.formato_1}"`,
       `"${row.formato_2}"`,
@@ -95,7 +96,9 @@ export default function ControlGestion() {
           <AlertTriangle className="text-amber-500 shrink-0 mt-0.5 mr-3" size={20} />
           <div>
             <h3 className="text-sm font-bold text-amber-800">Privacidad y Protección de Datos</h3>
-            <p className="text-sm text-amber-700 mt-1">Por directrices de privacidad (Ley 1581 de 2012), los datos personales sensibles (Nombres, Identificación, Contacto) han sido excluidos. Los cruces deben realizarse con el Excel original utilizando el Código Anónimo.</p>
+            <p className="text-sm text-amber-700 mt-1">
+              Bajo autorización explícita para este tablero, se incluye el Nombre de los participantes para control de gestión. El resto de datos personales sensibles (Identificación, Teléfono, Correo, etc.) siguen estrictamente excluidos.
+            </p>
           </div>
         </div>
       </div>
@@ -111,6 +114,7 @@ export default function ControlGestion() {
             <thead className="bg-slate-50">
               <tr>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Código</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Nombre</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Territorio</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Formato 1</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Formato 2</th>
@@ -122,6 +126,7 @@ export default function ControlGestion() {
               {filteredData.map((row, idx) => (
                 <tr key={idx} className="hover:bg-slate-50 transition-colors">
                   <td className="px-4 py-3 whitespace-nowrap text-sm font-bold text-slate-900">{row.codigo}</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-800">{row.nombre}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.territorio}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.formato_1 || '-'}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.formato_2 || '-'}</td>

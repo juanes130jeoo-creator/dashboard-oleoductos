@@ -63,6 +63,7 @@ Toda la aplicación se alimenta de un único archivo `src/data/data.json`. La es
 ```
 
 > **Nota de Privacidad:** Los datos sociodemográficos de edad, nivel educativo, y composición familiar de los participantes **nunca** se almacenan a nivel individual. Solo llegan a este archivo como métricas agregadas dentro del objeto `sociodemografico`.
+> **Excepción de Privacidad Autorizada (Control de Gestión):** Por solicitud y autorización expresa para propósitos logísticos, la tabla de Control de Gestión visualiza el nombre completo de los participantes en la plataforma. Todos los demás datos sensibles (identificación, teléfono, correo electrónico, fecha de nacimiento exacta, etc.) permanecen estrictamente bloqueados y excluidos del repositorio.
 
 
 > **Nota:** Si `participantes` está vacío (`[]`), la interfaz renderizará automáticamente los "Empty States" (Estados Vacíos) estructurados, sin mostrar errores.

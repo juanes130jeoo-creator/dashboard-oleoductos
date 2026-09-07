@@ -62,12 +62,26 @@ export default function CharacterizationView() {
   const hasSocio = sociodemografico && Object.keys(sociodemografico).length > 0
 
   const territoriosDisp = useMemo(() => {
-    if (!hasSocio || !sociodemografico.edad) return ['Todos']
-    return Object.keys(sociodemografico.edad)
+    if (!hasSocio || !sociodemografico.piramide) return ['Todos']
+    return Object.keys(sociodemografico.piramide)
   }, [hasSocio, sociodemografico])
 
   // Derived Data
-  const edadData = useMemo(() => formatChartData(sociodemografico?.edad?.[piramideTerritorio], sociodemograficoConfig?.edadRangos), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
+  const piramideData = useMemo(() => {
+    if (!sociodemografico?.piramide || !sociodemograficoConfig?.edadRangos) return []
+    const territoryData = sociodemografico.piramide[piramideTerritorio] || {}
+    
+    return sociodemograficoConfig.edadRangos.map(rango => {
+      const counts = territoryData[rango] || { "Femenino": 0, "Masculino": 0 }
+      // In a pyramid, one side is negative, one is positive.
+      return {
+        name: rango,
+        Femenino: counts["Femenino"] || 0,
+        Masculino: -(counts["Masculino"] || 0)
+      }
+    })
+  }, [sociodemografico, sociodemograficoConfig, piramideTerritorio])
+
   const sexoData = useMemo(() => formatChartData(sociodemografico?.sexo?.[piramideTerritorio], sociodemograficoConfig?.sexoCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
   const zonaData = useMemo(() => formatChartData(sociodemografico?.zona?.[piramideTerritorio], sociodemograficoConfig?.zonaCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
   const jefeData = useMemo(() => formatChartData(sociodemografico?.jefe_hogar?.[piramideTerritorio], sociodemograficoConfig?.jefeHogarCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
@@ -147,22 +161,32 @@ export default function CharacterizationView() {
                <p className="text-sm">Gráfico pendiente.</p>
             </div>
           ) : (
-            <div className="h-72">
+            <div className="h-96">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={edadData} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
-                  <XAxis dataKey="name" tick={{ fill: '#64748b', fontSize: 12 }} axisLine={false} tickLine={false} />
-                  <YAxis tick={{ fill: '#64748b' }} axisLine={false} tickLine={false} />
+                <BarChart data={piramideData} layout="vertical" stackOffset="sign" margin={{ top: 20, right: 30, left: 30, bottom: 5 }}>
+                  <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
+                  <XAxis 
+                    type="number" 
+                    tickFormatter={(value) => Math.abs(value)}
+                    tick={{ fill: '#64748b', fontSize: 12 }} 
+                    axisLine={false} 
+                    tickLine={false} 
+                  />
+                  <YAxis 
+                    dataKey="name" 
+                    type="category" 
+                    tick={{ fill: '#64748b', fontSize: 12, fontWeight: 'bold' }} 
+                    axisLine={false} 
+                    tickLine={false} 
+                  />
                   <Tooltip 
                     cursor={{ fill: '#f8fafc' }}
                     contentStyle={{ backgroundColor: '#ffffff', borderColor: '#e2e8f0', color: '#1e293b' }}
-                    formatter={(value) => [`${value} participantes (${((value / totalParticipantes) * 100).toFixed(1)}%)`, 'Cantidad']}
+                    formatter={(value, name) => [Math.abs(value), name]}
                   />
-                  <Bar dataKey="value" fill="#06b6d4" radius={[4, 4, 0, 0]}>
-                    {edadData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={index % 2 === 0 ? '#06b6d4' : '#0891b2'} />
-                    ))}
-                  </Bar>
+                  <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }} />
+                  <Bar dataKey="Masculino" stackId="stack" fill="#3b82f6" radius={[4, 0, 0, 4]} />
+                  <Bar dataKey="Femenino" stackId="stack" fill="#ec4899" radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
