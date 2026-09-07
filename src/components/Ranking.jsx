@@ -74,7 +74,7 @@ export default function Ranking() {
 
   const exportCSV = () => {
     if (!hasData) return
-    const headers = ['Posición (LB)', 'Participante', 'Territorio', 'Nivel (Actual)', 'Cumplimiento LB']
+    const headers = ['Posición (LB)', 'Código', 'Territorio', 'Nivel (Actual)', 'Cumplimiento LB']
     if (hasCierre) {
       headers.push('Cumplimiento Cierre', 'Variación')
     }
@@ -88,7 +88,7 @@ export default function Ranking() {
       
       const row = [
         idx + 1,
-        `"${emp.nombre}"`,
+        `"${emp.id}"`,
         `"${emp.territorio || ''}"`,
         `"${level.label}"`,
         (lb * 100).toFixed(1) + '%'
@@ -169,7 +169,7 @@ export default function Ranking() {
             <thead className="bg-slate-50">
               <tr>
                 <Th label="Posición" sortKey="ranking" />
-                <Th label="Participante" sortKey="nombre" />
+                <Th label="Código" sortKey="nombre" />
                 <Th label="Territorio" sortKey="territorio" />
                 <Th label="Nivel" sortKey="ranking" />
                 <Th label="Línea Base" sortKey="ranking" />
@@ -194,8 +194,8 @@ export default function Ranking() {
                     <td className="px-4 py-3 whitespace-nowrap text-sm font-bold text-slate-900">
                       #{idx + 1}
                     </td>
-                    <td className="px-4 py-3 text-sm font-medium text-slate-800 max-w-[200px] truncate" title={emp.nombre}>
-                      {emp.nombre}
+                    <td className="px-4 py-3 text-sm font-medium text-slate-800 max-w-[200px] truncate" title={emp.id}>
+                      {emp.id}
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">
                       {emp.territorio || '—'}

@@ -17,11 +17,13 @@ export const PopulationProvider = ({ children }) => {
     
     // Safety check in case data.json doesn't have the population yet
     const rawPopulations = rawData.poblaciones || {};
-    const activeDataRaw = rawPopulations[selectedPopulationId] || { participantes: [], preguntas_por_dimension: {} };
+    const activeDataRaw = rawPopulations[selectedPopulationId] || { participantes: [], preguntas_por_dimension: {}, sociodemografico: {}, control_gestion: [] };
 
     const activeData = {
       participantes: activeDataRaw.participantes || [],
       preguntas_por_dimension: activeDataRaw.preguntas_por_dimension || {},
+      sociodemografico: activeDataRaw.sociodemografico || {},
+      control_gestion: activeDataRaw.control_gestion || []
     };
 
     return {
