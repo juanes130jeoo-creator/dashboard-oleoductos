@@ -3,7 +3,7 @@ import { LayoutDashboard, Users, User, BarChart2, ShieldAlert, ListChecks, Map, 
 import { usePopulation } from './context/PopulationContext'
 
 import Home from './components/Home'
-import CompanyProfile from './components/CompanyProfile'
+import ControlGestion from './components/ControlGestion'
 import Comparator from './components/Comparator'
 import Ranking from './components/Ranking'
 import DimensionAnalysis from './components/DimensionAnalysis'
@@ -16,7 +16,7 @@ const TABS = [
   { id: 'characterization', label: 'Caracterización de la Población', icon: Users },
   { id: 'subregion', label: 'Análisis Territorial', icon: Map, requiresMap: true },
   { id: 'questions', label: 'Por Pregunta', icon: ListChecks },
-  { id: 'profile', label: 'Reporte Individual', icon: User },
+  { id: 'control', label: 'Control de Gestión', icon: User },
   { id: 'comparator', label: 'Comparativas', icon: Users },
   { id: 'ranking', label: 'Ranking General', icon: BarChart2 },
   { id: 'analysis', label: 'Análisis de Dimensiones', icon: ShieldAlert },
@@ -26,6 +26,9 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('home')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { selectedPopulationId, setSelectedPopulationId, activeConfig, populations } = usePopulation()
+
+  // Ocultar selector si solo hay 1 población configurada (o con datos)
+  const showPopulationSelector = populations.length > 1
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId)
@@ -83,22 +86,31 @@ export default function App() {
           <div className="w-full">
             <h1 className="text-slate-900 font-bold text-lg leading-tight">Dashboard Oleoductos</h1>
             
-            <div className="mt-4 relative">
-              <label htmlFor="population-select" className="sr-only">Seleccionar Población</label>
-              <select
-                id="population-select"
-                value={selectedPopulationId}
-                onChange={handlePopulationChange}
-                className="w-full appearance-none bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block px-3 py-2 pr-8 font-medium"
-              >
-                {populations.map(pop => (
-                  <option key={pop.id} value={pop.id}>{pop.name}</option>
-                ))}
-              </select>
-              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-500">
-                <ChevronDown size={16} />
+            {showPopulationSelector && (
+              <div className="mt-4 relative">
+                <label htmlFor="population-select" className="sr-only">Seleccionar Población</label>
+                <select
+                  id="population-select"
+                  value={selectedPopulationId}
+                  onChange={handlePopulationChange}
+                  className="w-full appearance-none bg-slate-50 border border-slate-200 text-slate-700 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block px-3 py-2 pr-8 font-medium"
+                >
+                  {populations.map(pop => (
+                    <option key={pop.id} value={pop.id}>{pop.name}</option>
+                  ))}
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-slate-500">
+                  <ChevronDown size={16} />
+                </div>
               </div>
-            </div>
+            )}
+            {!showPopulationSelector && (
+              <div className="mt-4">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-cyan-100 text-cyan-800">
+                  {activeConfig.nombre}
+                </span>
+              </div>
+            )}
           </div>
           <button 
             className="md:hidden p-2 -mr-2 -mt-2 text-slate-500 hover:bg-slate-100 rounded-lg min-h-[44px] min-w-[44px] flex items-center justify-center"
@@ -139,7 +151,7 @@ export default function App() {
           {activeTab === 'characterization' && <CharacterizationView />}
           {activeTab === 'subregion' && <SubregionAnalysis />}
           {activeTab === 'questions' && <QuestionView />}
-          {activeTab === 'profile' && <CompanyProfile />}
+          {activeTab === 'control' && <ControlGestion />}
           {activeTab === 'comparator' && <Comparator />}
           {activeTab === 'ranking' && <Ranking />}
           {activeTab === 'analysis' && <DimensionAnalysis />}

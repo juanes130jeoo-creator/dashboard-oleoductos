@@ -1,10 +1,1105 @@
 {
+  "metadata": {
+    "excluidos_criterio": "filas_rojas",
+    "excluidos_cantidad": 3,
+    "total_registros_brutos": 66
+  },
   "poblaciones": {
     "emprendedores": {
+      "sociodemografico": {
+        "edad": {
+          "Todos": {
+            "26-35 años": 13,
+            "18-25 años": 39,
+            "Sin dato": 8,
+            "36-45 años": 2,
+            "46-55 años": 1
+          },
+          "Puerto Boyacá": {
+            "26-35 años": 12,
+            "18-25 años": 22,
+            "Sin dato": 5,
+            "36-45 años": 1
+          },
+          "Puerto Serviez": {
+            "26-35 años": 1,
+            "36-45 años": 1,
+            "18-25 años": 17,
+            "46-55 años": 1,
+            "Sin dato": 3
+          }
+        },
+        "sexo": {
+          "Todos": {
+            "F": 41,
+            "M": 22
+          },
+          "Puerto Boyacá": {
+            "F": 30,
+            "M": 10
+          },
+          "Puerto Serviez": {
+            "F": 11,
+            "M": 12
+          }
+        },
+        "zona": {
+          "Todos": {
+            "U": 40,
+            "R": 23
+          },
+          "Puerto Boyacá": {
+            "U": 40
+          },
+          "Puerto Serviez": {
+            "R": 23
+          }
+        },
+        "jefe_hogar": {
+          "Todos": {
+            "Sí": 7,
+            "No": 56
+          },
+          "Puerto Boyacá": {
+            "Sí": 7,
+            "No": 33
+          },
+          "Puerto Serviez": {
+            "No": 23
+          }
+        },
+        "estado_soportes": {
+          "Todos": {
+            "COMPLETO": 49,
+            "PENDIENTE": 14
+          },
+          "Puerto Boyacá": {
+            "COMPLETO": 29,
+            "PENDIENTE": 11
+          },
+          "Puerto Serviez": {
+            "COMPLETO": 20,
+            "PENDIENTE": 3
+          }
+        }
+      },
+      "control_gestion": [
+        {
+          "codigo": "P-01",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-02",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-03",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-04",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-05",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-06",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-07",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-08",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-09",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-10",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-11",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-12",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-13",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-14",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-15",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-16",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-17",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-18",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-19",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-20",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-21",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-22",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-23",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-24",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-25",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-26",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-27",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-28",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-29",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-30",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-31",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-32",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-33",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-34",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-35",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-36",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-37",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-38",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-39",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-40",
+          "territorio": "Puerto Boyacá",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-41",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-42",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-43",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-44",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-45",
+          "territorio": "Puerto Serviez",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-46",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-47",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-48",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-49",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-50",
+          "territorio": "Puerto Serviez",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-51",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-52",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-53",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-54",
+          "territorio": "Puerto Serviez",
+          "formato_1": "PENDIENTE",
+          "formato_2": "PENDIENTE",
+          "estado_soportes": "PENDIENTE",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-55",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-56",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-57",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-58",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": true
+        },
+        {
+          "codigo": "P-59",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-60",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-61",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-62",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        },
+        {
+          "codigo": "P-63",
+          "territorio": "Puerto Serviez",
+          "formato_1": "OK",
+          "formato_2": "OK",
+          "estado_soportes": "COMPLETO",
+          "tiene_observacion": false
+        }
+      ],
       "preguntas_por_dimension": {},
-      "participantes": []
+      "participantes": [
+        {
+          "id": "P-01",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-02",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-03",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-04",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-05",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-06",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-07",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-08",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-09",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-10",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-11",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-12",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-13",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-14",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-15",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-16",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-17",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-18",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-19",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-20",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-21",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-22",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-23",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-24",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-25",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-26",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-27",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-28",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-29",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-30",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-31",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-32",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-33",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-34",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-35",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-36",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-37",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-38",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-39",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-40",
+          "territorio": "Puerto Boyacá",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-41",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-42",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-43",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-44",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-45",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-46",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-47",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-48",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-49",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-50",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-51",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-52",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-53",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-54",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-55",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-56",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-57",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-58",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-59",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-60",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-61",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-62",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        },
+        {
+          "id": "P-63",
+          "territorio": "Puerto Serviez",
+          "mediciones": {
+            "linea_base": null,
+            "cierre": null
+          }
+        }
+      ]
     },
     "jovenes": {
+      "sociodemografico": {},
+      "control_gestion": [],
       "preguntas_por_dimension": {},
       "participantes": []
     }

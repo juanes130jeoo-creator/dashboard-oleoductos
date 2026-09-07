@@ -1,222 +1,232 @@
-import pandas as pd
 import json
 import argparse
 import sys
 import os
 import math
+import openpyxl
 
-def clean_name(name):
-    if pd.isna(name): return ""
-    return str(name).strip().upper()
+def clean_str(val):
+    if val is None: return ""
+    return str(val).strip()
 
-def get_edad_rango(edad, poblacion):
+def get_edad_rango(edad):
     try:
         edad = float(edad)
         if math.isnan(edad): return "Sin dato"
     except:
         return "Sin dato"
         
-    if poblacion == "emprendedores":
-        if edad <= 25: return "18-25 años"
-        elif edad <= 35: return "26-35 años"
-        elif edad <= 45: return "36-45 años"
-        elif edad <= 55: return "46-55 años"
-        else: return "56+ años"
-    else: # jovenes
-        if edad < 14: return "Menor de 14 años"
-        elif edad <= 15: return "14-15 años"
-        elif edad <= 17: return "16-17 años"
-        elif edad <= 19: return "18-19 años"
-        else: return "20 o más años"
+    if edad <= 25: return "18-25 años"
+    elif edad <= 35: return "26-35 años"
+    elif edad <= 45: return "36-45 años"
+    elif edad <= 55: return "46-55 años"
+    else: return "56+ años"
 
-def get_hogar_rango(personas):
-    try:
-        p = int(float(personas))
-        if p <= 2: return "1 a 2 personas"
-        elif p <= 4: return "3 a 4 personas"
-        else: return "5 o más personas"
-    except:
-        return "Sin dato"
+def has_observation(obs_val):
+    val = clean_str(obs_val).lower().strip()
+    if not val:
+        return False
+    if val == 'ok' or val == 'puerto boyaca' or val == 'puerto boyacá' or val == 'puerto serviez':
+        return False
+    return True
 
 def main():
-    parser = argparse.ArgumentParser(description="Procesar Excel de Oleoductos a JSON.")
+    parser = argparse.ArgumentParser(description="Procesar Excel de Oleoductos a JSON (solo datos autorizados y agregados).")
     parser.add_argument('--input', type=str, required=True, help='Ruta al archivo Excel (.xlsx)')
-    parser.add_argument('--poblacion', type=str, required=True, choices=['emprendedores', 'jovenes'], help='Población destino')
-    parser.add_argument('--medicion', type=str, required=True, choices=['linea_base', 'cierre'], help='Tipo de medición')
     parser.add_argument('--output', type=str, default='src/data/data.json', help='Ruta al archivo JSON de salida')
     args = parser.parse_args()
 
     excel_path = args.input
     out_json_path = args.output
-    poblacion_key = args.poblacion
-    medicion_key = args.medicion
-
-    print(f"Leyendo {excel_path} para la población '{poblacion_key}', medición '{medicion_key}'...")
+    
+    print(f"Leyendo {excel_path}...")
 
     try:
-        df_datos = pd.read_excel(excel_path, sheet_name='Datos')
+        wb = openpyxl.load_workbook(excel_path, data_only=True)
     except Exception as e:
-        print(f"Error cargando hoja 'Datos': {e}")
+        print(f"Error cargando Excel: {e}")
         sys.exit(1)
 
-    col_nombre = None
-    col_territorio = None
-    col_cumplimiento = None
-    col_edad = None
-    col_edu = None
-    col_hogar = None
-
-    for col in df_datos.columns:
-        c_upper = str(col).upper()
-        if 'NOMBRE' in c_upper or 'RAZON SOCIAL' in c_upper: col_nombre = col
-        elif 'MUNICIPIO' in c_upper or 'TERRITORIO' in c_upper: col_territorio = col
-        elif 'CUMPLIMIENTO TOTAL' in c_upper or 'TOTAL' in c_upper: col_cumplimiento = col
-        elif 'EDAD' in c_upper: col_edad = col
-        elif 'EDUCATI' in c_upper or 'NIVEL EDU' in c_upper or 'ESCOLARIDAD' in c_upper: col_edu = col
-        elif 'HOGAR' in c_upper or 'PERSONAS' in c_upper or 'CONVIV' in c_upper: col_hogar = col
-
-    if not col_nombre:
-        print("Error: No se encontró columna de Nombre en hoja 'Datos'.")
-        sys.exit(1)
-
-    try:
-        df_puntajes = pd.read_excel(excel_path, sheet_name='Puntaje por Pregunta', header=[0, 1])
-    except Exception as e:
-        print(f"Error cargando hoja 'Puntaje por Pregunta': {e}")
-        sys.exit(1)
-
-    col_nombre_puntaje = df_puntajes.columns[0]
-    
-    if len(df_datos) != len(df_puntajes):
-        print(f"Error: La hoja 'Datos' tiene {len(df_datos)} filas pero 'Puntaje por Pregunta' tiene {len(df_puntajes)} filas.")
-        sys.exit(1)
-
-    preguntas_cols = [c for c in df_puntajes.columns if c != col_nombre_puntaje and 'TOTAL' not in str(c[0]).upper()]
-    dimensiones_encontradas = []
-    preguntas_por_dimension = {}
-    
-    for dim_raw, preg_raw in preguntas_cols:
-        dim = str(dim_raw).strip()
-        preg = str(preg_raw).strip()
-        if 'UNNAMED' in dim.upper() and 'UNNAMED' in preg.upper(): continue
-        if dim not in dimensiones_encontradas:
-            dimensiones_encontradas.append(dim)
-            preguntas_por_dimension[dim] = []
-        preguntas_por_dimension[dim].append(preg)
-
-    if os.path.exists(out_json_path):
-        with open(out_json_path, 'r', encoding='utf-8') as f:
+    # 1. Indicadores de contexto
+    indicadores = []
+    if 'datos' in wb.sheetnames:
+        sheet_datos = wb['datos']
+        # Mapeo manual basado en las filas conocidas del excel y territorios
+        # 2: Desempleo juvenil en Colombia
+        # 3: Jóvenes que no estudian ni trabajan
+        # 4: Informalidad laboral nacional
+        # 5: Informalidad laboral juvenil
+        # 6: Actividad empresarial temprana en Colombia
+        # 7: Informalidad zonas rurales en Boyacá
+        # 8: Población juvenil en Boyacá
+        # 9: Informalidad laboral en el departamento de Boyacá
+        
+        map_indicadores = [
+            {"row": 2, "id": "desempleo_juv_col", "nombre": "Desempleo juvenil (15-28 años)", "territorio": "Colombia"},
+            {"row": 3, "id": "ninis", "nombre": "Jóvenes que no estudian ni trabajan", "territorio": "Colombia"},
+            {"row": 4, "id": "informalidad_nal", "nombre": "Informalidad laboral", "territorio": "Colombia"},
+            {"row": 5, "id": "informalidad_juv", "nombre": "Informalidad laboral juvenil", "territorio": "Colombia"},
+            {"row": 6, "id": "actividad_emp_temp", "nombre": "Actividad empresarial temprana", "territorio": "Colombia"},
+            {"row": 7, "id": "informalidad_rural_boy", "nombre": "Informalidad zonas rurales", "territorio": "Boyacá"},
+            {"row": 8, "id": "pob_juv_boy", "nombre": "Población juvenil (aprox)", "territorio": "Boyacá"},
+            {"row": 9, "id": "informalidad_boy", "nombre": "Informalidad laboral", "territorio": "Boyacá"},
+        ]
+        
+        for item in map_indicadores:
+            val = sheet_datos.cell(row=item["row"], column=5).value
             try:
-                final_data = json.load(f)
+                val_pct = float(val) * 100
+                val_str = f"{val_pct:.1f}"
             except:
-                final_data = {"poblaciones": {"emprendedores": {"sociodemografico": {}, "preguntas_por_dimension": {}, "participantes": []}, "jovenes": {"sociodemografico": {}, "preguntas_por_dimension": {}, "participantes": []}}}
-    else:
-        final_data = {"poblaciones": {"emprendedores": {"sociodemografico": {}, "preguntas_por_dimension": {}, "participantes": []}, "jovenes": {"sociodemografico": {}, "preguntas_por_dimension": {}, "participantes": []}}}
-
-    poblacion_data = final_data["poblaciones"][poblacion_key]
+                val_str = None
+                
+            indicadores.append({
+                "id": item["id"],
+                "nombre": item["nombre"],
+                "territorio": item["territorio"],
+                "valor": val_str,
+                "unidad": "%",
+                "fuente": "Por confirmar",
+                "fecha": "Por confirmar"
+            })
+            
+        with open('src/config/indicadores-contexto.json', 'w', encoding='utf-8') as f:
+            json.dump(indicadores, f, ensure_ascii=False, indent=2)
+            
+    # 2. Base consolidada
+    sheet_name = ' Base consolidada edades '
+    if sheet_name not in wb.sheetnames:
+        print(f"Hoja '{sheet_name}' no encontrada.")
+        sys.exit(1)
+        
+    sheet = wb[sheet_name]
     
-    if medicion_key == 'linea_base' or not poblacion_data.get("preguntas_por_dimension"):
-        poblacion_data["preguntas_por_dimension"] = preguntas_por_dimension
-
-    if "sociodemografico" not in poblacion_data:
-        poblacion_data["sociodemografico"] = {}
-
-    participantes_list = poblacion_data["participantes"]
-    participantes_dict = {p["id"]: p for p in participantes_list}
-
-    # Contadores para datos sociodemográficos
-    edad_counts = {}
-    edu_counts = {}
-    hogar_counts = {}
-    suma_personas_hogar = 0
-    conteo_hogares = 0
-
-    for idx in range(len(df_datos)):
-        row_datos = df_datos.iloc[idx]
-        row_puntajes = df_puntajes.iloc[idx]
-        
-        nombre_datos = clean_name(row_datos[col_nombre])
-        nombre_puntajes = clean_name(row_puntajes[col_nombre_puntaje])
-        
-        if nombre_datos != nombre_puntajes:
-            print(f"Error crítico de cruce en fila {idx}: '{nombre_datos}' NO coincide con '{nombre_puntajes}'.")
-            sys.exit(1)
+    # Índices de columnas (1-based en openpyxl)
+    COL_TERRITORIO = 1
+    COL_NOMBRES = 2
+    COL_EDAD = 11
+    COL_SEXO = 12
+    COL_JEFE_HOGAR = 15
+    COL_ZONA = 18
+    COL_F1 = 26
+    COL_F2 = 27
+    COL_SOPORTES = 28
+    COL_OBS = 29
+    
+    participantes_list = []
+    control_gestion = []
+    
+    # Contenedores anidados por territorio (y "Todos")
+    # Estructura: { "Todos": {rango: val}, "Puerto Boyacá": {rango: val} }
+    edad_counts = {"Todos": {}}
+    sexo_counts = {"Todos": {}}
+    zona_counts = {"Todos": {}}
+    jefe_counts = {"Todos": {}}
+    soportes_counts = {"Todos": {}}
+    
+    excluidos_rojo = 0
+    total_filas = 0
+    
+    for row_idx in range(8, sheet.max_row + 1):
+        terr_val = sheet.cell(row=row_idx, column=COL_TERRITORIO).value
+        if not terr_val:
+            continue
             
-        part_id = f"{poblacion_key}_{nombre_datos.replace(' ', '_')}"
+        total_filas += 1
         
-        # Procesar Sociodemográficos (Solo en línea base, o se pueden actualizar, pero es agregado global)
-        # Los datos se agregan, NO se guardan en el participante.
-        if medicion_key == 'linea_base':
-            if col_edad:
-                rango = get_edad_rango(row_datos[col_edad], poblacion_key)
-                edad_counts[rango] = edad_counts.get(rango, 0) + 1
-            if col_edu:
-                edu = str(row_datos[col_edu]).strip() if not pd.isna(row_datos[col_edu]) else "Sin dato"
-                edu_counts[edu] = edu_counts.get(edu, 0) + 1
-            if col_hogar:
-                rango_h = get_hogar_rango(row_datos[col_hogar])
-                hogar_counts[rango_h] = hogar_counts.get(rango_h, 0) + 1
-                try:
-                    suma_personas_hogar += int(float(row_datos[col_hogar]))
-                    conteo_hogares += 1
-                except:
-                    pass
-        
-        puntajes_preg = {}
-        dim_sums = {dim: [] for dim in dimensiones_encontradas}
-        
-        for dim, preg in preguntas_cols:
-            if 'UNNAMED' in str(dim).upper() and 'UNNAMED' in str(preg).upper(): continue
-            val = row_puntajes[(dim, preg)]
-            val = float(val) if not pd.isna(val) else 0.0
-            puntajes_preg[preg] = {"valor": val}
-            dim_sums[dim].append(val)
+        # Detección dinámica de exclusión: revisamos que la celda de la columna 'Nombres' (2) esté en rojo
+        fill_color = sheet.cell(row=row_idx, column=COL_NOMBRES).fill.start_color.index
+        if fill_color == 'FFFF0000':
+            excluidos_rojo += 1
+            continue
             
-        promedios_dim = {}
-        for dim, vals in dim_sums.items():
-            promedios_dim[dim] = sum(vals) / len(vals) if len(vals) > 0 else 0.0
+        codigo_anonimo = f"P-{len(participantes_list) + 1:02d}"
+        territorio = clean_str(terr_val)
+        
+        if territorio not in edad_counts:
+            edad_counts[territorio] = {}
+            sexo_counts[territorio] = {}
+            zona_counts[territorio] = {}
+            jefe_counts[territorio] = {}
+            soportes_counts[territorio] = {}
             
-        cump = float(row_datos[col_cumplimiento]) if col_cumplimiento and not pd.isna(row_datos[col_cumplimiento]) else 0.0
+        def add_count(dic, terr, val):
+            dic["Todos"][val] = dic["Todos"].get(val, 0) + 1
+            dic[terr][val] = dic[terr].get(val, 0) + 1
         
-        medicion_obj = {
-            "cumplimiento_total": cump,
-            "promedios_dimensiones": promedios_dim,
-            "puntajes_preguntas": puntajes_preg
-        }
+        edad_val = sheet.cell(row=row_idx, column=COL_EDAD).value
+        rango_edad = get_edad_rango(edad_val)
+        add_count(edad_counts, territorio, rango_edad)
         
-        territorio = str(row_datos[col_territorio]).strip() if col_territorio and not pd.isna(row_datos[col_territorio]) else "Sin dato"
+        sexo_val = clean_str(sheet.cell(row=row_idx, column=COL_SEXO).value) or "Sin dato"
+        add_count(sexo_counts, territorio, sexo_val)
         
-        if part_id in participantes_dict:
-            p = participantes_dict[part_id]
-            if "mediciones" not in p: p["mediciones"] = {}
-            p["mediciones"][medicion_key] = medicion_obj
-            p["territorio"] = territorio
-        else:
-            p = {
-                "id": part_id,
-                "nombre": nombre_datos,
-                "territorio": territorio,
-                "mediciones": { "linea_base": None, "cierre": None }
+        zona_val = clean_str(sheet.cell(row=row_idx, column=COL_ZONA).value) or "Sin dato"
+        add_count(zona_counts, territorio, zona_val)
+        
+        jefe_val = clean_str(sheet.cell(row=row_idx, column=COL_JEFE_HOGAR).value) or "Sin dato"
+        add_count(jefe_counts, territorio, jefe_val)
+        
+        estado_sop_val = clean_str(sheet.cell(row=row_idx, column=COL_SOPORTES).value) or "Sin dato"
+        add_count(soportes_counts, territorio, estado_sop_val)
+        
+        obs_val = sheet.cell(row=row_idx, column=COL_OBS).value
+        
+        # 1. Participante anónimo para gráficas y métricas
+        participantes_list.append({
+            "id": codigo_anonimo,
+            "territorio": territorio,
+            "mediciones": {
+                "linea_base": None,
+                "cierre": None
             }
-            p["mediciones"][medicion_key] = medicion_obj
-            participantes_list.append(p)
-            participantes_dict[part_id] = p
+        })
+        
+        # 2. Registro para Control de Gestión (solo PII anónima)
+        control_gestion.append({
+            "codigo": codigo_anonimo,
+            "territorio": territorio,
+            "formato_1": clean_str(sheet.cell(row=row_idx, column=COL_F1).value),
+            "formato_2": clean_str(sheet.cell(row=row_idx, column=COL_F2).value),
+            "estado_soportes": estado_sop_val,
+            "tiene_observacion": has_observation(obs_val)
+        })
 
-    # Actualizar nodo sociodemográfico global
-    if medicion_key == 'linea_base':
-        socio = poblacion_data.get("sociodemografico", {})
-        if col_edad: socio["edad"] = edad_counts
-        if col_edu: socio["nivel_educativo"] = edu_counts
-        if col_hogar: 
-            hogar_counts["promedio"] = round(suma_personas_hogar / conteo_hogares, 1) if conteo_hogares > 0 else 0
-            socio["personas_hogar"] = hogar_counts
-        poblacion_data["sociodemografico"] = socio
+    # Cargar JSON o crear base
+    final_data = {
+        "metadata": {
+            "excluidos_criterio": "filas_rojas",
+            "excluidos_cantidad": excluidos_rojo,
+            "total_registros_brutos": total_filas
+        },
+        "poblaciones": {
+            "emprendedores": {
+                "sociodemografico": {
+                    "edad": edad_counts,
+                    "sexo": sexo_counts,
+                    "zona": zona_counts,
+                    "jefe_hogar": jefe_counts,
+                    "estado_soportes": soportes_counts
+                },
+                "control_gestion": control_gestion,
+                "preguntas_por_dimension": {},
+                "participantes": participantes_list
+            },
+            "jovenes": {
+                "sociodemografico": {},
+                "control_gestion": [],
+                "preguntas_por_dimension": {},
+                "participantes": []
+            }
+        }
+    }
 
     with open(out_json_path, "w", encoding="utf-8") as f:
         json.dump(final_data, f, ensure_ascii=False, indent=2)
 
     print(f"Exito. Datos procesados y guardados en {out_json_path}.")
-    print(f"Total participantes en '{poblacion_key}': {len(participantes_list)}")
+    print(f"Total participantes autorizados: {len(participantes_list)}")
+    print(f"Total excluidos (rojo): {excluidos_rojo}")
 
 if __name__ == "__main__":
     main()

@@ -1,47 +1,74 @@
 [
   {
-    "id": "tasa_informalidad",
-    "nombre": "Tasa de informalidad del empleo",
-    "territorio": "General",
-    "valor": null,
+    "id": "desempleo_juv_col",
+    "nombre": "Desempleo juvenil (15-28 años)",
+    "territorio": "Colombia",
+    "valor": "17.3",
     "unidad": "%",
-    "fuente": "DANE",
-    "fecha": "2023"
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
   },
   {
-    "id": "desempleo_ptoboyaca",
-    "nombre": "Tasa de desempleo",
-    "territorio": "Puerto Boyacá",
-    "valor": null,
+    "id": "ninis",
+    "nombre": "Jóvenes que no estudian ni trabajan",
+    "territorio": "Colombia",
+    "valor": "22.8",
     "unidad": "%",
-    "fuente": "DANE",
-    "fecha": "2023"
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
   },
   {
-    "id": "desempleo_ptoserviez",
-    "nombre": "Tasa de desempleo",
-    "territorio": "Puerto Serviez",
-    "valor": null,
+    "id": "informalidad_nal",
+    "nombre": "Informalidad laboral",
+    "territorio": "Colombia",
+    "valor": "55.8",
     "unidad": "%",
-    "fuente": "DANE (Proyección)",
-    "fecha": "2023"
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
   },
   {
-    "id": "poblacion_joven_municipio",
-    "nombre": "Tasa de población joven",
-    "territorio": "Puerto Boyacá",
-    "valor": null,
+    "id": "informalidad_juv",
+    "nombre": "Informalidad laboral juvenil",
+    "territorio": "Colombia",
+    "valor": "61.0",
     "unidad": "%",
-    "fuente": "DANE (Censo/Proyecciones)",
-    "fecha": "2023"
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
   },
   {
-    "id": "poblacion_joven_referencia",
-    "nombre": "Tasa de población joven",
-    "territorio": "Departamento (Por definir)",
-    "valor": null,
+    "id": "actividad_emp_temp",
+    "nombre": "Actividad empresarial temprana",
+    "territorio": "Colombia",
+    "valor": "28.0",
     "unidad": "%",
-    "fuente": "DANE (Censo/Proyecciones)",
-    "fecha": "2023"
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
+  },
+  {
+    "id": "informalidad_rural_boy",
+    "nombre": "Informalidad zonas rurales",
+    "territorio": "Boyacá",
+    "valor": "87.0",
+    "unidad": "%",
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
+  },
+  {
+    "id": "pob_juv_boy",
+    "nombre": "Población juvenil (aprox)",
+    "territorio": "Boyacá",
+    "valor": "24.0",
+    "unidad": "%",
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
+  },
+  {
+    "id": "informalidad_boy",
+    "nombre": "Informalidad laboral",
+    "territorio": "Boyacá",
+    "valor": "57.0",
+    "unidad": "%",
+    "fuente": "Por confirmar",
+    "fecha": "Por confirmar"
   }
 ]
