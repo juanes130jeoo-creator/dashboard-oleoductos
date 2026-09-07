@@ -39,7 +39,7 @@ export default function Ranking() {
       if (sortConfig.key === 'ranking') {
          aValue = a.mediciones?.linea_base?.cumplimiento_total || 0
          bValue = b.mediciones?.linea_base?.cumplimiento_total || 0
-      } else if (sortConfig.key === 'nombre' || sortConfig.key === 'territorio') {
+      } else if (sortConfig.key === 'nombre' || sortConfig.key === 'territorio' || sortConfig.key === 'entidad') {
          aValue = a[sortConfig.key] || ''
          bValue = b[sortConfig.key] || ''
       } else if (sortConfig.key === 'cierre_total') {
@@ -74,7 +74,7 @@ export default function Ranking() {
 
   const exportCSV = () => {
     if (!hasData) return
-    const headers = ['Posición (LB)', 'Código', 'Territorio', 'Nivel (Actual)', 'Cumplimiento LB']
+    const headers = ['Posición (LB)', 'Código', 'Territorio', 'Entidad / Org.', 'Nivel (Actual)', 'Cumplimiento LB']
     if (hasCierre) {
       headers.push('Cumplimiento Cierre', 'Variación')
     }
@@ -90,6 +90,7 @@ export default function Ranking() {
         idx + 1,
         `"${emp.id}"`,
         `"${emp.territorio || ''}"`,
+        `"${emp.entidad || ''}"`,
         `"${level.label}"`,
         (lb * 100).toFixed(1) + '%'
       ]
@@ -171,6 +172,7 @@ export default function Ranking() {
                 <Th label="Posición" sortKey="ranking" />
                 <Th label="Código" sortKey="nombre" />
                 <Th label="Territorio" sortKey="territorio" />
+                <Th label="Entidad / Org." sortKey="entidad" />
                 <Th label="Nivel" sortKey="ranking" />
                 <Th label="Línea Base" sortKey="ranking" />
                 {hasCierre && <Th label="Cierre" sortKey="cierre_total" />}
@@ -199,6 +201,9 @@ export default function Ranking() {
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">
                       {emp.territorio || '—'}
+                    </td>
+                    <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">
+                      {emp.entidad || '—'}
                     </td>
                     <td className="px-4 py-3 whitespace-nowrap">
                       <span className={`px-2 py-1 inline-flex text-xs leading-5 font-bold rounded-full border border-opacity-50`} style={{backgroundColor: level.hex + '20', color: level.hex, borderColor: level.hex}}>

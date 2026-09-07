@@ -31,11 +31,12 @@ export default function ControlGestion() {
 
   const exportCSV = () => {
     if (!hasData) return
-    const headers = ['Código Anónimo', 'Nombre', 'Territorio', 'Formato 1', 'Formato 2', 'Estado Soportes', 'Observación Pendiente']
+    const headers = ['Código Anónimo', 'Nombre', 'Entidad / Org.', 'Territorio', 'Formato 1', 'Formato 2', 'Estado Soportes', 'Observación Pendiente']
     
     const rows = filteredData.map(row => [
       row.codigo,
       `"${row.nombre}"`,
+      `"${row.entidad}"`,
       `"${row.territorio}"`,
       `"${row.formato_1}"`,
       `"${row.formato_2}"`,
@@ -115,6 +116,7 @@ export default function ControlGestion() {
               <tr>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Código</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Nombre</th>
+                <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Entidad / Org.</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Territorio</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Formato 1</th>
                 <th className="px-4 py-3 text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">Formato 2</th>
@@ -127,6 +129,7 @@ export default function ControlGestion() {
                 <tr key={idx} className="hover:bg-slate-50 transition-colors">
                   <td className="px-4 py-3 whitespace-nowrap text-sm font-bold text-slate-900">{row.codigo}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-800">{row.nombre}</td>
+                  <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-800">{row.entidad}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.territorio}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.formato_1 || '-'}</td>
                   <td className="px-4 py-3 whitespace-nowrap text-sm text-slate-600">{row.formato_2 || '-'}</td>

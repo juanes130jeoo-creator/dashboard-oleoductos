@@ -158,6 +158,7 @@
         {
           "codigo": "P-01",
           "nombre": "ADRIANA LUCÍA LOAIZA LOAIZA",
+          "entidad": "360 - Hidden Kitchen",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -167,6 +168,7 @@
         {
           "codigo": "P-02",
           "nombre": "ANDRÉS BERNAL MONTAÑA",
+          "entidad": "Belleza",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -176,6 +178,7 @@
         {
           "codigo": "P-03",
           "nombre": "ANGELA MARÍA MARTÍNEZ CALDERON",
+          "entidad": "Beautty Flower",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -185,6 +188,7 @@
         {
           "codigo": "P-04",
           "nombre": "ASLLYE TATIANA LOPEZ ARISTIZABAL",
+          "entidad": "Cellshop L.A",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -194,6 +198,7 @@
         {
           "codigo": "P-05",
           "nombre": "BRENDA MICHELL GUZMÁN ROJAS",
+          "entidad": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -203,6 +208,7 @@
         {
           "codigo": "P-06",
           "nombre": "CHAROL DAYANA TASCON TREJOS",
+          "entidad": "Lash Dahiana",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -212,6 +218,7 @@
         {
           "codigo": "P-07",
           "nombre": "CRISTIAN ANDRÉS DÍAZ QUIÑONES",
+          "entidad": "Grado 0°",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -221,6 +228,7 @@
         {
           "codigo": "P-08",
           "nombre": "DANIEL ARLEY VARGAS MURCIA",
+          "entidad": "STUDIO DANVAR FILMS",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -230,6 +238,7 @@
         {
           "codigo": "P-09",
           "nombre": "DENNIS OMAIRA LUGO MOSQUERA",
+          "entidad": "Glamurosas boutique",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -239,6 +248,7 @@
         {
           "codigo": "P-10",
           "nombre": "DÍANA CAROLINA RAMIREZ OSORIO",
+          "entidad": "Caro_makeup",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -248,6 +258,7 @@
         {
           "codigo": "P-11",
           "nombre": "ELIANA ALEJANDRA CAÑAS ROMERO",
+          "entidad": "Eliana Cañas Cejas & Pestañas",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -257,6 +268,7 @@
         {
           "codigo": "P-12",
           "nombre": "ERIKA QUIROGA PIEDRAHITA",
+          "entidad": "Agregados y prefabricados QP",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -266,6 +278,7 @@
         {
           "codigo": "P-13",
           "nombre": "FREDY GONZALO CASTAÑO SÁNCHEZ",
+          "entidad": "Barbería el mello",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -275,6 +288,7 @@
         {
           "codigo": "P-14",
           "nombre": "HARY MICHELLE SUTANEME",
+          "entidad": "Manosguiadas_manillas",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -284,6 +298,7 @@
         {
           "codigo": "P-15",
           "nombre": "HEINER DUVAN NABARRETE ORTIZ",
+          "entidad": "CAFÉ CASA CAMPO",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -293,6 +308,7 @@
         {
           "codigo": "P-16",
           "nombre": "HILLARY STELLA DIAZ BARRIGA",
+          "entidad": "Hill Beauty Concept",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -302,6 +318,7 @@
         {
           "codigo": "P-17",
           "nombre": "JHON STIVEN OROZCO",
+          "entidad": "Barbería st",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -311,6 +328,7 @@
         {
           "codigo": "P-18",
           "nombre": "JUAN CARLOS PALOMO RENGIFO",
+          "entidad": "Local de barberia",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -320,6 +338,7 @@
         {
           "codigo": "P-19",
           "nombre": "KAREN LORENA RUIZ CERVERA",
+          "entidad": "Perfumería Esencia Eterna",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -329,6 +348,7 @@
         {
           "codigo": "P-20",
           "nombre": "KATERIN DAYANA GARZON GUERRERO",
+          "entidad": "Surtí todo Dayana",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -338,6 +358,7 @@
         {
           "codigo": "P-21",
           "nombre": "KEISCHA VANESSA PLAZA QUICENO",
+          "entidad": "NTR_Graciasublime",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -347,6 +368,7 @@
         {
           "codigo": "P-22",
           "nombre": "MADELEIENE MONTOYA ORJUELA",
+          "entidad": "total look boutique",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -356,6 +378,7 @@
         {
           "codigo": "P-23",
           "nombre": "MAGNO CESAR BUSTOS VARGAS",
+          "entidad": "Sabor porteño",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -365,6 +388,7 @@
         {
           "codigo": "P-24",
           "nombre": "MAILEN ANGULO VILORIA",
+          "entidad": "Maybeautyy",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -374,6 +398,7 @@
         {
           "codigo": "P-25",
           "nombre": "MAIRA ALEJANDRA BENÍTEZ MOSQUERA",
+          "entidad": "Mablan Accesorios",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -383,6 +408,7 @@
         {
           "codigo": "P-26",
           "nombre": "MARIANA TORO LOZANO",
+          "entidad": "Tienda virtual M&E",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -392,6 +418,7 @@
         {
           "codigo": "P-27",
           "nombre": "MARÍA ROSARIO HERNÁNDEZ DELAGO",
+          "entidad": "Esquina del Parque",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -401,6 +428,7 @@
         {
           "codigo": "P-28",
           "nombre": "MAYELINE ESPERANZA GONZALEZ",
+          "entidad": "Mayeline Gonzalez",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -410,6 +438,7 @@
         {
           "codigo": "P-29",
           "nombre": "MELANY ALEJANDRA BUITRAGO HERRERA",
+          "entidad": "Dulce bocado",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -419,6 +448,7 @@
         {
           "codigo": "P-30",
           "nombre": "MARYID VANESA LAGUNA CIRO",
+          "entidad": "Salón de belleza en etapa inicial",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -428,6 +458,7 @@
         {
           "codigo": "P-31",
           "nombre": "PAOLA ANDREA VARON MEJIA",
+          "entidad": "Sevi Cell",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -437,6 +468,7 @@
         {
           "codigo": "P-32",
           "nombre": "SANTIAGO RAMÍREZ PÉREZ",
+          "entidad": "Soluciones y sistemas",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -446,6 +478,7 @@
         {
           "codigo": "P-33",
           "nombre": "SANTIAGO ROJAS",
+          "entidad": "Santiago Software",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -455,6 +488,7 @@
         {
           "codigo": "P-34",
           "nombre": "VALERIA ORTEGÓN MOSQUERA",
+          "entidad": "Detallitos Valkami",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -464,6 +498,7 @@
         {
           "codigo": "P-35",
           "nombre": "VALERIN CRUZ",
+          "entidad": "Postres y anchetas dulce encanto",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -473,6 +508,7 @@
         {
           "codigo": "P-36",
           "nombre": "VIVIANA VIDALES ZABALA",
+          "entidad": "laboratorio",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -482,6 +518,7 @@
         {
           "codigo": "P-37",
           "nombre": "YAIRA YULIANA CORRALES",
+          "entidad": "Dulce bocado",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -491,6 +528,7 @@
         {
           "codigo": "P-38",
           "nombre": "YEXIEL AMADO MARTÍNEZ",
+          "entidad": "Delialegria",
           "territorio": "Puerto Boyacá",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -500,6 +538,7 @@
         {
           "codigo": "P-39",
           "nombre": "YULIANA FERNANDA LOZADA VANEGAS",
+          "entidad": "LUMARA",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -509,6 +548,7 @@
         {
           "codigo": "P-40",
           "nombre": "ZARAY SOFIA GUTIERREZ ROJAS",
+          "entidad": "Belleza integral",
           "territorio": "Puerto Boyacá",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -518,6 +558,7 @@
         {
           "codigo": "P-41",
           "nombre": "ANGIE LIZETH PALACIOS LLOREDA",
+          "entidad": "Jugos mosquera",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -527,6 +568,7 @@
         {
           "codigo": "P-42",
           "nombre": "ELIZABETH TRIANA TRIANA",
+          "entidad": "Salón de belleza",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -536,6 +578,7 @@
         {
           "codigo": "P-43",
           "nombre": "FRANKLIN ANDRÉS VEGA",
+          "entidad": "VegaBARER",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -545,6 +588,7 @@
         {
           "codigo": "P-44",
           "nombre": "GLORIA ARCILA",
+          "entidad": "Doña gallina",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -554,6 +598,7 @@
         {
           "codigo": "P-45",
           "nombre": "JAZLYN YELINA ATEHORTUA PEÑA",
+          "entidad": "J&P huevos",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -563,6 +608,7 @@
         {
           "codigo": "P-46",
           "nombre": "JUAN ESTEBAN MOLINA GONZALEZ",
+          "entidad": "Frutilandia",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -572,6 +618,7 @@
         {
           "codigo": "P-47",
           "nombre": "JUAN ESTEBAN JIMENEZ CORREA",
+          "entidad": "Antojos Urabeños",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -581,6 +628,7 @@
         {
           "codigo": "P-48",
           "nombre": "JUAN JOSÉ TABARES FRANCO",
+          "entidad": "Helados gourmet",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -590,6 +638,7 @@
         {
           "codigo": "P-49",
           "nombre": "KAREN DAYANA VILLARREAL CONTRERAS",
+          "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -599,6 +648,7 @@
         {
           "codigo": "P-50",
           "nombre": "MARTHA ZABALA TORRES",
+          "entidad": "Leymar",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -608,6 +658,7 @@
         {
           "codigo": "P-51",
           "nombre": "NAYERLY TÁMARA COGOLLO ORJUELA",
+          "entidad": "Caseta caspete la flaka",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -617,6 +668,7 @@
         {
           "codigo": "P-52",
           "nombre": "OSCAR JAINIVER VALLEJO PINZÓN",
+          "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -626,6 +678,7 @@
         {
           "codigo": "P-53",
           "nombre": "SAMUEL ANDRÉS MONTOYA MURILLO",
+          "entidad": "Donde Sami",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -635,6 +688,7 @@
         {
           "codigo": "P-54",
           "nombre": "SARA JULIETH REYES RODRÍGUEZ",
+          "entidad": "Hanileth",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
@@ -644,6 +698,7 @@
         {
           "codigo": "P-55",
           "nombre": "SARA NIKOL ROMERO MARULANDA",
+          "entidad": "Frutilandia",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -653,6 +708,7 @@
         {
           "codigo": "P-56",
           "nombre": "BRAYAN STIVEN MUÑOZ SANABRIA",
+          "entidad": "Piscicultura",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -662,6 +718,7 @@
         {
           "codigo": "P-57",
           "nombre": "ANDRES FELIPE MOSQUERA MARIN",
+          "entidad": "Adecuación de potreros silvopastoril",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -671,6 +728,7 @@
         {
           "codigo": "P-58",
           "nombre": "OMAR ENRIQUE OYOLA VIDAL",
+          "entidad": "Gallina doble proposito",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -680,6 +738,7 @@
         {
           "codigo": "P-59",
           "nombre": "SULAY ALEJANDRA GAITAN RODRIGUEZ",
+          "entidad": "Gallina",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -689,6 +748,7 @@
         {
           "codigo": "P-60",
           "nombre": "LITZY JHOANA ARENAS ZABALA",
+          "entidad": "Plantas medicinales",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -698,6 +758,7 @@
         {
           "codigo": "P-61",
           "nombre": "CRISTOFER ALEJANDRO ALVAREZ VASQUEZ",
+          "entidad": "CACAO",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -707,6 +768,7 @@
         {
           "codigo": "P-62",
           "nombre": "ANDERSON PEROZA ALEGRIAS",
+          "entidad": "Producción de carne de pollo",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -716,6 +778,7 @@
         {
           "codigo": "P-63",
           "nombre": "JORGE EDUARDO SANCHEZ CORTES",
+          "entidad": "Ganaderia",
           "territorio": "Puerto Serviez",
           "formato_1": "OK",
           "formato_2": "OK",
@@ -727,6 +790,7 @@
       "participantes": [
         {
           "id": "P-01",
+          "entidad": "360 - Hidden Kitchen",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -735,6 +799,7 @@
         },
         {
           "id": "P-02",
+          "entidad": "Belleza",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -743,6 +808,7 @@
         },
         {
           "id": "P-03",
+          "entidad": "Beautty Flower",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -751,6 +817,7 @@
         },
         {
           "id": "P-04",
+          "entidad": "Cellshop L.A",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -759,6 +826,7 @@
         },
         {
           "id": "P-05",
+          "entidad": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -767,6 +835,7 @@
         },
         {
           "id": "P-06",
+          "entidad": "Lash Dahiana",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -775,6 +844,7 @@
         },
         {
           "id": "P-07",
+          "entidad": "Grado 0°",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -783,6 +853,7 @@
         },
         {
           "id": "P-08",
+          "entidad": "STUDIO DANVAR FILMS",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -791,6 +862,7 @@
         },
         {
           "id": "P-09",
+          "entidad": "Glamurosas boutique",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -799,6 +871,7 @@
         },
         {
           "id": "P-10",
+          "entidad": "Caro_makeup",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -807,6 +880,7 @@
         },
         {
           "id": "P-11",
+          "entidad": "Eliana Cañas Cejas & Pestañas",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -815,6 +889,7 @@
         },
         {
           "id": "P-12",
+          "entidad": "Agregados y prefabricados QP",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -823,6 +898,7 @@
         },
         {
           "id": "P-13",
+          "entidad": "Barbería el mello",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -831,6 +907,7 @@
         },
         {
           "id": "P-14",
+          "entidad": "Manosguiadas_manillas",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -839,6 +916,7 @@
         },
         {
           "id": "P-15",
+          "entidad": "CAFÉ CASA CAMPO",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -847,6 +925,7 @@
         },
         {
           "id": "P-16",
+          "entidad": "Hill Beauty Concept",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -855,6 +934,7 @@
         },
         {
           "id": "P-17",
+          "entidad": "Barbería st",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -863,6 +943,7 @@
         },
         {
           "id": "P-18",
+          "entidad": "Local de barberia",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -871,6 +952,7 @@
         },
         {
           "id": "P-19",
+          "entidad": "Perfumería Esencia Eterna",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -879,6 +961,7 @@
         },
         {
           "id": "P-20",
+          "entidad": "Surtí todo Dayana",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -887,6 +970,7 @@
         },
         {
           "id": "P-21",
+          "entidad": "NTR_Graciasublime",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -895,6 +979,7 @@
         },
         {
           "id": "P-22",
+          "entidad": "total look boutique",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -903,6 +988,7 @@
         },
         {
           "id": "P-23",
+          "entidad": "Sabor porteño",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -911,6 +997,7 @@
         },
         {
           "id": "P-24",
+          "entidad": "Maybeautyy",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -919,6 +1006,7 @@
         },
         {
           "id": "P-25",
+          "entidad": "Mablan Accesorios",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -927,6 +1015,7 @@
         },
         {
           "id": "P-26",
+          "entidad": "Tienda virtual M&E",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -935,6 +1024,7 @@
         },
         {
           "id": "P-27",
+          "entidad": "Esquina del Parque",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -943,6 +1033,7 @@
         },
         {
           "id": "P-28",
+          "entidad": "Mayeline Gonzalez",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -951,6 +1042,7 @@
         },
         {
           "id": "P-29",
+          "entidad": "Dulce bocado",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -959,6 +1051,7 @@
         },
         {
           "id": "P-30",
+          "entidad": "Salón de belleza en etapa inicial",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -967,6 +1060,7 @@
         },
         {
           "id": "P-31",
+          "entidad": "Sevi Cell",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -975,6 +1069,7 @@
         },
         {
           "id": "P-32",
+          "entidad": "Soluciones y sistemas",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -983,6 +1078,7 @@
         },
         {
           "id": "P-33",
+          "entidad": "Santiago Software",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -991,6 +1087,7 @@
         },
         {
           "id": "P-34",
+          "entidad": "Detallitos Valkami",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -999,6 +1096,7 @@
         },
         {
           "id": "P-35",
+          "entidad": "Postres y anchetas dulce encanto",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1007,6 +1105,7 @@
         },
         {
           "id": "P-36",
+          "entidad": "laboratorio",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1015,6 +1114,7 @@
         },
         {
           "id": "P-37",
+          "entidad": "Dulce bocado",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1023,6 +1123,7 @@
         },
         {
           "id": "P-38",
+          "entidad": "Delialegria",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1031,6 +1132,7 @@
         },
         {
           "id": "P-39",
+          "entidad": "LUMARA",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1039,6 +1141,7 @@
         },
         {
           "id": "P-40",
+          "entidad": "Belleza integral",
           "territorio": "Puerto Boyacá",
           "mediciones": {
             "linea_base": null,
@@ -1047,6 +1150,7 @@
         },
         {
           "id": "P-41",
+          "entidad": "Jugos mosquera",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1055,6 +1159,7 @@
         },
         {
           "id": "P-42",
+          "entidad": "Salón de belleza",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1063,6 +1168,7 @@
         },
         {
           "id": "P-43",
+          "entidad": "VegaBARER",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1071,6 +1177,7 @@
         },
         {
           "id": "P-44",
+          "entidad": "Doña gallina",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1079,6 +1186,7 @@
         },
         {
           "id": "P-45",
+          "entidad": "J&P huevos",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1087,6 +1195,7 @@
         },
         {
           "id": "P-46",
+          "entidad": "Frutilandia",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1095,6 +1204,7 @@
         },
         {
           "id": "P-47",
+          "entidad": "Antojos Urabeños",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1103,6 +1213,7 @@
         },
         {
           "id": "P-48",
+          "entidad": "Helados gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1111,6 +1222,7 @@
         },
         {
           "id": "P-49",
+          "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1119,6 +1231,7 @@
         },
         {
           "id": "P-50",
+          "entidad": "Leymar",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1127,6 +1240,7 @@
         },
         {
           "id": "P-51",
+          "entidad": "Caseta caspete la flaka",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1135,6 +1249,7 @@
         },
         {
           "id": "P-52",
+          "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1143,6 +1258,7 @@
         },
         {
           "id": "P-53",
+          "entidad": "Donde Sami",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1151,6 +1267,7 @@
         },
         {
           "id": "P-54",
+          "entidad": "Hanileth",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1159,6 +1276,7 @@
         },
         {
           "id": "P-55",
+          "entidad": "Frutilandia",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1167,6 +1285,7 @@
         },
         {
           "id": "P-56",
+          "entidad": "Piscicultura",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1175,6 +1294,7 @@
         },
         {
           "id": "P-57",
+          "entidad": "Adecuación de potreros silvopastoril",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1183,6 +1303,7 @@
         },
         {
           "id": "P-58",
+          "entidad": "Gallina doble proposito",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1191,6 +1312,7 @@
         },
         {
           "id": "P-59",
+          "entidad": "Gallina",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1199,6 +1321,7 @@
         },
         {
           "id": "P-60",
+          "entidad": "Plantas medicinales",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1207,6 +1330,7 @@
         },
         {
           "id": "P-61",
+          "entidad": "CACAO",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1215,6 +1339,7 @@
         },
         {
           "id": "P-62",
+          "entidad": "Producción de carne de pollo",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
@@ -1223,6 +1348,7 @@
         },
         {
           "id": "P-63",
+          "entidad": "Ganaderia",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,

@@ -104,6 +104,7 @@ def main():
     COL_SEXO = 12
     COL_JEFE_HOGAR = 15
     COL_ZONA = 18
+    COL_ENTIDAD = 19
     COL_F1 = 26
     COL_F2 = 27
     COL_SOPORTES = 28
@@ -182,8 +183,12 @@ def main():
         apellidos = clean_str(sheet.cell(row=row_idx, column=COL_APELLIDOS).value)
         nombre_completo = f"{nombres} {apellidos}".strip()
         
+        entidad_val = clean_str(sheet.cell(row=row_idx, column=COL_ENTIDAD).value)
+        entidad_org = entidad_val if entidad_val else "Sin registrar"
+        
         participantes_list.append({
             "id": codigo_anonimo,
+            "entidad": entidad_org,
             "territorio": territorio,
             "mediciones": {
                 "linea_base": None,
@@ -194,6 +199,7 @@ def main():
         control_gestion.append({
             "codigo": codigo_anonimo,
             "nombre": nombre_completo,
+            "entidad": entidad_org,
             "territorio": territorio,
             "formato_1": clean_str(sheet.cell(row=row_idx, column=COL_F1).value),
             "formato_2": clean_str(sheet.cell(row=row_idx, column=COL_F2).value),
