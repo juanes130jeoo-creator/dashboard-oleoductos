@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { LayoutDashboard, Users, User, BarChart2, ShieldAlert, ListChecks, Map, Menu, X, ChevronDown } from 'lucide-react'
+import { LayoutDashboard, Users, User, BarChart2, ShieldAlert, ListChecks, Map, Menu, X, ChevronDown, UserCircle2, Trophy, LayoutGrid, ClipboardCheck } from 'lucide-react'
 import { usePopulation } from './context/PopulationContext'
 
 import Home from './components/Home'
@@ -10,10 +10,12 @@ import DimensionAnalysis from './components/DimensionAnalysis'
 import QuestionView from './components/QuestionView'
 import SubregionAnalysis from './components/SubregionAnalysis'
 import CharacterizationView from './components/CharacterizationView'
+import PerfilesView from './components/PerfilesView'
 
 const TABS = [
   { id: 'home', label: 'Dashboard', icon: LayoutDashboard },
   { id: 'characterization', label: 'Caracterización de la Población', icon: Users },
+  { id: 'perfiles', label: 'Perfiles', icon: UserCircle2 },
   { id: 'subregion', label: 'Análisis Territorial', icon: Map, requiresMap: true },
   { id: 'questions', label: 'Por Pregunta', icon: ListChecks },
   { id: 'control', label: 'Control de Gestión', icon: User },
@@ -149,6 +151,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto w-full">
           {activeTab === 'home' && <Home />}
           {activeTab === 'characterization' && <CharacterizationView />}
+          {activeTab === 'perfiles' && <PerfilesView />}
           {activeTab === 'subregion' && <SubregionAnalysis />}
           {activeTab === 'questions' && <QuestionView />}
           {activeTab === 'control' && <ControlGestion />}

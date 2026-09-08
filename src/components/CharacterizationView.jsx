@@ -4,6 +4,9 @@ import { Info, Users, GraduationCap, Home, MapPin, User, FileCheck, Layers } fro
 import { usePopulation } from '../context/PopulationContext'
 import indicadoresContexto from '../config/indicadores-contexto.json'
 import useIsMobile from '../hooks/useIsMobile'
+import FuenteDato from './shared/FuenteDato'
+import MapBoyaca from './MapBoyaca'
+import GrupoPoblacional from './GrupoPoblacional'
 
 export default function CharacterizationView() {
   const { activeConfig, activeData } = usePopulation()
@@ -37,10 +40,7 @@ export default function CharacterizationView() {
                   </div>
                 )}
               </div>
-              <div className="text-[10px] text-slate-400 mt-auto border-t border-slate-100 pt-2 flex flex-col xl:flex-row justify-between gap-1">
-                <span>Fte: {ind.fuente}</span>
-                <span>Año: {ind.fecha}</span>
-              </div>
+              <FuenteDato fuente={ind.fuente} fecha={ind.fecha} />
             </div>
           )
         })}
@@ -117,6 +117,7 @@ export default function CharacterizationView() {
           </ResponsiveContainer>
         )}
       </div>
+      <FuenteDato fuente="Listado Excel consolidado" fecha="Septiembre 2026" n={totalParticipantes} />
     </div>
   )
 
@@ -127,6 +128,14 @@ export default function CharacterizationView() {
         <h2 className="text-2xl font-bold text-slate-800 mb-2">Contexto Territorial</h2>
         <p className="text-slate-500 mb-6">Indicadores oficiales de referencia nacional y departamental.</p>
         {renderContextIndicators()}
+      </section>
+
+      <hr className="border-slate-200" />
+
+      {/* Block - Territorial and Population */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <MapBoyaca />
+        <GrupoPoblacional />
       </section>
 
       <hr className="border-slate-200" />
@@ -191,6 +200,7 @@ export default function CharacterizationView() {
               </ResponsiveContainer>
             </div>
           )}
+          <FuenteDato fuente="Listado Excel consolidado" fecha="Septiembre 2026" n={totalParticipantes} />
         </div>
       </section>
 

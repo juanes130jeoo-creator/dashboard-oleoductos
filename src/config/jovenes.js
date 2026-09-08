@@ -37,8 +37,31 @@ export const config = {
     "Dimensión C — por definir": "Dim C"
   },
   sociodemograficoConfig: {
-    edadRangos: ["Menor de 14 años", "14-15 años", "16-17 años", "18-19 años", "20 o más años"],
-    nivelesEducativos: ["Básica Primaria", "Básica Secundaria", "Media", "Técnica", "Tecnológica"],
-    tamanosHogar: ["1 a 2 personas", "3 a 4 personas", "5 o más personas"]
+    edadRangos: ["15-17", "18-21", "22-25", "26-28", "29+", "Sin dato"],
+    sexoCategorias: ["Femenino", "Masculino", "Sin dato"],
+    zonaCategorias: ["Urbana", "Rural", "Sin dato"],
+    jefeHogarCategorias: ["Si", "No", "Sin dato"],
+    soportesCategorias: ["COMPLETO", "INCOMPLETO", "Sin dato"],
+    nivelesEducativos: ["Primaria", "Secundaria", "Media", "Técnica", "Tecnológica", "Profesional", "Posgrado", "Sin dato"],
+    tamanosHogar: ["1 a 2 personas", "3 a 4 personas", "5 o más personas", "Sin dato"]
+  },
+  perfiles: {
+    grupoPoblacional: {
+      n: 15,
+      datos: [
+        { name: "Ruralidad", value: 15, percent: 100.0 },
+        { name: "Reconocimiento como víctima", value: 6, percent: 40.0 },
+        { name: "Afrocolombiano", value: 3, percent: 20.0 }
+      ]
+    },
+    lineasTematicas: {
+      n: 15,
+      datos: [
+        { name: "Alimentos y bebidas", value: 9, percent: 60.0 },
+        { name: "Agropecuaria", value: 2, percent: 13.3 },
+        { name: "Belleza y cuidado personal", value: 2, percent: 13.3 },
+        { name: "Otra / por precisar", value: 2, percent: 13.3 }
+      ]
+    }
   }
 }
