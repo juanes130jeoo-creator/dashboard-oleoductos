@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts'
-import { Info, Users, GraduationCap, MapPin, User, Layers } from 'lucide-react'
+import { Info, Users, GraduationCap } from 'lucide-react'
 import { usePopulation } from '../context/PopulationContext'
 import indicadoresContexto from '../config/indicadores-contexto.json'
 import useIsMobile from '../hooks/useIsMobile'
@@ -49,15 +49,6 @@ export default function CharacterizationView() {
   }
 
   // Helper to format simple charts
-  const formatChartData = (dataObj, orderArray) => {
-    if (!dataObj) return []
-    const keys = orderArray || Object.keys(dataObj).filter(k => k !== 'promedio')
-    return keys.map(k => ({
-      name: k,
-      value: dataObj[k] || 0
-    }))
-  }
-
   const hasData = participantes && participantes.length > 0
   const hasSocio = sociodemografico && Object.keys(sociodemografico).length > 0
 
@@ -82,42 +73,8 @@ export default function CharacterizationView() {
     })
   }, [sociodemografico, sociodemograficoConfig, piramideTerritorio])
 
-  const sexoData = useMemo(() => formatChartData(sociodemografico?.sexo?.[piramideTerritorio], sociodemograficoConfig?.sexoCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
-  const zonaData = useMemo(() => formatChartData(sociodemografico?.zona?.[piramideTerritorio], sociodemograficoConfig?.zonaCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
 
   const totalParticipantes = (participantes && piramideTerritorio === 'Todos') ? participantes.length : (participantes?.filter(p => p.territorio === piramideTerritorio)?.length || 0)
-
-  const ChartCard = ({ title, icon: Icon, desc, data, dataKey = "value", color = "#06b6d4" }) => (
-    <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col">
-      <h3 className="text-lg font-bold text-slate-800 mb-1 flex items-center gap-2">
-        <Icon className="text-cyan-600" size={20} /> {title}
-      </h3>
-      {desc && <p className="text-sm text-slate-500 mb-6">{desc}</p>}
-      
-      <div className="flex-1 min-h-[250px]">
-        {!hasSocio ? (
-          <div className="flex flex-col items-center justify-center h-full text-slate-500 bg-slate-50 rounded-lg border border-dashed border-slate-300">
-             <p className="text-sm">Datos pendientes</p>
-          </div>
-        ) : (
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={data} layout="vertical" margin={{ top: 5, right: 30, left: 10, bottom: 5 }}>
-              <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#e2e8f0" />
-              <XAxis type="number" tick={{ fill: '#64748b' }} axisLine={false} tickLine={false} />
-              <YAxis dataKey="name" type="category" width={90} tick={{ fill: '#64748b', fontSize: 11 }} axisLine={false} tickLine={false} />
-              <Tooltip 
-                cursor={{ fill: '#f8fafc' }}
-                contentStyle={{ backgroundColor: '#ffffff', borderColor: '#e2e8f0', color: '#1e293b' }}
-                formatter={(value) => [value, 'Cantidad']}
-              />
-              <Bar dataKey={dataKey} fill={color} radius={[0, 4, 4, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        )}
-      </div>
-      <FuenteDato fuente="Listado Excel consolidado" fecha="Septiembre 2026" n={totalParticipantes} />
-    </div>
-  )
 
   return (
     <div className="space-y-8">
@@ -199,18 +156,6 @@ export default function CharacterizationView() {
             </div>
           )}
           <FuenteDato fuente="Listado Excel consolidado" fecha="Septiembre 2026" n={totalParticipantes} />
-        </div>
-      </section>
-
-      {/* Block C */}
-      <section>
-        <h2 className="text-2xl font-bold text-slate-800 mb-6 flex items-center gap-2">
-          <Layers className="text-cyan-600" /> Perfil Demográfico y Gestión
-        </h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <ChartCard title="Distribución por Sexo" icon={User} data={sexoData} color="#8b5cf6" />
-          <ChartCard title="Ubicación" icon={MapPin} data={zonaData} color="#10b981" />
         </div>
       </section>
     </div>

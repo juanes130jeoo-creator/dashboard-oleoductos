@@ -1,8 +1,8 @@
 {
   "metadata": {
     "excluidos_criterio": "filas_rojas_dinamico",
-    "excluidos_cantidad": 3,
-    "total_registros_brutos": 66
+    "excluidos_cantidad": 0,
+    "total_registros_brutos": 63
   },
   "poblaciones": {
     "emprendedores": {

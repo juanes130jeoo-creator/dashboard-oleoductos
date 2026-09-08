@@ -58,7 +58,7 @@ export default function GrupoPoblacional() {
         Estas condiciones no son excluyentes entre sí; una misma persona puede reportar más de una característica. Los porcentajes son prevalencias dentro del grupo y no suman 100%.
       </div>
       
-      <FuenteDato fuente="Informe de caracterización" fecha="agosto 2026" n={activeN} />
+      <FuenteDato fuente="Base consolidada final, Excel del proyecto" fecha="Septiembre 2026" n={activeN} />
     </div>
   )
 }

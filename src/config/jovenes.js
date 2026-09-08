@@ -47,20 +47,21 @@ export const config = {
   },
   perfiles: {
     grupoPoblacional: {
-      n: 15,
+      n: 23,
       datos: [
-        { name: "Ruralidad", value: 15, percent: 100.0 },
-        { name: "Reconocimiento como víctima", value: 6, percent: 40.0 },
-        { name: "Afrocolombiano", value: 3, percent: 20.0 }
+        { name: "Ruralidad", value: 23, percent: 100.0 },
+        { name: "Ninguna otra condición", value: 15, percent: 65.2 },
+        { name: "Reconocimiento como víctima", value: 6, percent: 26.1 },
+        { name: "Pertenencia étnica", value: 3, percent: 13.0 }
       ]
     },
     lineasTematicas: {
-      n: 15,
+      n: 23,
       datos: [
-        { name: "Alimentos y bebidas", value: 9, percent: 60.0 },
-        { name: "Agropecuaria", value: 2, percent: 13.3 },
-        { name: "Belleza y cuidado personal", value: 2, percent: 13.3 },
-        { name: "Otra / por precisar", value: 2, percent: 13.3 }
+        { name: "Alimentos y bebidas", value: 11, percent: 47.8 },
+        { name: "Agropecuaria", value: 8, percent: 34.8 },
+        { name: "Otra / por precisar", value: 3, percent: 13.0 },
+        { name: "Belleza y cuidado personal", value: 1, percent: 4.3 }
       ]
     }
   }

@@ -90,13 +90,14 @@ def main():
             json.dump(indicadores, f, ensure_ascii=False, indent=2)
             
     # 2. Base consolidada
-    sheet_name = ' Base consolidada edades '
-    if sheet_name not in wb.sheetnames:
+    sheet_name = 'Base consolidada'
+    if sheet_name in wb.sheetnames:
+        sheet = wb[sheet_name]
+    else:
         print(f"Hoja '{sheet_name}' no encontrada.")
         sys.exit(1)
-        
-    sheet = wb[sheet_name]
-    
+
+    # Identificar celdas con relleno rojo dinámicamente en la columna Nombres
     COL_TERRITORIO = 1
     COL_NOMBRES = 2
     COL_APELLIDOS = 3
@@ -105,10 +106,10 @@ def main():
     COL_JEFE_HOGAR = 15
     COL_ZONA = 18
     COL_ENTIDAD = 19
-    COL_F1 = 26
-    COL_F2 = 27
-    COL_SOPORTES = 28
-    COL_OBS = 29
+    COL_F1 = 27
+    COL_F2 = 28
+    COL_SOPORTES = 29
+    COL_OBS = 30
     
     participantes_list = []
     control_gestion = []

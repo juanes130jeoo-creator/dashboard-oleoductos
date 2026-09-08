@@ -52,17 +52,17 @@ export default function MapBoyaca() {
               textAnchor="end"
               x="-12"
               y="4"
-              style={{ fontFamily: "system-ui", fill: "#334155", fontSize: "12px", fontWeight: "bold" }}
+              style={{ fontFamily: "system-ui", fill: "#334155", fontSize: "16px", fontWeight: "bold" }}
             >
               Puerto Boyacá
             </text>
             <text
               textAnchor="end"
               x="-12"
-              y="18"
-              style={{ fontFamily: "system-ui", fill: "#64748b", fontSize: "10px" }}
+              y="22"
+              style={{ fontFamily: "system-ui", fill: "#64748b", fontSize: "14px" }}
             >
-              43 participantes
+              40 participantes
             </text>
           </Marker>
 
@@ -73,22 +73,22 @@ export default function MapBoyaca() {
               textAnchor="start"
               x="10"
               y="4"
-              style={{ fontFamily: "system-ui", fill: "#334155", fontSize: "11px", fontWeight: "bold" }}
+              style={{ fontFamily: "system-ui", fill: "#334155", fontSize: "15px", fontWeight: "bold" }}
             >
               Puerto Serviez
             </text>
             <text
               textAnchor="start"
               x="10"
-              y="16"
-              style={{ fontFamily: "system-ui", fill: "#64748b", fontSize: "9px" }}
+              y="20"
+              style={{ fontFamily: "system-ui", fill: "#64748b", fontSize: "13px" }}
             >
-              15 participantes
+              23 participantes
             </text>
           </Marker>
         </ComposableMap>
       </div>
-      <FuenteDato fuente="Informe de caracterización" fecha="agosto 2026" n={58} />
+      <FuenteDato fuente="Base consolidada final, Excel del proyecto" fecha="Septiembre 2026" n={63} />
     </div>
   )
 }

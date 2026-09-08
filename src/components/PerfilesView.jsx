@@ -40,13 +40,14 @@ export default function PerfilesView() {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <FuenteDato fuente="Informe de caracterización" fecha="agosto 2026" n={n} />
+      <FuenteDato fuente="Base consolidada final, Excel del proyecto" fecha="Septiembre 2026" n={n} />
     </div>
   )
 
   const renderVerticalBar = (title, data, n) => (
     <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full flex flex-col">
-      <h3 className="text-sm font-bold text-slate-800 mb-6">{title}</h3>
+      <h3 className="text-sm font-bold text-slate-800 mb-1">{title}</h3>
+      <p className="text-xs text-slate-500 mb-6 italic">10 participantes no diligenciaron el formulario de confirmación.</p>
       <div className="flex-grow h-80">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 20 }}>
@@ -60,7 +61,7 @@ export default function PerfilesView() {
             />
             <Bar dataKey="value" fill="#10b981" radius={[4, 4, 0, 0]}>
               {data.map((entry, index) => (
-                <Cell key={`cell-${index}`} fill={index % 2 === 0 ? '#10b981' : '#34d399'} />
+                <Cell key={`cell-${index}`} fill={entry.name === "Sin dato" ? "#94a3b8" : (index % 2 === 0 ? "#10b981" : "#34d399")} />
               ))}
             </Bar>
           </BarChart>
@@ -72,7 +73,8 @@ export default function PerfilesView() {
 
   const renderStackedGroupedBar = (title, data, n) => (
     <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full flex flex-col">
-      <h3 className="text-sm font-bold text-slate-800 mb-6">{title}</h3>
+      <h3 className="text-sm font-bold text-slate-800 mb-1">{title}</h3>
+      <p className="text-xs text-slate-500 mb-6 italic">10 participantes no diligenciaron el formulario de confirmación.</p>
       <div className="flex-grow h-80">
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
@@ -87,6 +89,7 @@ export default function PerfilesView() {
             <Legend iconType="circle" wrapperStyle={{ paddingTop: '10px' }} />
             <Bar dataKey="si" name="Sí" fill="#8b5cf6" radius={[4, 4, 0, 0]} />
             <Bar dataKey="no" name="No" fill="#cbd5e1" radius={[4, 4, 0, 0]} />
+            <Bar dataKey="sinDato" name="Sin dato" fill="#94a3b8" radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>
