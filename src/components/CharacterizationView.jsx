@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts'
-import { Info, Users, GraduationCap, Home, MapPin, User, FileCheck, Layers } from 'lucide-react'
+import { Info, Users, GraduationCap, MapPin, User, Layers } from 'lucide-react'
 import { usePopulation } from '../context/PopulationContext'
 import indicadoresContexto from '../config/indicadores-contexto.json'
 import useIsMobile from '../hooks/useIsMobile'
@@ -84,8 +84,6 @@ export default function CharacterizationView() {
 
   const sexoData = useMemo(() => formatChartData(sociodemografico?.sexo?.[piramideTerritorio], sociodemograficoConfig?.sexoCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
   const zonaData = useMemo(() => formatChartData(sociodemografico?.zona?.[piramideTerritorio], sociodemograficoConfig?.zonaCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
-  const jefeData = useMemo(() => formatChartData(sociodemografico?.jefe_hogar?.[piramideTerritorio], sociodemograficoConfig?.jefeHogarCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
-  const soportesData = useMemo(() => formatChartData(sociodemografico?.estado_soportes?.[piramideTerritorio], sociodemograficoConfig?.soportesCategorias), [sociodemografico, sociodemograficoConfig, piramideTerritorio])
 
   const totalParticipantes = (participantes && piramideTerritorio === 'Todos') ? participantes.length : (participantes?.filter(p => p.territorio === piramideTerritorio)?.length || 0)
 
@@ -213,8 +211,6 @@ export default function CharacterizationView() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ChartCard title="Distribución por Sexo" icon={User} data={sexoData} color="#8b5cf6" />
           <ChartCard title="Ubicación" icon={MapPin} data={zonaData} color="#10b981" />
-          <ChartCard title="Jefatura de Hogar" icon={Home} data={jefeData} color="#f59e0b" />
-          <ChartCard title="Estado de Soportes" icon={FileCheck} data={soportesData} color="#3b82f6" />
         </div>
       </section>
     </div>
