@@ -4,7 +4,7 @@ import { Info, AlertCircle } from 'lucide-react'
 import FuenteDato from './shared/FuenteDato'
 
 export default function PerfilesView() {
-  const { activePoblacion, activeConfig } = usePopulation()
+  const { selectedPopulationId, activeConfig } = usePopulation()
   const perfiles = activeConfig?.perfiles
 
   if (!perfiles) {
@@ -16,7 +16,7 @@ export default function PerfilesView() {
     )
   }
 
-  const isEmprendedores = activePoblacion === 'emprendedores'
+  const isEmprendedores = selectedPopulationId === 'emprendedores'
 
   const renderHorizontalBar = (dataKey, data, n) => (
     <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm h-full flex flex-col">

@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts'
 import { Users } from 'lucide-react'
-import { usePopulation } from '../context/PopulationContext'
 import FuenteDato from './shared/FuenteDato'
+import { config as configEmprendedores } from '../config/emprendedores'
+import { config as configJovenes } from '../config/jovenes'
 
 export default function GrupoPoblacional() {
-  const { populations } = usePopulation()
   const [territorio, setTerritorio] = useState('Puerto Boyacá')
 
-  const empData = populations.emprendedores.config.perfiles.grupoPoblacional
-  const jovData = populations.jovenes.config.perfiles.grupoPoblacional
+  const empData = configEmprendedores.perfiles?.grupoPoblacional
+  const jovData = configJovenes.perfiles?.grupoPoblacional
 
   const isPB = territorio === 'Puerto Boyacá'
-  const activeData = isPB ? empData.datos : jovData.datos
-  const activeN = isPB ? empData.n : jovData.n
+  const activeData = isPB ? (empData?.datos || []) : (jovData?.datos || [])
+  const activeN = isPB ? empData?.n : jovData?.n
 
   return (
     <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col h-full">
