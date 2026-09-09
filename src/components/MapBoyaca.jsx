@@ -83,12 +83,12 @@ export default function MapBoyaca() {
               y="20"
               style={{ fontFamily: "system-ui", fill: "#64748b", fontSize: "13px" }}
             >
-              23 participantes
+              13 participantes
             </text>
           </Marker>
         </ComposableMap>
       </div>
-      <FuenteDato fuente="Base consolidada final, Excel del proyecto" fecha="Septiembre 2026" n={63} />
+      <FuenteDato fuente="Base consolidada final, Excel del proyecto" fecha="Septiembre 2026" n={53} />
     </div>
   )
 }

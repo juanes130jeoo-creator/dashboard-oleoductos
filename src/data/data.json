@@ -2,7 +2,7 @@
   "metadata": {
     "excluidos_criterio": "filas_rojas_dinamico",
     "excluidos_cantidad": 0,
-    "total_registros_brutos": 63
+    "total_registros_brutos": 53
   },
   "poblaciones": {
     "emprendedores": {
@@ -25,8 +25,8 @@
               "Sin dato": 0
             },
             "15-17": {
-              "Femenino": 7,
-              "Masculino": 10,
+              "Femenino": 4,
+              "Masculino": 3,
               "Sin dato": 0
             },
             "Sin dato": {
@@ -88,12 +88,12 @@
               "Masculino": 0,
               "Sin dato": 0
             },
-            "15-17": {
-              "Femenino": 4,
-              "Masculino": 9,
+            "18-21": {
+              "Femenino": 1,
+              "Masculino": 2,
               "Sin dato": 0
             },
-            "18-21": {
+            "15-17": {
               "Femenino": 1,
               "Masculino": 2,
               "Sin dato": 0
@@ -102,46 +102,46 @@
         },
         "sexo": {
           "Todos": {
-            "Femenino": 41,
-            "Masculino": 22
+            "Femenino": 38,
+            "Masculino": 15
           },
           "Puerto Boyacá": {
             "Femenino": 30,
             "Masculino": 10
           },
           "Puerto Serviez": {
-            "Femenino": 11,
-            "Masculino": 12
+            "Femenino": 8,
+            "Masculino": 5
           }
         },
         "zona": {
           "Todos": {
             "U": 40,
-            "R": 23
+            "R": 13
           },
           "Puerto Boyacá": {
             "U": 40
           },
           "Puerto Serviez": {
-            "R": 23
+            "R": 13
           }
         },
         "jefe_hogar": {
           "Todos": {
             "Si": 7,
-            "No": 56
+            "No": 46
           },
           "Puerto Boyacá": {
             "Si": 7,
             "No": 33
           },
           "Puerto Serviez": {
-            "No": 23
+            "No": 13
           }
         },
         "estado_soportes": {
           "Todos": {
-            "COMPLETO": 49,
+            "COMPLETO": 39,
             "PENDIENTE": 14
           },
           "Puerto Boyacá": {
@@ -149,7 +149,7 @@
             "PENDIENTE": 11
           },
           "Puerto Serviez": {
-            "COMPLETO": 20,
+            "COMPLETO": 10,
             "PENDIENTE": 3
           }
         }
@@ -607,16 +607,6 @@
         },
         {
           "codigo": "P-46",
-          "nombre": "JUAN ESTEBAN MOLINA GONZALEZ",
-          "entidad": "Frutilandia",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-47",
           "nombre": "JUAN ESTEBAN JIMENEZ CORREA",
           "entidad": "Antojos Urabeños",
           "territorio": "Puerto Serviez",
@@ -626,7 +616,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-48",
+          "codigo": "P-47",
           "nombre": "JUAN JOSÉ TABARES FRANCO",
           "entidad": "Helados gourmet",
           "territorio": "Puerto Serviez",
@@ -636,7 +626,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-49",
+          "codigo": "P-48",
           "nombre": "KAREN DAYANA VILLARREAL CONTRERAS",
           "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
@@ -646,7 +636,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-50",
+          "codigo": "P-49",
           "nombre": "MARTHA ZABALA TORRES",
           "entidad": "Leymar",
           "territorio": "Puerto Serviez",
@@ -656,7 +646,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-51",
+          "codigo": "P-50",
           "nombre": "NAYERLY TÁMARA COGOLLO ORJUELA",
           "entidad": "Caseta caspete la flaka",
           "territorio": "Puerto Serviez",
@@ -666,7 +656,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-52",
+          "codigo": "P-51",
           "nombre": "OSCAR JAINIVER VALLEJO PINZÓN",
           "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
@@ -676,7 +666,7 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-53",
+          "codigo": "P-52",
           "nombre": "SAMUEL ANDRÉS MONTOYA MURILLO",
           "entidad": "Donde Sami",
           "territorio": "Puerto Serviez",
@@ -686,103 +676,13 @@
           "tiene_observacion": false
         },
         {
-          "codigo": "P-54",
+          "codigo": "P-53",
           "nombre": "SARA JULIETH REYES RODRÍGUEZ",
           "entidad": "Hanileth",
           "territorio": "Puerto Serviez",
           "formato_1": "PENDIENTE",
           "formato_2": "PENDIENTE",
           "estado_soportes": "PENDIENTE",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-55",
-          "nombre": "SARA NIKOL ROMERO MARULANDA",
-          "entidad": "Frutilandia",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-56",
-          "nombre": "BRAYAN STIVEN MUÑOZ SANABRIA",
-          "entidad": "Piscicultura",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": true
-        },
-        {
-          "codigo": "P-57",
-          "nombre": "ANDRES FELIPE MOSQUERA MARIN",
-          "entidad": "Adecuación de potreros silvopastoril",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-58",
-          "nombre": "OMAR ENRIQUE OYOLA VIDAL",
-          "entidad": "Gallina doble proposito",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": true
-        },
-        {
-          "codigo": "P-59",
-          "nombre": "SULAY ALEJANDRA GAITAN RODRIGUEZ",
-          "entidad": "Gallina",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-60",
-          "nombre": "LITZY JHOANA ARENAS ZABALA",
-          "entidad": "Plantas medicinales",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-61",
-          "nombre": "CRISTOFER ALEJANDRO ALVAREZ VASQUEZ",
-          "entidad": "CACAO",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-62",
-          "nombre": "ANDERSON PEROZA ALEGRIAS",
-          "entidad": "Producción de carne de pollo",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
-          "tiene_observacion": false
-        },
-        {
-          "codigo": "P-63",
-          "nombre": "JORGE EDUARDO SANCHEZ CORTES",
-          "entidad": "Ganaderia",
-          "territorio": "Puerto Serviez",
-          "formato_1": "OK",
-          "formato_2": "OK",
-          "estado_soportes": "COMPLETO",
           "tiene_observacion": false
         }
       ],
@@ -1195,15 +1095,6 @@
         },
         {
           "id": "P-46",
-          "entidad": "Frutilandia",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-47",
           "entidad": "Antojos Urabeños",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1212,7 +1103,7 @@
           }
         },
         {
-          "id": "P-48",
+          "id": "P-47",
           "entidad": "Helados gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1221,7 +1112,7 @@
           }
         },
         {
-          "id": "P-49",
+          "id": "P-48",
           "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1230,7 +1121,7 @@
           }
         },
         {
-          "id": "P-50",
+          "id": "P-49",
           "entidad": "Leymar",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1239,7 +1130,7 @@
           }
         },
         {
-          "id": "P-51",
+          "id": "P-50",
           "entidad": "Caseta caspete la flaka",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1248,7 +1139,7 @@
           }
         },
         {
-          "id": "P-52",
+          "id": "P-51",
           "entidad": "Proyecto Helados Gourmet",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1257,7 +1148,7 @@
           }
         },
         {
-          "id": "P-53",
+          "id": "P-52",
           "entidad": "Donde Sami",
           "territorio": "Puerto Serviez",
           "mediciones": {
@@ -1266,89 +1157,8 @@
           }
         },
         {
-          "id": "P-54",
+          "id": "P-53",
           "entidad": "Hanileth",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-55",
-          "entidad": "Frutilandia",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-56",
-          "entidad": "Piscicultura",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-57",
-          "entidad": "Adecuación de potreros silvopastoril",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-58",
-          "entidad": "Gallina doble proposito",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-59",
-          "entidad": "Gallina",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-60",
-          "entidad": "Plantas medicinales",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-61",
-          "entidad": "CACAO",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-62",
-          "entidad": "Producción de carne de pollo",
-          "territorio": "Puerto Serviez",
-          "mediciones": {
-            "linea_base": null,
-            "cierre": null
-          }
-        },
-        {
-          "id": "P-63",
-          "entidad": "Ganaderia",
           "territorio": "Puerto Serviez",
           "mediciones": {
             "linea_base": null,
