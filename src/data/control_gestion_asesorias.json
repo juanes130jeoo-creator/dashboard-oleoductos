@@ -1,0 +1,639 @@
+[
+  {
+    "id": 2,
+    "emprendimiento": "360 - Hidden Kitchen",
+    "emprendedor": "ADRIANA LUCIA",
+    "nombre_completo": "360 - Hidden Kitchen - ADRIANA LUCIA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-26",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "emprendimiento": "Beautty Flower",
+    "emprendedor": "ANGELA MARIA",
+    "nombre_completo": "Beautty Flower - ANGELA MARIA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "4:00pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Presencial",
+        "tema": "Contabilidad"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-20",
+        "hora_dia": "2:00pm",
+        "horas": 2.0,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-28",
+        "hora_dia": "2 pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "emprendimiento": "Cellshop L.A",
+    "emprendedor": "ASLLYE TATIANA",
+    "nombre_completo": "Cellshop L.A - ASLLYE TATIANA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-22",
+        "hora_dia": "7 pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "emprendimiento": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo",
+    "emprendedor": "BRENDA MICHELL",
+    "nombre_completo": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo - BRENDA MICHELL",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-21",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Comercial"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-26",
+        "hora_dia": "2:00pm",
+        "horas": null,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "emprendimiento": "Lash Dahiana",
+    "emprendedor": "CHAROL DAYANA",
+    "nombre_completo": "Lash Dahiana - CHAROL DAYANA",
+    "asesorias": []
+  },
+  {
+    "id": 7,
+    "emprendimiento": "STUDIO DANVAR FILMS",
+    "emprendedor": "DANIEL ARLEY",
+    "nombre_completo": "STUDIO DANVAR FILMS - DANIEL ARLEY",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-17",
+        "hora_dia": "7:00pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "4 pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "emprendimiento": "Eliana Cañas Cejas & Pestañas",
+    "emprendedor": "ELIANA ALEJANDRA",
+    "nombre_completo": "Eliana Cañas Cejas & Pestañas - ELIANA ALEJANDRA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "6:00pm",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "6 pm",
+        "horas": null,
+        "profesional": "Merly",
+        "modalidad": "Presencial",
+        "tema": "Comercial / Innovación"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "emprendimiento": "Agregados y prefabricados QP",
+    "emprendedor": "ERIKA",
+    "nombre_completo": "Agregados y prefabricados QP - ERIKA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-25",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "emprendimiento": "Barbería el mello",
+    "emprendedor": "FREDY GONZALO",
+    "nombre_completo": "Barbería el mello - FREDY GONZALO",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "2:00pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "emprendimiento": "Coco Bom",
+    "emprendedor": "HANNA SOFIA",
+    "nombre_completo": "Coco Bom - HANNA SOFIA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-19",
+        "hora_dia": "3:00pm",
+        "horas": 2.0,
+        "profesional": "Merly",
+        "modalidad": "Virtual",
+        "tema": "Modelo Canvas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-26",
+        "hora_dia": "9 am",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "emprendimiento": "Manosguiadas_manillas",
+    "emprendedor": "HARY MICHELLE",
+    "nombre_completo": "Manosguiadas_manillas - HARY MICHELLE",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "10:00am",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Presencial",
+        "tema": "Contabilidad"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "4 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "emprendimiento": "CAFÉ CASA CAMPO",
+    "emprendedor": "HEINER DUVAN",
+    "nombre_completo": "CAFÉ CASA CAMPO - HEINER DUVAN",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-19",
+        "hora_dia": "5:00pm",
+        "horas": 2.0,
+        "profesional": "Merly",
+        "modalidad": "Virtual",
+        "tema": "Modelo Canvas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-23",
+        "hora_dia": "4 pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "emprendimiento": "Hill Beauty Concept",
+    "emprendedor": "HILLARY STELLA",
+    "nombre_completo": "Hill Beauty Concept - HILLARY STELLA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "6:00pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Presencial",
+        "tema": "Contabilidad"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "4 pm",
+        "horas": null,
+        "profesional": "Merly",
+        "modalidad": "Presencial",
+        "tema": "Comercial / Innovación"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "emprendimiento": "Barbería st",
+    "emprendedor": "JHON STIVEN",
+    "nombre_completo": "Barbería st - JHON STIVEN",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-21",
+        "hora_dia": "3:00pm",
+        "horas": null,
+        "profesional": "Felipe",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "emprendimiento": "Local de barberia",
+    "emprendedor": "JUAN CARLOS",
+    "nombre_completo": "Local de barberia - JUAN CARLOS",
+    "asesorias": []
+  },
+  {
+    "id": 17,
+    "emprendimiento": "Perfumería Esencia Eterna",
+    "emprendedor": "KAREN LORENA",
+    "nombre_completo": "Perfumería Esencia Eterna - KAREN LORENA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-17",
+        "hora_dia": "6:00pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Presencial",
+        "tema": "Contabilidad"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-24",
+        "hora_dia": "6 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "emprendimiento": "NTR_Graciasublime",
+    "emprendedor": "KEISCHA VANESSA",
+    "nombre_completo": "NTR_Graciasublime - KEISCHA VANESSA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "3:00pm",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "2 pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "emprendimiento": "total look boutique",
+    "emprendedor": "MADELEIENE",
+    "nombre_completo": "total look boutique - MADELEIENE",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-17",
+        "hora_dia": "5:00pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-19",
+        "hora_dia": "3:00pm",
+        "horas": 2.0,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-22",
+        "hora_dia": "9 am",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "emprendimiento": "Sabor porteño",
+    "emprendedor": "MAGNO CESAR",
+    "nombre_completo": "Sabor porteño - MAGNO CESAR",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "6:00pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "emprendimiento": "Maybeautyy",
+    "emprendedor": "MAILEN",
+    "nombre_completo": "Maybeautyy - MAILEN",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "5:00pm",
+        "horas": 2.0,
+        "profesional": "Cristián",
+        "modalidad": "Presencial",
+        "tema": "Transformación Digital"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-22",
+        "hora_dia": "4:30 pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Virtual",
+        "tema": "Contabilidad"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "emprendimiento": "Tienda virtual M&E",
+    "emprendedor": "MARIANA",
+    "nombre_completo": "Tienda virtual M&E - MARIANA",
+    "asesorias": []
+  },
+  {
+    "id": 23,
+    "emprendimiento": "Salón de belleza en etapa inicial",
+    "emprendedor": "MARYID VANESA",
+    "nombre_completo": "Salón de belleza en etapa inicial - MARYID VANESA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-25",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Comercial"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "emprendimiento": "Mayeline Gonzalez",
+    "emprendedor": "MAYELINE ESPERANZA",
+    "nombre_completo": "Mayeline Gonzalez - MAYELINE ESPERANZA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-21",
+        "hora_dia": "5 pm",
+        "horas": 2.0,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Comercial"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "emprendimiento": "Dulce bocado",
+    "emprendedor": "MELANY ALEJANDRA",
+    "nombre_completo": "Dulce bocado - MELANY ALEJANDRA",
+    "asesorias": []
+  },
+  {
+    "id": 26,
+    "emprendimiento": "Soluciones y sistemas software",
+    "emprendedor": "SANTIAGO",
+    "nombre_completo": "Soluciones y sistemas software - SANTIAGO",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "3:00pm",
+        "horas": 2.0,
+        "profesional": "Cristián",
+        "modalidad": "Presencial",
+        "tema": "Transformación Digital"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "4 pm",
+        "horas": null,
+        "profesional": "Paula",
+        "modalidad": "Virtual",
+        "tema": "Contabilidad"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "emprendimiento": "Detallitos Valkami",
+    "emprendedor": "VALERIA",
+    "nombre_completo": "Detallitos Valkami - VALERIA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "4:00pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-23",
+        "hora_dia": "4 pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Virtual",
+        "tema": "Contabilidad"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "emprendimiento": "Postres y anchetas dulce encanto",
+    "emprendedor": "VALERIN",
+    "nombre_completo": "Postres y anchetas dulce encanto - VALERIN",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-18",
+        "hora_dia": "1:30pm",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Presencial",
+        "tema": "Contabilidad"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "2 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "emprendimiento": "Dulce bocado",
+    "emprendedor": "YAIRA YULIANA",
+    "nombre_completo": "Dulce bocado - YAIRA YULIANA",
+    "asesorias": []
+  },
+  {
+    "id": 30,
+    "emprendimiento": "LUMARA",
+    "emprendedor": "YULIANA FERNANDA",
+    "nombre_completo": "LUMARA - YULIANA FERNANDA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-21",
+        "hora_dia": "10:00am",
+        "horas": 2.0,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Comercial"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "emprendimiento": "Galaxicar Kids",
+    "emprendedor": "YILVEY",
+    "nombre_completo": "Galaxicar Kids - YILVEY",
+    "asesorias": []
+  },
+  {
+    "id": 32,
+    "emprendimiento": "Kaida Bloom",
+    "emprendedor": "SARA JULIANA",
+    "nombre_completo": "Kaida Bloom - SARA JULIANA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-25",
+        "hora_dia": "6 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "emprendimiento": "Ciaobella Burguer",
+    "emprendedor": "SANTIAGO",
+    "nombre_completo": "Ciaobella Burguer - SANTIAGO",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-26",
+        "hora_dia": "8 am",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      }
+    ]
+  }
+]

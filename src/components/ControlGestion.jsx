@@ -3,13 +3,17 @@ import { Info, Download, ArrowUpDown } from 'lucide-react'
 import { usePopulation } from '../context/PopulationContext'
 import matrices from '../data/control_gestion_matrices.json'
 import FuenteDato from './shared/FuenteDato'
+import ControlGestionEmprendedores from './ControlGestionEmprendedores'
 
 export default function ControlGestion() {
   const { selectedPopulationId } = usePopulation()
   
-  const isEmprendedores = selectedPopulationId === 'emprendedores'
-  const data = isEmprendedores ? matrices.emprendedores : matrices.jovenes
-  const n = isEmprendedores ? 30 : 20
+  if (selectedPopulationId === 'emprendedores') {
+    return <ControlGestionEmprendedores />
+  }
+
+  const data = matrices.jovenes
+  const n = 20
   const fuente = `Matriz de seguimiento del programa`
 
   const hasData = data && data.length > 0
@@ -48,9 +52,7 @@ export default function ControlGestion() {
 
   const exportCSV = () => {
     if (!hasData) return
-    const columns = isEmprendedores 
-      ? ["Nº", "Nombre del emprendedor", "Emprendimiento", "Diagnóstico inicial", "Taller 1", "Taller 2", "Taller 3", "Taller 4", "Taller 5", "Taller 6", "% asistencia talleres", "Horas acompañamiento realizadas"]
-      : ["Nº", "Nombre del joven", "Idea / modelo de negocio", "Taller 1: Mentalidad emprendedora", "Taller 2: Identificación de oportunidades", "Taller 3: Modelo de negocio Canvas", "% asistencia talleres", "Horas acompañamiento realizadas"]
+    const columns = ["Nº", "Nombre del joven", "Idea / modelo de negocio", "Taller 1: Mentalidad emprendedora", "Taller 2: Identificación de oportunidades", "Taller 3: Modelo de negocio Canvas", "% asistencia talleres", "Horas acompañamiento realizadas"]
 
     const headers = columns.join(",")
     const rows = sortedData.map(row => 
@@ -61,7 +63,7 @@ export default function ControlGestion() {
     const encodedUri = encodeURI(csvContent)
     const link = document.createElement("a")
     link.setAttribute("href", encodedUri)
-    link.setAttribute("download", `seguimiento_${selectedPopulationId}.csv`)
+    link.setAttribute("download", `seguimiento_jovenes.csv`)
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -80,7 +82,7 @@ export default function ControlGestion() {
   }
   
   // Asistencia Taller 1 calculation
-  const t1Key = isEmprendedores ? "Taller 1" : "Taller 1: Mentalidad emprendedora"
+  const t1Key = "Taller 1: Mentalidad emprendedora"
   const t1Asistencias = data.filter(d => d[t1Key] === "Sí").length
   const t1Perc = n > 0 ? (t1Asistencias / n * 100).toFixed(1) : "0.0"
 
@@ -90,22 +92,7 @@ export default function ControlGestion() {
     return Math.max(acc, hrs)
   }, 0)
 
-  const empCols = [
-    { key: "Nº", label: "Nº", sortable: true },
-    { key: "Nombre del emprendedor", label: "Nombre del emprendedor", sortable: false },
-    { key: "Emprendimiento", label: "Emprendimiento", sortable: false },
-    { key: "Diagnóstico inicial", label: "Diagnóstico inicial", sortable: false },
-    { key: "Taller 1", label: "Taller 1", sortable: false },
-    { key: "Taller 2", label: "Taller 2", sortable: false },
-    { key: "Taller 3", label: "Taller 3", sortable: false },
-    { key: "Taller 4", label: "Taller 4", sortable: false },
-    { key: "Taller 5", label: "Taller 5", sortable: false },
-    { key: "Taller 6", label: "Taller 6", sortable: false },
-    { key: "% asistencia talleres", label: "% asistencia", sortable: true },
-    { key: "Horas acompañamiento realizadas", label: "Horas acum.", sortable: true }
-  ]
-
-  const jovCols = [
+  const columns = [
     { key: "Nº", label: "Nº", sortable: true },
     { key: "Nombre del joven", label: "Nombre del joven", sortable: false },
     { key: "Idea / modelo de negocio", label: "Idea / modelo de negocio", sortable: false },
@@ -115,8 +102,6 @@ export default function ControlGestion() {
     { key: "% asistencia talleres", label: "% asistencia", sortable: true },
     { key: "Horas acompañamiento realizadas", label: "Horas acum.", sortable: true }
   ]
-
-  const columns = isEmprendedores ? empCols : jovCols
 
   if (!hasData) {
     return (
