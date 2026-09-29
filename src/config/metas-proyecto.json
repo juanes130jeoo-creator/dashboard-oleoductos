@@ -1,0 +1,98 @@
+{
+  "emprendedores": [
+    {
+      "componente": "Caracterización y diagnóstico inicial (línea base)",
+      "meta": 30,
+      "ejecucion": 30,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Formación grupal en competencias empresariales",
+      "meta": 6,
+      "ejecucion": 3,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Acompañamiento técnico individual para cierre de brechas",
+      "meta": 240,
+      "ejecucion": 0,
+      "unidad": "horas",
+      "fuente": "base de asesorías",
+      "filtro_emprendimientos": []
+    },
+    {
+      "componente": "Conexiones de valor, networking y relacionamiento comercial",
+      "meta": 3,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Estructuración e implementación de planes de inversión",
+      "meta": 30,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Evaluación y selección de emprendimientos para entrega de incentivos",
+      "meta": 30,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Implementación, acompañamiento y seguimiento de incentivos en especie",
+      "meta": 15,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Seguimiento, monitoreo y evaluación de resultados",
+      "meta": 15,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    }
+  ],
+  "jovenes": [
+    {
+      "componente": "Convocatoria y vinculación",
+      "meta": 10,
+      "ejecucion": 10,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Formación en emprendimiento",
+      "meta": 3,
+      "ejecucion": 2,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Acompañamiento para estructuración y validación de modelos de negocio",
+      "meta": 200,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Evaluación y selección",
+      "meta": 60,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    },
+    {
+      "componente": "Incentivos y puesta en marcha",
+      "meta": 2,
+      "ejecucion": 0,
+      "unidad": "",
+      "fuente": "manual"
+    }
+  ]
+}

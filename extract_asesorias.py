@@ -1,8 +1,8 @@
 import openpyxl
-from openpyxl.utils import column_index_from_string
 import json
 import datetime
 import sys
+import re
 
 def get_str(val):
     if val is None: return ""
@@ -19,68 +19,81 @@ def get_date(val):
             return val.split(" ")[0]
     return str(val)
 
+def normalize_spaces(text):
+    if not text: return ""
+    return re.sub(r'\s+', ' ', text).strip()
+
+CATALOGO = {
+    "comercial": "Comercial",
+    "comercial/ innovación": "Comercial / Innovación",
+    "contabilidad": "Contabilidad",
+    "finanzas": "Finanzas",
+    "marketing": "Marketing",
+    "marketing digital": "Marketing Digital",
+    "modelo canvas": "Modelo Canvas",
+    "posicionamiento": "Posicionamiento",
+    "redes sociales": "Redes Sociales",
+    "redes sociales - tik tok": "Redes Sociales",
+    "redes sociales/ portafolio": "Redes Sociales",
+    "portafolio/redes sociales": "Redes Sociales",
+    "servicio al cliente": "Servicio al Cliente",
+    "servicio la cliente": "Servicio al Cliente",
+    "transformación digital": "Transformación Digital",
+    "marketing o contabilidad": "Sin Definir / Pendiente",
+    "": "Sin Definir / Pendiente"
+}
+
+def normalize_tema(tema):
+    t_clean = normalize_spaces(tema).lower()
+    if t_clean in CATALOGO:
+        return CATALOGO[t_clean]
+    if not t_clean or t_clean == "none":
+        return "Sin Definir / Pendiente"
+    return "Sin Definir / Pendiente" # Defaults unmatched to Sin Definir
+
+def normalize_modalidad(mod):
+    m = normalize_spaces(mod).lower()
+    if "presencial" in m: return "Presencial"
+    if "virtual" in m: return "Virtual"
+    return "Sin dato"
+
+def normalize_prof(prof):
+    p = normalize_spaces(prof)
+    if not p or p.lower() == "none": return "Sin asignar"
+    if p == "Gio": return "Giovanna"
+    if p == "Cristian": return "Cristián"
+    return p
+
 def extract():
-    file_path = 'C:\\Users\\jeo20\\Desktop\\oleoductos.xlsx'
+    file_path = 'asesorias_v2.xlsx'
     try:
         wb = openpyxl.load_workbook(file_path, data_only=True)
     except Exception as e:
         print(f"Error loading Excel: {e}")
         sys.exit(1)
 
-    sheet = wb['Base maestra']
+    sheet = wb.active
     
-    # Mapping
-    col_entidad = column_index_from_string('R')
-    col_nombres = column_index_from_string('B')
+    col_nombres = 2
+    col_entidad = 18
     
-    # Rondas definitions
     rondas_cols = [
-        {
-            "num": 1,
-            "fecha": column_index_from_string('X'),
-            "hora": column_index_from_string('Y'),
-            "horas": column_index_from_string('AC'),
-            "profesional": column_index_from_string('BS'),
-            "modalidad": column_index_from_string('BT'),
-            "tema": column_index_from_string('BU')
-        },
-        {
-            "num": 2,
-            "fecha": column_index_from_string('AD'),
-            "hora": column_index_from_string('AE'),
-            "horas": column_index_from_string('AI'),
-            "profesional": column_index_from_string('BV'),
-            "modalidad": column_index_from_string('BW'),
-            "tema": column_index_from_string('BX')
-        },
-        {
-            "num": 3,
-            "fecha": column_index_from_string('AJ'),
-            "hora": column_index_from_string('AK'),
-            "horas": column_index_from_string('AO'),
-            "profesional": column_index_from_string('BY'),
-            "modalidad": column_index_from_string('BZ'),
-            "tema": column_index_from_string('CA')
-        },
-        {
-            "num": 4,
-            "fecha": column_index_from_string('AP'),
-            "hora": column_index_from_string('AQ'),
-            "horas": column_index_from_string('AU'),
-            "profesional": column_index_from_string('CB'),
-            "modalidad": column_index_from_string('CC'),
-            "tema": column_index_from_string('CD')
-        }
+        {"num": 1, "fecha": 24, "hora": 25, "prof": 26, "mod": 27, "tema": 28, "horas": 29},
+        {"num": 2, "fecha": 30, "hora": 31, "prof": 32, "mod": 33, "tema": 34, "horas": 35},
+        {"num": 3, "fecha": 36, "hora": 37, "prof": 38, "mod": 39, "tema": 40, "horas": 41},
+        {"num": 4, "fecha": 42, "hora": 43, "prof": 44, "mod": 45, "tema": 46, "horas": 47}
     ]
 
     data = []
     
+    # 36 emprendimientos, starts at row 2
     for r in range(2, sheet.max_row + 1):
-        if r == 35: continue # Note row
+        nombre_raw = sheet.cell(row=r, column=col_nombres).value
+        if not nombre_raw: continue
+        nombre = get_str(nombre_raw)
+        
         entidad = get_str(sheet.cell(row=r, column=col_entidad).value)
         if not entidad: continue
-        
-        nombre = get_str(sheet.cell(row=r, column=col_nombres).value)
         
         emprendimiento = f"{entidad} - {nombre}"
         
@@ -93,15 +106,16 @@ def extract():
                 hora_str = hora_val.strftime("%H:%M")
             else:
                 hora_str = get_str(hora_val)
-            
+                
             horas_val = sheet.cell(row=r, column=ronda['horas']).value
             horas = float(horas_val) if horas_val is not None and str(horas_val).strip() else None
             
-            prof = get_str(sheet.cell(row=r, column=ronda['profesional']).value)
-            mod = get_str(sheet.cell(row=r, column=ronda['modalidad']).value)
-            tema = get_str(sheet.cell(row=r, column=ronda['tema']).value)
+            prof = normalize_prof(get_str(sheet.cell(row=r, column=ronda['prof']).value))
+            mod = normalize_modalidad(get_str(sheet.cell(row=r, column=ronda['mod']).value))
+            tema = normalize_tema(get_str(sheet.cell(row=r, column=ronda['tema']).value))
             
-            if fecha or prof or tema or (horas is not None):
+            # If completely empty, skip
+            if fecha or (prof != "Sin asignar") or (tema != "Sin Definir / Pendiente") or (horas is not None):
                 asesorias.append({
                     "ronda": ronda['num'],
                     "fecha": fecha,

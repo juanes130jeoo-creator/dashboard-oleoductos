@@ -18,12 +18,12 @@ const getWeekRange = (dateStr) => {
 }
 
 export default function ControlGestionEmprendedores() {
-  const [corteDate, setCorteDate] = useState('2026-09-23')
+  const [corteDate, setCorteDate] = useState('2026-09-29')
   const [selectedEmpId, setSelectedEmpId] = useState('')
   const [openRonda, setOpenRonda] = useState(null)
   const [openWeek, setOpenWeek] = useState(null)
 
-  const nCohorte = 32
+  const nCohorte = 36
 
   // --- DATA PROCESSING ---
   const allSessions = useMemo(() => {
@@ -253,6 +253,38 @@ export default function ControlGestionEmprendedores() {
     link.click()
     document.body.removeChild(link)
   }
+
+
+  // Riesgo de Desercion
+  let r1SinR2Prog = 0
+  let r1SinR2NoFecha = []
+  let sinR1Prog = 0
+  let sinR1NoAsignada = []
+
+  asesoriasData.forEach(emp => {
+    const eAll = allSessions.filter(s => s.emp_id === emp.id)
+    const hasR1Real = eAll.some(s => s.ronda === 1 && s.isRealizada)
+    const hasR2Real = eAll.some(s => s.ronda === 2 && s.isRealizada)
+    
+    if (hasR1Real && !hasR2Real) {
+      const hasR2Prog = eAll.some(s => s.ronda === 2 && s.isProgramada)
+      if (hasR2Prog) {
+        r1SinR2Prog++
+      } else {
+        r1SinR2NoFecha.push(emp.nombre_completo.split(' - ')[0]) // Using just the business name for brevity
+      }
+    } else if (!hasR1Real) {
+      const hasR1Prog = eAll.some(s => s.ronda === 1 && s.isProgramada)
+      if (hasR1Prog) {
+        sinR1Prog++
+      } else {
+        sinR1NoAsignada.push(emp.nombre_completo.split(' - ')[0])
+      }
+    }
+  })
+  
+  const r1SinR2Total = r1SinR2Prog + r1SinR2NoFecha.length
+  const sinR1Total = sinR1Prog + sinR1NoAsignada.length
 
   // Funnel
   const c3 = con3.size
@@ -645,6 +677,28 @@ export default function ControlGestionEmprendedores() {
           </div>
         </div>
       </div>
+
+
+        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm col-span-1 lg:col-span-2">
+          <h3 className="font-bold text-slate-800 mb-4 flex items-center gap-2"><AlertCircle size={18} className="text-amber-500" /> Riesgo de Deserción / Novedades</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-amber-50 border border-amber-100 p-4 rounded-lg">
+              <h4 className="font-bold text-amber-800 mb-2">{r1SinR2Total} emprendimientos tuvieron la #1 sin la #2</h4>
+              <p className="text-sm text-amber-700 mb-2">De ellos, <strong className="font-bold">{r1SinR2Prog}</strong> tienen la #2 programada y <strong className="font-bold">{r1SinR2NoFecha.length}</strong> no tienen fecha:</p>
+              <ul className="text-xs text-amber-700 list-disc list-inside space-y-1 ml-1">
+                {r1SinR2NoFecha.map((name, i) => <li key={i}>{name}</li>)}
+              </ul>
+            </div>
+            
+            <div className="bg-rose-50 border border-rose-100 p-4 rounded-lg">
+              <h4 className="font-bold text-rose-800 mb-2">{sinR1Total} emprendimientos no han tenido la #1</h4>
+              <p className="text-sm text-rose-700 mb-2">De ellos, <strong className="font-bold">{sinR1Prog}</strong> la tienen programada y <strong className="font-bold">{sinR1NoAsignada.length}</strong> no tienen ninguna asesoría asignada:</p>
+              <ul className="text-xs text-rose-700 list-disc list-inside space-y-1 ml-1">
+                {sinR1NoAsignada.map((name, i) => <li key={i}>{name}</li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 bg-white p-6 rounded-xl border border-slate-200 shadow-sm">

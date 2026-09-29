@@ -9,10 +9,19 @@
         "ronda": 1,
         "fecha": "2026-09-26",
         "hora_dia": "3 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-10-03",
+        "hora_dia": "3:00 pm",
+        "horas": null,
+        "profesional": "Paula",
+        "modalidad": "Virtual",
+        "tema": "Contabilidad"
       }
     ]
   },
@@ -44,10 +53,19 @@
         "ronda": 3,
         "fecha": "2026-09-28",
         "hora_dia": "2 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-05",
+        "hora_dia": "4 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
       }
     ]
   },
@@ -65,6 +83,24 @@
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-28",
+        "hora_dia": "7 pm",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-01",
+        "hora_dia": "7:00 pm",
+        "horas": null,
+        "profesional": "Juan Andres",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -85,8 +121,8 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-09-26",
-        "hora_dia": "2:00pm",
+        "fecha": "2026-09-29",
+        "hora_dia": "8:00pm",
         "horas": null,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
@@ -118,8 +154,17 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-09-25",
-        "hora_dia": "4 pm",
+        "fecha": "2026-09-24",
+        "hora_dia": "6 pm",
+        "horas": 2.0,
+        "profesional": "Merly",
+        "modalidad": "Presencial",
+        "tema": "Comercial / Innovación"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "3 pm",
         "horas": null,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
@@ -146,10 +191,19 @@
         "ronda": 2,
         "fecha": "2026-09-25",
         "hora_dia": "6 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
         "tema": "Comercial / Innovación"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-30",
+        "hora_dia": "10:00 am",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -163,10 +217,10 @@
         "ronda": 1,
         "fecha": "2026-09-25",
         "hora_dia": "3 pm",
-        "horas": null,
-        "profesional": "Giovanna",
+        "horas": 2.0,
+        "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Finanzas"
       }
     ]
   },
@@ -184,6 +238,15 @@
         "profesional": "Sinthia",
         "modalidad": "Presencial",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 3,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -204,9 +267,9 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-09-26",
+        "fecha": "2026-09-29",
         "hora_dia": "9 am",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
@@ -231,11 +294,20 @@
       {
         "ronda": 2,
         "fecha": "2026-09-25",
-        "hora_dia": "4 pm",
-        "horas": null,
+        "hora_dia": "3 pm",
+        "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-28",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Juan Andres",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -284,10 +356,19 @@
         "ronda": 2,
         "fecha": "2026-09-25",
         "hora_dia": "4 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
         "tema": "Comercial / Innovación"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-05",
+        "hora_dia": "6:00pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
       }
     ]
   },
@@ -296,17 +377,7 @@
     "emprendimiento": "Barbería st",
     "emprendedor": "JHON STIVEN",
     "nombre_completo": "Barbería st - JHON STIVEN",
-    "asesorias": [
-      {
-        "ronda": 1,
-        "fecha": "2026-09-21",
-        "hora_dia": "3:00pm",
-        "horas": null,
-        "profesional": "Felipe",
-        "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
-      }
-    ]
+    "asesorias": []
   },
   {
     "id": 16,
@@ -334,10 +405,19 @@
         "ronda": 2,
         "fecha": "2026-09-24",
         "hora_dia": "6 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "3:00 pm",
+        "horas": null,
+        "profesional": "Cristián",
+        "modalidad": "Presencial",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -359,7 +439,16 @@
       {
         "ronda": 2,
         "fecha": "2026-09-25",
-        "hora_dia": "2 pm",
+        "hora_dia": "1:30 pm",
+        "horas": 2.0,
+        "profesional": "Girlesa",
+        "modalidad": "Presencial",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "1:30 pm",
         "horas": null,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
@@ -416,6 +505,15 @@
         "profesional": "Sinthia",
         "modalidad": "Presencial",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 3,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -442,6 +540,15 @@
         "profesional": "Paula",
         "modalidad": "Virtual",
         "tema": "Contabilidad"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-28",
+        "hora_dia": "3 PM",
+        "horas": 2.0,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -457,17 +564,7 @@
     "emprendimiento": "Salón de belleza en etapa inicial",
     "emprendedor": "MARYID VANESA",
     "nombre_completo": "Salón de belleza en etapa inicial - MARYID VANESA",
-    "asesorias": [
-      {
-        "ronda": 1,
-        "fecha": "2026-09-25",
-        "hora_dia": "3 pm",
-        "horas": null,
-        "profesional": "Ana",
-        "modalidad": "Virtual",
-        "tema": "Comercial"
-      }
-    ]
+    "asesorias": []
   },
   {
     "id": 24,
@@ -477,12 +574,12 @@
     "asesorias": [
       {
         "ronda": 1,
-        "fecha": "2026-09-21",
-        "hora_dia": "5 pm",
-        "horas": 2.0,
-        "profesional": "Ana",
+        "fecha": "2026-09-30",
+        "hora_dia": "8:00 am",
+        "horas": null,
+        "profesional": "Camilo",
         "modalidad": "Virtual",
-        "tema": "Comercial"
+        "tema": "Marketing"
       }
     ]
   },
@@ -491,7 +588,17 @@
     "emprendimiento": "Dulce bocado",
     "emprendedor": "MELANY ALEJANDRA",
     "nombre_completo": "Dulce bocado - MELANY ALEJANDRA",
-    "asesorias": []
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-10-07",
+        "hora_dia": "2 pm",
+        "horas": null,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      }
+    ]
   },
   {
     "id": 26,
@@ -512,10 +619,19 @@
         "ronda": 2,
         "fecha": "2026-09-25",
         "hora_dia": "4 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
         "tema": "Contabilidad"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "1:30 pm",
+        "horas": null,
+        "profesional": "Cristián",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -542,14 +658,32 @@
         "profesional": "Paula",
         "modalidad": "Virtual",
         "tema": "Contabilidad"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-09-28",
+        "hora_dia": "5 PM",
+        "horas": 2.0,
+        "profesional": "Felipe",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-05",
+        "hora_dia": "4:00pm",
+        "horas": null,
+        "profesional": "Juan Andres",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
   {
     "id": 28,
-    "emprendimiento": "Postres y anchetas dulce encanto",
+    "emprendimiento": "Dulce Antojo",
     "emprendedor": "VALERIN",
-    "nombre_completo": "Postres y anchetas dulce encanto - VALERIN",
+    "nombre_completo": "Dulce Antojo - VALERIN",
     "asesorias": [
       {
         "ronda": 1,
@@ -562,7 +696,7 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-09-25",
+        "fecha": "2026-10-02",
         "hora_dia": "2 pm",
         "horas": null,
         "profesional": "Camilo",
@@ -592,6 +726,24 @@
         "profesional": "Ana",
         "modalidad": "Virtual",
         "tema": "Comercial"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-28",
+        "hora_dia": "10 am",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "10:00 am",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -600,7 +752,26 @@
     "emprendimiento": "Galaxicar Kids",
     "emprendedor": "YILVEY",
     "nombre_completo": "Galaxicar Kids - YILVEY",
-    "asesorias": []
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-28",
+        "hora_dia": "6pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-10-05",
+        "hora_dia": "6:30 pm",
+        "horas": null,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
+      }
+    ]
   },
   {
     "id": 32,
@@ -612,10 +783,19 @@
         "ronda": 1,
         "fecha": "2026-09-25",
         "hora_dia": "6 pm",
-        "horas": null,
-        "profesional": "Camilo",
+        "horas": 2.0,
+        "profesional": "Girlesa",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-10-02",
+        "hora_dia": "6 pm",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Presencial",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -627,12 +807,107 @@
     "asesorias": [
       {
         "ronda": 1,
-        "fecha": "2026-09-26",
-        "hora_dia": "8 am",
+        "fecha": "2026-09-25",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Merly",
+        "modalidad": "Presencial",
+        "tema": "Modelo Canvas"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "emprendimiento": "Emparepas de mimi",
+    "emprendedor": "KEVIN STEEK",
+    "nombre_completo": "Emparepas de mimi - KEVIN STEEK",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-28",
+        "hora_dia": "2 pm",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-30",
+        "hora_dia": "4 pm",
         "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "emprendimiento": "Esencia y Moda",
+    "emprendedor": "BRISETT DAYANA",
+    "nombre_completo": "Esencia y Moda - BRISETT DAYANA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-25",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Girlesa",
+        "modalidad": "Presencial",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-30",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Camilo",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "emprendimiento": "Pauleta",
+    "emprendedor": "MARIA PAULA",
+    "nombre_completo": "Pauleta - MARIA PAULA",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-25",
+        "hora_dia": "1:30 pm",
+        "horas": 2.0,
+        "profesional": "Merly",
+        "modalidad": "Presencial",
+        "tema": "Modelo Canvas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-09-25",
+        "hora_dia": "5 pm",
+        "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
         "tema": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "emprendimiento": "Boutique Mondragon",
+    "emprendedor": "ERIK DEIBER",
+    "nombre_completo": "Boutique Mondragon - ERIK DEIBER",
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": "2026-09-26",
+        "hora_dia": "10 am",
+        "horas": 2.0,
+        "profesional": "Felipe",
+        "modalidad": "Virtual",
+        "tema": "Modelo Canvas"
       }
     ]
   }
