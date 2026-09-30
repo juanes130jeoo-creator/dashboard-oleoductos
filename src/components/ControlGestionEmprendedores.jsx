@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { Info, Download, ChevronDown, ChevronRight, Calendar, User, Clock, AlertCircle } from 'lucide-react'
-import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, PieChart, Pie, Legend } from 'recharts'
+import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, PieChart, Pie, Legend, Label } from 'recharts'
+import profMapping from '../config/profesionales-mapping.json'
 import asesoriasData from '../data/control_gestion_asesorias.json'
 import FuenteDato from './shared/FuenteDato'
 
@@ -24,6 +25,7 @@ export default function ControlGestionEmprendedores() {
   const [openWeek, setOpenWeek] = useState(null)
 
   const nCohorte = 36
+  const metaContrato = 30
 
   // --- DATA PROCESSING ---
   const allSessions = useMemo(() => {
@@ -52,14 +54,28 @@ export default function ControlGestionEmprendedores() {
     return list
   }, [corteDate])
 
+  const profMapObj = { ...profMapping }
+  let nextId = Object.keys(profMapObj).length + 1
+  const getMappedName = (name) => {
+    if (!name || name === 'Sin asignar' || name === 'Sin definir') return 'Sin asignar'
+    if (!profMapObj[name]) {
+      profMapObj[name] = `Asesor(a) ${nextId++}`
+    }
+    return profMapObj[name]
+  }
+
   const realizadas = allSessions.filter(s => s.isRealizada)
   const programadas = allSessions.filter(s => s.isProgramada)
+  
+  allSessions.forEach(s => {
+    s.profesional = getMappedName(s.profesional);
+  })
 
   // 2. Tarjetas superiores
   const totalRealizadas = realizadas.length
   
   const empUnicosRealizadas = new Set(realizadas.map(s => s.emp_id)).size
-  const empAtendidosPerc = ((empUnicosRealizadas / nCohorte) * 100).toFixed(1)
+  const empAtendidosPerc = ((empUnicosRealizadas / metaContrato) * 100).toFixed(1)
 
   const con1 = new Set(realizadas.filter(s => s.ronda === 1).map(s => s.emp_id))
   const con2 = new Set(realizadas.filter(s => s.ronda === 2).map(s => s.emp_id))
@@ -134,7 +150,8 @@ export default function ControlGestionEmprendedores() {
   // 5. Productividad por profesional
   let profMap = {}
   realizadas.forEach(s => {
-    const p = s.profesional || 'Sin definir'
+    const p = s.profesional || 'Sin asignar'
+    
     if (!profMap[p]) profMap[p] = { name: p, total: 0, r1: 0, r2: 0, r3: 0, r4: 0, horas: 0, temas: {} }
     profMap[p].total++
     profMap[p][`r${s.ronda}`]++
@@ -312,7 +329,7 @@ export default function ControlGestionEmprendedores() {
       {/* 2. Tarjetas */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card title="Sesiones acumuladas" val={totalRealizadas} sub={`asesorías #1 a #4 realizadas al corte`} icon={Clock} color="text-indigo-600" />
-        <Card title="Emprendimientos atendidos" val={empUnicosRealizadas} sub={`${empAtendidosPerc}% de la cohorte de ${nCohorte}`} icon={User} color="text-cyan-600" />
+        <Card title="Emprendimientos atendidos" val={empUnicosRealizadas} sub={`${empAtendidosPerc}% de la meta de ${metaContrato}`} icon={User} color="text-cyan-600" />
         <Card title="Continuidad #1 → #2" val={continuidadCount} sub={`${continuidadPerc}% de los que tuvieron la #1`} icon={ChevronRight} color="text-emerald-600" />
         <Card title="Tema líder" val={temaLider} sub={`${temaLiderCount} sesiones · ${temaLiderPerc}%`} icon={Info} color="text-amber-600" />
         <Card title="Modalidad predominante" val={modalidadPredominante} sub={`Presencial ${modalidadCount["Presencial"]} (${presencialPerc}%) vs. Virtual ${modalidadCount["Virtual"]} (${virtualPerc}%)`} icon={Info} color="text-blue-600" />
@@ -321,9 +338,11 @@ export default function ControlGestionEmprendedores() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* 3. Volumen Global */}
-        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col">
           <h3 className="font-bold text-slate-800 mb-4">Volumen global por ronda</h3>
-          <table className="w-full text-left text-sm mb-6">
+          <div className="flex flex-col md:flex-row gap-4 flex-1 items-center">
+            <div className="w-full md:w-1/2">
+              <table className="w-full text-left text-sm mb-0">
             <thead>
               <tr className="border-b border-slate-200 text-slate-500">
                 <th className="py-2 font-medium">Ronda</th>
@@ -346,16 +365,29 @@ export default function ControlGestionEmprendedores() {
               </tr>
             </tbody>
           </table>
+            </div>
 
-          <div className="h-48">
-            <ResponsiveContainer width="100%" height="100%">
-              <PieChart>
-                <Pie data={pieModalidadData} cx="50%" cy="50%" innerRadius={40} outerRadius={70} dataKey="value" label={({name, value}) => `${name} ${value}`}>
-                  {pieModalidadData.map((e, i) => <Cell key={i} fill={e.color} />)}
-                </Pie>
-                <Tooltip />
-              </PieChart>
-            </ResponsiveContainer>
+            <div className="w-full md:w-1/2 h-[260px]">
+              <ResponsiveContainer width="100%" height="100%">
+                <PieChart>
+                  <Pie data={pieModalidadData} cx="50%" cy="50%" innerRadius={55} outerRadius={85} dataKey="value" stroke="none">
+                    {pieModalidadData.map((e, i) => <Cell key={i} fill={e.color} />)}
+                    <Label 
+                      value={`${totalRealizadas} sesiones`} position="center" 
+                      style={{ fontSize: '14px', fontWeight: 'bold', fill: '#334155' }}
+                    />
+                  </Pie>
+                  <Tooltip />
+                  <Legend layout="horizontal" verticalAlign="bottom" align="center" 
+                    payload={[
+                      { value: `Presencial ${modalidadCount["Presencial"]} (${presencialPerc}%)`, type: 'square', color: '#3b82f6' },
+                      { value: `Virtual ${modalidadCount["Virtual"]} (${virtualPerc}%)`, type: 'square', color: '#10b981' }
+                    ]}
+                    wrapperStyle={{ fontSize: '12px', paddingTop: '10px' }}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         </div>
 
@@ -406,7 +438,7 @@ export default function ControlGestionEmprendedores() {
 
       {/* 5. Productividad */}
       <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm overflow-x-auto">
-        <h3 className="font-bold text-slate-800 mb-4">Productividad por Profesional</h3>
+        <h3 className="font-bold text-slate-800 mb-4">Distribución de asesorías del equipo profesional</h3>
         <table className="w-full text-left text-sm whitespace-nowrap min-w-[700px]">
           <thead>
             <tr className="border-b border-slate-200 text-slate-500">
@@ -629,34 +661,42 @@ export default function ControlGestionEmprendedores() {
           <h3 className="font-bold text-slate-800 mb-6">Embudo de Continuidad</h3>
           <div className="space-y-4 relative">
              <div className="flex justify-between text-sm font-medium">
-               <span className="text-slate-600">Cohorte original</span>
-               <span className="text-slate-800">{nCohorte}</span>
+               <span className="text-slate-600">Meta del contrato: {metaContrato} emprendimientos</span>
+               <span className="text-slate-800">100%</span>
              </div>
-             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-slate-300 w-full"></div></div>
+             
+             <div className="flex justify-between text-sm font-medium mt-2">
+               <span className="text-slate-600">Registrados en la base</span>
+               <span className="text-slate-800 flex items-center gap-2">
+                 {nCohorte} <span className="text-emerald-600 font-bold">({((nCohorte/metaContrato)*100).toFixed(0)}%)</span>
+                 {nCohorte > metaContrato && <span className="text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded uppercase font-bold">supera la meta en {nCohorte - metaContrato}</span>}
+               </span>
+             </div>
+             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-slate-400" style={{width: '100%'}}></div></div>
 
              <div className="flex justify-between text-sm font-medium">
                <span className="text-slate-600">Con #1</span>
-               <span className="text-slate-800">{empRonda1} <span className="text-slate-400 font-normal">({((empRonda1/nCohorte)*100).toFixed(1)}%)</span></span>
+               <span className="text-slate-800">{empRonda1} <span className="text-slate-500 font-normal">({((empRonda1/metaContrato)*100).toFixed(1)}%)</span></span>
              </div>
-             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-400" style={{width: `${(empRonda1/nCohorte)*100}%`}}></div></div>
+             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-400" style={{width: `${Math.min((empRonda1/metaContrato)*100, 100)}%`}}></div></div>
 
              <div className="flex justify-between text-sm font-medium">
                <span className="text-slate-600">Con #1 y #2</span>
-               <span className="text-slate-800">{continuidadCount} <span className="text-slate-400 font-normal">({((continuidadCount/nCohorte)*100).toFixed(1)}%)</span></span>
+               <span className="text-slate-800">{continuidadCount} <span className="text-slate-500 font-normal">({((continuidadCount/metaContrato)*100).toFixed(1)}%)</span></span>
              </div>
-             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-500" style={{width: `${(continuidadCount/nCohorte)*100}%`}}></div></div>
+             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-500" style={{width: `${Math.min((continuidadCount/metaContrato)*100, 100)}%`}}></div></div>
 
              <div className="flex justify-between text-sm font-medium">
                <span className="text-slate-600">Con #1, #2 y #3</span>
-               <span className="text-slate-800">{c3} <span className="text-slate-400 font-normal">({((c3/nCohorte)*100).toFixed(1)}%)</span></span>
+               <span className="text-slate-800">{c3} <span className="text-slate-500 font-normal">({((c3/metaContrato)*100).toFixed(1)}%)</span></span>
              </div>
-             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-600" style={{width: `${(c3/nCohorte)*100}%`}}></div></div>
+             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-600" style={{width: `${Math.min((c3/metaContrato)*100, 100)}%`}}></div></div>
 
              <div className="flex justify-between text-sm font-medium">
                <span className="text-slate-600">Con #1 a #4</span>
-               <span className="text-slate-800">{c4}</span>
+               <span className="text-slate-800">{c4} <span className="text-slate-500 font-normal">(0%)</span></span>
              </div>
-             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-700" style={{width: `${(c4/nCohorte)*100}%`}}></div></div>
+             <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="h-full bg-indigo-700" style={{width: `${Math.min((c4/metaContrato)*100, 100)}%`}}></div></div>
           </div>
         </div>
 
