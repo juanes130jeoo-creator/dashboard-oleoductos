@@ -16,9 +16,18 @@
       },
       {
         "ronda": 2,
+        "fecha": "2026-10-02",
+        "hora_dia": "8 am",
+        "horas": 2.0,
+        "profesional": "Cristián",
+        "modalidad": "Presencial",
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
         "fecha": "2026-10-03",
-        "hora_dia": "3:00 pm",
-        "horas": null,
+        "hora_dia": "3 pm",
+        "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
         "tema": "Contabilidad"
@@ -62,7 +71,7 @@
         "ronda": 4,
         "fecha": "2026-10-05",
         "hora_dia": "4 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Virtual",
         "tema": "Marketing"
@@ -97,10 +106,19 @@
         "ronda": 3,
         "fecha": "2026-10-01",
         "hora_dia": "7:00 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
         "tema": "Redes Sociales"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-07",
+        "hora_dia": "7:00 pm",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -123,10 +141,19 @@
         "ronda": 2,
         "fecha": "2026-09-29",
         "hora_dia": "8:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
         "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-10",
+        "hora_dia": "2:00 pm",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -165,10 +192,19 @@
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "3 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-09",
+        "hora_dia": "5:00pm",
+        "horas": null,
+        "profesional": "Felipe",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -199,11 +235,11 @@
       {
         "ronda": 3,
         "fecha": "2026-09-30",
-        "hora_dia": "10:00 am",
-        "horas": null,
-        "profesional": "Sin asignar",
+        "hora_dia": "12:30 pm",
+        "horas": 2.0,
+        "profesional": "Cristián",
         "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -221,6 +257,15 @@
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-10-02",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Giovanna",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -240,13 +285,22 @@
         "tema": "Finanzas"
       },
       {
-        "ronda": 3,
-        "fecha": null,
-        "hora_dia": "",
-        "horas": null,
-        "profesional": "Sin asignar",
-        "modalidad": "Sin dato",
+        "ronda": 2,
+        "fecha": "2026-10-01",
+        "hora_dia": "5 pm",
+        "horas": 2.0,
+        "profesional": "Cristián",
+        "modalidad": "Presencial",
         "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-13",
+        "hora_dia": "3:00pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -273,6 +327,24 @@
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "11 am",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-07",
+        "hora_dia": "9:00 am",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -308,6 +380,15 @@
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
         "tema": "Redes Sociales"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-09",
+        "hora_dia": "4:00pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas"
       }
     ]
   },
@@ -365,10 +446,19 @@
         "ronda": 3,
         "fecha": "2026-10-05",
         "hora_dia": "6:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 4,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Por reprogramar",
+        "tema": "Portafolio"
       }
     ]
   },
@@ -377,7 +467,17 @@
     "emprendimiento": "Barbería st",
     "emprendedor": "JHON STIVEN",
     "nombre_completo": "Barbería st - JHON STIVEN",
-    "asesorias": []
+    "asesorias": [
+      {
+        "ronda": 1,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
+      }
+    ]
   },
   {
     "id": 16,
@@ -414,7 +514,7 @@
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "3:00 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Cristián",
         "modalidad": "Presencial",
         "tema": "Servicio al Cliente"
@@ -449,10 +549,19 @@
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "1:30 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-09",
+        "hora_dia": "2:00pm",
+        "horas": null,
+        "profesional": "Felipe",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -488,6 +597,15 @@
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-09",
+        "hora_dia": "3:00 pm",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Marketing"
       }
     ]
   },
@@ -505,15 +623,6 @@
         "profesional": "Sinthia",
         "modalidad": "Presencial",
         "tema": "Finanzas"
-      },
-      {
-        "ronda": 3,
-        "fecha": null,
-        "hora_dia": "",
-        "horas": null,
-        "profesional": "Sin asignar",
-        "modalidad": "Sin dato",
-        "tema": "Servicio al Cliente"
       }
     ]
   },
@@ -549,6 +658,15 @@
         "profesional": "Giovanna",
         "modalidad": "Virtual",
         "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-02",
+        "hora_dia": "9 am",
+        "horas": 2.0,
+        "profesional": "Camilo",
+        "modalidad": "Presencial",
+        "tema": "Marketing"
       }
     ]
   },
@@ -568,18 +686,36 @@
   },
   {
     "id": 24,
-    "emprendimiento": "Mayeline Gonzalez",
+    "emprendimiento": "Detalles que encantan",
     "emprendedor": "MAYELINE ESPERANZA",
-    "nombre_completo": "Mayeline Gonzalez - MAYELINE ESPERANZA",
+    "nombre_completo": "Detalles que encantan - MAYELINE ESPERANZA",
     "asesorias": [
       {
         "ronda": 1,
-        "fecha": "2026-09-30",
-        "hora_dia": "8:00 am",
-        "horas": null,
-        "profesional": "Camilo",
+        "fecha": "2026-10-01",
+        "hora_dia": "5 pm",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 2,
+        "fecha": "2026-10-05",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Cristián",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-08",
+        "hora_dia": "5 PM",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Sin Definir / Pendiente"
       }
     ]
   },
@@ -594,7 +730,7 @@
         "fecha": "2026-10-07",
         "hora_dia": "2 pm",
         "horas": null,
-        "profesional": "Giovanna",
+        "profesional": "Felipe",
         "modalidad": "Virtual",
         "tema": "Servicio al Cliente"
       }
@@ -628,10 +764,19 @@
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "1:30 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Cristián",
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "tema": "Servicio al Cliente"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-09",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Merly",
+        "modalidad": "Virtual",
+        "tema": "Comercial"
       }
     ]
   },
@@ -670,9 +815,9 @@
       },
       {
         "ronda": 4,
-        "fecha": "2026-10-05",
+        "fecha": "2026-10-06",
         "hora_dia": "4:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
         "tema": "Redes Sociales"
@@ -697,11 +842,20 @@
       {
         "ronda": 2,
         "fecha": "2026-10-02",
-        "hora_dia": "2 pm",
-        "horas": null,
+        "hora_dia": "1:30 pm",
+        "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 3,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Redes Sociales"
       }
     ]
   },
@@ -738,11 +892,11 @@
       },
       {
         "ronda": 3,
-        "fecha": "2026-10-02",
-        "hora_dia": "10:00 am",
+        "fecha": null,
+        "hora_dia": "",
         "horas": null,
-        "profesional": "Camilo",
-        "modalidad": "Virtual",
+        "profesional": "Sin asignar",
+        "modalidad": "Por reprogramar",
         "tema": "Sin Definir / Pendiente"
       }
     ]
@@ -764,12 +918,12 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-10-05",
-        "hora_dia": "6:30 pm",
+        "fecha": "2026-10-09",
+        "hora_dia": "6:30 PM",
         "horas": null,
-        "profesional": "Giovanna",
+        "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Modelo Canvas"
       }
     ]
   },
@@ -790,12 +944,12 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-10-02",
+        "fecha": "2026-10-01",
         "hora_dia": "6 pm",
-        "horas": null,
-        "profesional": "Sin asignar",
+        "horas": 2.0,
+        "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "Marketing"
       }
     ]
   },
@@ -835,10 +989,19 @@
         "ronda": 2,
         "fecha": "2026-09-30",
         "hora_dia": "4 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
         "tema": "Finanzas"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-13",
+        "hora_dia": "2 pm",
+        "horas": null,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Modelo Canvas"
       }
     ]
   },
@@ -859,11 +1022,11 @@
       },
       {
         "ronda": 2,
-        "fecha": "2026-09-30",
-        "hora_dia": "3 pm",
-        "horas": null,
+        "fecha": "2026-10-01",
+        "hora_dia": "10:30 am",
+        "horas": 2.0,
         "profesional": "Camilo",
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "tema": "Marketing"
       }
     ]
@@ -891,6 +1054,24 @@
         "profesional": "Camilo",
         "modalidad": "Presencial",
         "tema": "Marketing"
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-02",
+        "hora_dia": "9 am",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Presencial",
+        "tema": "Finanzas"
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-07",
+        "hora_dia": "4:00pm",
+        "horas": null,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Redes Sociales"
       }
     ]
   },

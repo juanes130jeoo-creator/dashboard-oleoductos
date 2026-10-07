@@ -13,12 +13,20 @@ def get_date(val):
     if isinstance(val, datetime.datetime):
         return val.strftime("%Y-%m-%d")
     if isinstance(val, str):
+        v = val.strip()
+        # Handle DD/MM/YY or DD/MM/YYYY
+        if '/' in v:
+            parts = v.split('/')
+            if len(parts) == 3:
+                day, month, year = parts
+                if len(year) == 2:
+                    year = "20" + year
+                return f"{year}-{month.zfill(2)}-{day.zfill(2)}"
         try:
-            return datetime.datetime.strptime(val, "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d")
+            return datetime.datetime.strptime(v, "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d")
         except:
-            return val.split(" ")[0]
+            return v.split(" ")[0]
     return str(val)
-
 def normalize_spaces(text):
     if not text: return ""
     return re.sub(r'\s+', ' ', text).strip()
@@ -40,6 +48,11 @@ CATALOGO = {
     "servicio la cliente": "Servicio al Cliente",
     "transformación digital": "Transformación Digital",
     "marketing o contabilidad": "Sin Definir / Pendiente",
+    "finazas": "Finanzas",
+    "publicidad": "Marketing",
+    "portafolio": "Portafolio",
+    "publicidad o redes": "Sin Definir / Pendiente",
+    "contabilidad o redes": "Sin Definir / Pendiente",
     "": "Sin Definir / Pendiente"
 }
 
@@ -53,6 +66,7 @@ def normalize_tema(tema):
 
 def normalize_modalidad(mod):
     m = normalize_spaces(mod).lower()
+    if "reprogram" in m: return "Por reprogramar"
     if "presencial" in m: return "Presencial"
     if "virtual" in m: return "Virtual"
     return "Sin dato"
@@ -65,7 +79,7 @@ def normalize_prof(prof):
     return p
 
 def extract():
-    file_path = 'asesorias_v2.xlsx'
+    file_path = 'asesorias_v3.xlsx'
     try:
         wb = openpyxl.load_workbook(file_path, data_only=True)
     except Exception as e:
@@ -115,7 +129,7 @@ def extract():
             tema = normalize_tema(get_str(sheet.cell(row=r, column=ronda['tema']).value))
             
             # If completely empty, skip
-            if fecha or (prof != "Sin asignar") or (tema != "Sin Definir / Pendiente") or (horas is not None):
+            if fecha or (prof != "Sin asignar") or (tema != "Sin Definir / Pendiente") or (horas is not None) or (mod != "Sin dato"):
                 asesorias.append({
                     "ronda": ronda['num'],
                     "fecha": fecha,

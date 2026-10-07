@@ -6,7 +6,7 @@ import metasData from '../config/metas-proyecto.json'
 import asesoriasData from '../data/control_gestion_asesorias.json'
 import FuenteDato from './shared/FuenteDato'
 
-const CORTE_DATE = "2026-09-29"
+const CORTE_DATE = "2026-10-06"
 
 export default function Home() {
   const { selectedPopulationId } = usePopulation()

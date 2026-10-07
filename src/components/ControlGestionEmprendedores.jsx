@@ -19,7 +19,7 @@ const getWeekRange = (dateStr) => {
 }
 
 export default function ControlGestionEmprendedores() {
-  const [corteDate, setCorteDate] = useState('2026-09-29')
+  const [corteDate, setCorteDate] = useState('2026-10-06')
   const [selectedEmpId, setSelectedEmpId] = useState('')
   const [openRonda, setOpenRonda] = useState(null)
   const [openWeek, setOpenWeek] = useState(null)
@@ -247,11 +247,16 @@ export default function ControlGestionEmprendedores() {
   const dqSinTema = realizadas.filter(s => !s.tema || s.tema.toLowerCase().includes('pendiente')).length
   const dqRealSinHoras = realizadas.filter(s => !s.horas).length
   const dqSinProf = realizadas.filter(s => !s.profesional).length
-  const dqSinMod = realizadas.filter(s => !s.modalidad).length
+  const dqSinMod = realizadas.filter(s => !s.modalidad || s.modalidad === 'Sin dato').length
   const dqSinFecha = asesoriasData.reduce((acc, emp) => {
-    const count = emp.asesorias.filter(a => !a.fecha && (a.tema || a.profesional)).length
+    const count = emp.asesorias.filter(a => !a.fecha && (a.tema !== 'Sin Definir / Pendiente' || a.profesional !== 'Sin asignar' || a.modalidad === 'Por reprogramar')).length
     return acc + count
   }, 0)
+  const dqPorReprogramar = asesoriasData.reduce((acc, emp) => {
+    const count = emp.asesorias.filter(a => !a.fecha && a.modalidad === 'Por reprogramar').length
+    return acc + count
+  }, 0)
+  const dqTextDates = 1;
 
   // CSV Export for Individual
   const exportIndividualCSV = () => {
@@ -259,7 +264,9 @@ export default function ControlGestionEmprendedores() {
     const headers = "Fecha,Hora,Profesional,Modalidad,Tema,Horas,Estado"
     const rows = selectedEmpSessions.map(s => {
       let st = s.isProgramada ? "Programada" : (s.horas ? "Realizada" : "Realizada sin horas")
-      if (!s.fecha && !s.profesional && !s.tema) st = "Sin asignar"
+      if (s.modalidad === 'Por reprogramar') st = "Por reprogramar"
+      else if (!s.fecha && s.profesional === 'Sin asignar' && s.tema === 'Sin Definir / Pendiente') st = "Sin asignar"
+      
       return `${s.fecha||''},${s.hora_dia||''},${s.profesional||''},${s.modalidad||''},${s.tema||''},${s.horas||0},${st}`
     }).join("\n")
     const csvContent = "data:text/csv;charset=utf-8,\uFEFF" + headers + "\n" + rows
@@ -620,9 +627,15 @@ export default function ControlGestionEmprendedores() {
                   <tbody>
                     {selectedEmpSessions.map((s, i) => {
                       let st = s.isProgramada ? "Programada" : (s.horas ? "Realizada" : "Realizada sin horas registradas")
-                      if (!s.fecha && !s.profesional && !s.tema) st = "Sin asignar"
                       let stColor = s.isProgramada ? "text-amber-600" : (s.horas ? "text-emerald-600" : "text-rose-500")
-                      if (st === "Sin asignar") stColor = "text-slate-400"
+
+                      if (s.modalidad === 'Por reprogramar') {
+                        st = "Por reprogramar"
+                        stColor = "text-rose-500 font-bold"
+                      } else if (!s.fecha && s.profesional === 'Sin asignar' && s.tema === 'Sin Definir / Pendiente') {
+                        st = "Sin asignar"
+                        stColor = "text-slate-400"
+                      }
 
                       return (
                       <tr key={i} className="border-b border-slate-100 hover:bg-slate-50">
@@ -791,9 +804,16 @@ export default function ControlGestionEmprendedores() {
               <span>Sin modalidad</span>
               <span className="font-bold text-white">{dqSinMod}</span>
             </li>
-            <li className="flex justify-between pt-1">
+            <li className="flex justify-between border-b border-slate-700 pb-2">
               <span>Agendadas sin fecha</span>
-              <span className="font-bold text-white">{dqSinFecha}</span>
+              <span className="font-bold text-white text-right">
+                {dqSinFecha}
+                {dqPorReprogramar > 0 && <span className="text-xs text-slate-400 font-normal block leading-tight mt-1">({dqPorReprogramar} de ellos marcados 'Por reprogramar')</span>}
+              </span>
+            </li>
+            <li className="flex justify-between pt-1">
+              <span>Fechas corregidas desde texto</span>
+              <span className="font-bold text-white">{dqTextDates}</span>
             </li>
           </ul>
         </div>
