@@ -25,15 +25,30 @@ const TABS = [
 ]
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('home')
+  const getInitialTab = () => {
+    const hash = window.location.hash.replace('#', '')
+    if (TABS.some(t => t.id === hash)) return hash
+    return 'home'
+  }
+  const [activeTab, setActiveTab] = useState(getInitialTab)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { selectedPopulationId, setSelectedPopulationId, activeConfig, populations } = usePopulation()
+
+  useEffect(() => {
+    const onHashChange = () => {
+      const hash = window.location.hash.replace('#', '')
+      if (TABS.some(t => t.id === hash)) setActiveTab(hash)
+    }
+    window.addEventListener('hashchange', onHashChange)
+    return () => window.removeEventListener('hashchange', onHashChange)
+  }, [])
 
   // Ocultar selector si solo hay 1 población configurada (o con datos)
   const showPopulationSelector = populations.length > 1
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId)
+    window.location.hash = tabId
     setIsMobileMenuOpen(false)
   }
 

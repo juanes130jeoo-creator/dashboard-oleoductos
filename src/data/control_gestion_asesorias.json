@@ -1,9 +1,11 @@
 [
   {
-    "id": 2,
+    "id": "1001343186",
     "emprendimiento": "360 - Hidden Kitchen",
-    "emprendedor": "ADRIANA LUCIA",
-    "nombre_completo": "360 - Hidden Kitchen - ADRIANA LUCIA",
+    "emprendedor": "ADRIANA LUCIA LOAIZA LOAIZA",
+    "nombre_completo": "360 - Hidden Kitchen - ADRIANA LUCIA LOAIZA LOAIZA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -12,16 +14,22 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
         "fecha": "2026-10-02",
         "hora_dia": "8 am",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al Cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -30,15 +38,32 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-10",
+        "hora_dia": "3 pm",
+        "horas": 2.0,
+        "profesional": "Ana",
+        "modalidad": "Virtual",
+        "tema": "Publicidad",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 3,
+    "id": "1073130777",
     "emprendimiento": "Beautty Flower",
-    "emprendedor": "ANGELA MARIA",
-    "nombre_completo": "Beautty Flower - ANGELA MARIA",
+    "emprendedor": "ANGELA MARIA MARTINEZ CALDERON",
+    "nombre_completo": "Beautty Flower - ANGELA MARIA MARTINEZ CALDERON",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -47,7 +72,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Presencial",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -56,7 +84,10 @@
         "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al Cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -65,7 +96,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
@@ -74,15 +108,20 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 4,
+    "id": "1007202155",
     "emprendimiento": "Cellshop L.A",
-    "emprendedor": "ASLLYE TATIANA",
-    "nombre_completo": "Cellshop L.A - ASLLYE TATIANA",
+    "emprendedor": "ASLLYE TATIANA LOPEZ ARISTIZABAL",
+    "nombre_completo": "Cellshop L.A - ASLLYE TATIANA LOPEZ ARISTIZABAL",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -91,7 +130,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -100,7 +142,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -109,24 +154,32 @@
         "horas": 2.0,
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
         "fecha": "2026-10-07",
         "hora_dia": "7:00 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "publicidad o redes",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 5,
+    "id": "1056786216",
     "emprendimiento": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo",
-    "emprendedor": "BRENDA MICHELL",
-    "nombre_completo": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo - BRENDA MICHELL",
+    "emprendedor": "BRENDA MICHELL GUZMAN ROJAS",
+    "nombre_completo": "Puerto Boyacá Vive: Experiencias que conectan territorio, identidad y desarrollo - BRENDA MICHELL GUZMAN ROJAS",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -135,7 +188,10 @@
         "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Comercial"
+        "tema": "Comercial",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -144,31 +200,41 @@
         "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al Cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
-        "fecha": "2026-10-10",
-        "hora_dia": "2:00 pm",
+        "fecha": null,
+        "hora_dia": "",
         "horas": null,
         "profesional": "Sin asignar",
-        "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
+        "modalidad": "Por reprogramar",
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 6,
+    "id": "1056775456",
     "emprendimiento": "Lash Dahiana",
-    "emprendedor": "CHAROL DAYANA",
-    "nombre_completo": "Lash Dahiana - CHAROL DAYANA",
+    "emprendedor": "CHAROL DAYANA TASCON TREJOS",
+    "nombre_completo": "Lash Dahiana - CHAROL DAYANA TASCON TREJOS",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
     "asesorias": []
   },
   {
-    "id": 7,
+    "id": "1056785274",
     "emprendimiento": "STUDIO DANVAR FILMS",
-    "emprendedor": "DANIEL ARLEY",
-    "nombre_completo": "STUDIO DANVAR FILMS - DANIEL ARLEY",
+    "emprendedor": "DANIEL ARLEY VARGAS MURCIA",
+    "nombre_completo": "STUDIO DANVAR FILMS - DANIEL ARLEY VARGAS MURCIA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -177,7 +243,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -186,7 +255,10 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
-        "tema": "Comercial / Innovación"
+        "tema": "Comercial/ innovación",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -195,24 +267,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
         "fecha": "2026-10-09",
         "hora_dia": "5:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Felipe",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 8,
+    "id": "1053861995",
     "emprendimiento": "Eliana Cañas Cejas & Pestañas",
-    "emprendedor": "ELIANA ALEJANDRA",
-    "nombre_completo": "Eliana Cañas Cejas & Pestañas - ELIANA ALEJANDRA",
+    "emprendedor": "ELIANA ALEJANDRA CAÑAS ROMERO",
+    "nombre_completo": "Eliana Cañas Cejas & Pestañas - ELIANA ALEJANDRA CAÑAS ROMERO",
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -221,7 +301,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -230,24 +313,44 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
-        "tema": "Comercial / Innovación"
+        "tema": "Comercial/ innovación",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
         "fecha": "2026-09-30",
         "hora_dia": "12:30 pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-11",
+        "hora_dia": "10 am",
+        "horas": 2.0,
+        "profesional": "Sinthia",
+        "modalidad": "Virtual",
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": false,
+        "isProgramada": true
       }
     ]
   },
   {
-    "id": 9,
+    "id": "1056778982",
     "emprendimiento": "Agregados y prefabricados QP",
-    "emprendedor": "ERIKA",
-    "nombre_completo": "Agregados y prefabricados QP - ERIKA",
+    "emprendedor": "ERIKA QUIROGA PIEDRAHITA",
+    "nombre_completo": "Agregados y prefabricados QP - ERIKA QUIROGA PIEDRAHITA",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -256,7 +359,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -265,15 +371,20 @@
         "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 10,
+    "id": "1007568579",
     "emprendimiento": "Barbería el mello",
-    "emprendedor": "FREDY GONZALO",
-    "nombre_completo": "Barbería el mello - FREDY GONZALO",
+    "emprendedor": "FREDY GONZALO CASTAÑO SÁNCHEZ",
+    "nombre_completo": "Barbería el mello - FREDY GONZALO CASTAÑO SÁNCHEZ",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -282,33 +393,56 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
         "fecha": "2026-10-01",
         "hora_dia": "5 pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
         "fecha": "2026-10-13",
-        "hora_dia": "3:00pm",
-        "horas": null,
+        "hora_dia": "4 pm",
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": true
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-16",
+        "hora_dia": "3 pm",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Publicidad",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": true
       }
     ]
   },
   {
-    "id": 11,
+    "id": "1028786434",
     "emprendimiento": "Coco Bom",
-    "emprendedor": "HANNA SOFIA",
-    "nombre_completo": "Coco Bom - HANNA SOFIA",
+    "emprendedor": "HANNA SOFIA SANDOVAL VALENCIA",
+    "nombre_completo": "Coco Bom - HANNA SOFIA SANDOVAL VALENCIA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -317,7 +451,10 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Virtual",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -326,7 +463,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -335,24 +475,32 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
-        "fecha": "2026-10-07",
-        "hora_dia": "9:00 am",
-        "horas": null,
+        "fecha": "2026-10-08",
+        "hora_dia": "9 am",
+        "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 12,
+    "id": "1056772352",
     "emprendimiento": "Manosguiadas_manillas",
-    "emprendedor": "HARY MICHELLE",
-    "nombre_completo": "Manosguiadas_manillas - HARY MICHELLE",
+    "emprendedor": "HARY MICHELLE SUTANEME",
+    "nombre_completo": "Manosguiadas_manillas - HARY MICHELLE SUTANEME",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -361,7 +509,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Presencial",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -370,7 +521,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -379,24 +533,32 @@
         "horas": 2.0,
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Redes sociales/ Portafolio",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
         "fecha": "2026-10-09",
         "hora_dia": "4:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 13,
+    "id": "1055551527",
     "emprendimiento": "CAFÉ CASA CAMPO",
-    "emprendedor": "HEINER DUVAN",
-    "nombre_completo": "CAFÉ CASA CAMPO - HEINER DUVAN",
+    "emprendedor": "HEINER DUVAN NABARRETE ORTIZ",
+    "nombre_completo": "CAFÉ CASA CAMPO - HEINER DUVAN NABARRETE ORTIZ",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -405,7 +567,10 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Virtual",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -414,15 +579,20 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 14,
+    "id": "1056786901",
     "emprendimiento": "Hill Beauty Concept",
-    "emprendedor": "HILLARY STELLA",
-    "nombre_completo": "Hill Beauty Concept - HILLARY STELLA",
+    "emprendedor": "HILLARY STELLA DIAZ BARRIGA",
+    "nombre_completo": "Hill Beauty Concept - HILLARY STELLA DIAZ BARRIGA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -431,7 +601,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Presencial",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -440,7 +613,10 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
-        "tema": "Comercial / Innovación"
+        "tema": "Comercial/ innovación",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -449,24 +625,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
-        "fecha": null,
-        "hora_dia": "",
-        "horas": null,
+        "fecha": "2026-10-08",
+        "hora_dia": "8 AM",
+        "horas": 2.0,
         "profesional": "Ana",
-        "modalidad": "Por reprogramar",
-        "tema": "Portafolio"
+        "modalidad": "Virtual",
+        "tema": "Portafolio",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 15,
+    "id": "1057096054",
     "emprendimiento": "Barbería st",
-    "emprendedor": "JHON STIVEN",
-    "nombre_completo": "Barbería st - JHON STIVEN",
+    "emprendedor": "JHON STIVEN OROZCO",
+    "nombre_completo": "Barbería st - JHON STIVEN OROZCO",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
     "asesorias": [
       {
         "ronda": 1,
@@ -475,22 +659,54 @@
         "horas": null,
         "profesional": "Sin asignar",
         "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
+      },
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 16,
+    "id": "1023877697",
     "emprendimiento": "Local de barberia",
-    "emprendedor": "JUAN CARLOS",
-    "nombre_completo": "Local de barberia - JUAN CARLOS",
-    "asesorias": []
+    "emprendedor": "JUAN CARLOS PALOMO RENGIFO",
+    "nombre_completo": "Local de barberia - JUAN CARLOS PALOMO RENGIFO",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
+    "asesorias": [
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
+      }
+    ]
   },
   {
-    "id": 17,
+    "id": "1000269589",
     "emprendimiento": "Perfumería Esencia Eterna",
-    "emprendedor": "KAREN LORENA",
-    "nombre_completo": "Perfumería Esencia Eterna - KAREN LORENA",
+    "emprendedor": "KAREN LORENA RUIZ CERVERA",
+    "nombre_completo": "Perfumería Esencia Eterna - KAREN LORENA RUIZ CERVERA",
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -499,7 +715,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Presencial",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -508,24 +727,32 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "3:00 pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 18,
+    "id": "1107035178",
     "emprendimiento": "NTR_Graciasublime",
-    "emprendedor": "KEISCHA VANESSA",
-    "nombre_completo": "NTR_Graciasublime - KEISCHA VANESSA",
+    "emprendedor": "KEISCHA VANESSA PLAZA QUICENO",
+    "nombre_completo": "NTR_Graciasublime - KEISCHA VANESSA PLAZA QUICENO",
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -534,7 +761,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -543,7 +773,10 @@
         "horas": 2.0,
         "profesional": "Girlesa",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -552,24 +785,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
-        "fecha": "2026-10-09",
-        "hora_dia": "2:00pm",
+        "fecha": null,
+        "hora_dia": "",
         "horas": null,
-        "profesional": "Felipe",
-        "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "profesional": "Sin asignar",
+        "modalidad": "Por reprogramar",
+        "tema": "redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 19,
+    "id": "1056772762",
     "emprendimiento": "total look boutique",
-    "emprendedor": "MADELEIENE",
-    "nombre_completo": "total look boutique - MADELEIENE",
+    "emprendedor": "MADELEIENE MONTOYA",
+    "nombre_completo": "total look boutique - MADELEIENE MONTOYA",
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -578,7 +819,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -587,7 +831,10 @@
         "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -596,24 +843,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
-        "fecha": "2026-10-09",
-        "hora_dia": "3:00 pm",
+        "fecha": null,
+        "hora_dia": "",
         "horas": null,
-        "profesional": "Ana",
-        "modalidad": "Virtual",
-        "tema": "Marketing"
+        "profesional": "Sin asignar",
+        "modalidad": "Por reprogramar",
+        "tema": "publicidad",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 20,
+    "id": "1105793466",
     "emprendimiento": "Sabor porteño",
-    "emprendedor": "MAGNO CESAR",
-    "nombre_completo": "Sabor porteño - MAGNO CESAR",
+    "emprendedor": "MAGNO CESAR BUSTOS VARGAS",
+    "nombre_completo": "Sabor porteño - MAGNO CESAR BUSTOS VARGAS",
+    "estado_ruta": "1 de 4",
+    "horas_acumuladas": 2.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -622,24 +877,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 21,
+    "id": "1057095711",
     "emprendimiento": "Maybeautyy",
-    "emprendedor": "MAILEN",
-    "nombre_completo": "Maybeautyy - MAILEN",
+    "emprendedor": "MAILEN ANGULO VILORIA",
+    "nombre_completo": "Maybeautyy - MAILEN ANGULO VILORIA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
         "fecha": "2026-09-18",
         "hora_dia": "5:00pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Transformación Digital"
+        "tema": "Transformación digital",
+        "tema_grafico": "Transformación digital",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -648,7 +911,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -657,7 +923,10 @@
         "horas": 2.0,
         "profesional": "Giovanna",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al Cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
@@ -666,29 +935,64 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 22,
+    "id": "1036130439",
     "emprendimiento": "Tienda virtual M&E",
-    "emprendedor": "MARIANA",
-    "nombre_completo": "Tienda virtual M&E - MARIANA",
-    "asesorias": []
+    "emprendedor": "MARIANA TORO LOZANO",
+    "nombre_completo": "Tienda virtual M&E - MARIANA TORO LOZANO",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
+    "asesorias": [
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
+      }
+    ]
   },
   {
-    "id": 23,
+    "id": "1001444602",
     "emprendimiento": "Salón de belleza en etapa inicial",
-    "emprendedor": "MARYID VANESA",
-    "nombre_completo": "Salón de belleza en etapa inicial - MARYID VANESA",
-    "asesorias": []
+    "emprendedor": "MARYID VANESA LAGUNA CIRO",
+    "nombre_completo": "Salón de belleza en etapa inicial - MARYID VANESA LAGUNA CIRO",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
+    "asesorias": [
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
+      }
+    ]
   },
   {
-    "id": 24,
+    "id": "1007424751",
     "emprendimiento": "Detalles que encantan",
-    "emprendedor": "MAYELINE ESPERANZA",
-    "nombre_completo": "Detalles que encantan - MAYELINE ESPERANZA",
+    "emprendedor": "MAYELINE ESPERANZA GONZALEZ",
+    "nombre_completo": "Detalles que encantan - MAYELINE ESPERANZA GONZALEZ",
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -697,59 +1001,90 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
         "fecha": "2026-10-05",
         "hora_dia": "3 pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
-        "fecha": "2026-10-08",
-        "hora_dia": "5 PM",
-        "horas": null,
-        "profesional": "Sin asignar",
+        "fecha": "2026-10-10",
+        "hora_dia": "10 am",
+        "horas": 2.0,
+        "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "Modelo canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 25,
+    "id": "1056774134",
     "emprendimiento": "Dulce bocado",
-    "emprendedor": "MELANY ALEJANDRA",
-    "nombre_completo": "Dulce bocado - MELANY ALEJANDRA",
+    "emprendedor": "MELANY ALEJANDRA BUITRAGO HERRERA",
+    "nombre_completo": "Dulce bocado - MELANY ALEJANDRA BUITRAGO HERRERA",
+    "estado_ruta": "1 de 4",
+    "horas_acumuladas": 2.0,
     "asesorias": [
       {
         "ronda": 1,
         "fecha": "2026-10-07",
         "hora_dia": "2 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Felipe",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
+      },
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 26,
+    "id": "1005745041",
     "emprendimiento": "Soluciones y sistemas software",
-    "emprendedor": "SANTIAGO",
-    "nombre_completo": "Soluciones y sistemas software - SANTIAGO",
+    "emprendedor": "SANTIAGO RAMÍREZ PÉREZ",
+    "nombre_completo": "Soluciones y sistemas software - SANTIAGO RAMÍREZ PÉREZ",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
         "fecha": "2026-09-18",
         "hora_dia": "3:00pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Transformación Digital"
+        "tema": "Transformación digital",
+        "tema_grafico": "Transformación digital",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -758,33 +1093,44 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
         "fecha": "2026-10-02",
         "hora_dia": "1:30 pm",
         "horas": 2.0,
-        "profesional": "Cristián",
+        "profesional": "Cristian",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
         "fecha": "2026-10-09",
         "hora_dia": "3 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Virtual",
-        "tema": "Comercial"
+        "tema": "Comercial",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 27,
+    "id": "1056771257",
     "emprendimiento": "Detallitos Valkami",
-    "emprendedor": "VALERIA",
-    "nombre_completo": "Detallitos Valkami - VALERIA",
+    "emprendedor": "VALERIA ORTEGÓN MOSQUERA",
+    "nombre_completo": "Detallitos Valkami - VALERIA ORTEGÓN MOSQUERA",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -793,7 +1139,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -802,7 +1151,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Virtual",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -811,7 +1163,10 @@
         "horas": 2.0,
         "profesional": "Felipe",
         "modalidad": "Virtual",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
@@ -820,15 +1175,20 @@
         "horas": 2.0,
         "profesional": "Juan Andres",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Portafolio/Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 28,
+    "id": "1056775521",
     "emprendimiento": "Dulce Antojo",
-    "emprendedor": "VALERIN",
-    "nombre_completo": "Dulce Antojo - VALERIN",
+    "emprendedor": "VALERIN CRUZ",
+    "nombre_completo": "Dulce Antojo - VALERIN CRUZ",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -837,7 +1197,10 @@
         "horas": 2.0,
         "profesional": "Paula",
         "modalidad": "Presencial",
-        "tema": "Contabilidad"
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -846,31 +1209,54 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
-        "fecha": null,
-        "hora_dia": "",
+        "fecha": "2026-10-14",
+        "hora_dia": "2 PM",
         "horas": null,
         "profesional": "Sin asignar",
-        "modalidad": "Sin dato",
-        "tema": "Redes Sociales"
+        "modalidad": "Virtual",
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": true
       }
     ]
   },
   {
-    "id": 29,
+    "id": "1056774156",
     "emprendimiento": "Dulce bocado",
-    "emprendedor": "YAIRA YULIANA",
-    "nombre_completo": "Dulce bocado - YAIRA YULIANA",
-    "asesorias": []
+    "emprendedor": "YAIRA YULIANA CORRALES",
+    "nombre_completo": "Dulce bocado - YAIRA YULIANA CORRALES",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
+    "asesorias": [
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": 2.0,
+        "profesional": "Sin asignar",
+        "modalidad": "Sin dato",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
+      }
+    ]
   },
   {
-    "id": 30,
+    "id": "1005195549",
     "emprendimiento": "LUMARA",
-    "emprendedor": "YULIANA FERNANDA",
-    "nombre_completo": "LUMARA - YULIANA FERNANDA",
+    "emprendedor": "YULIANA FERNANDA LOZADA VANEGAS",
+    "nombre_completo": "LUMARA - YULIANA FERNANDA LOZADA VANEGAS",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -879,7 +1265,10 @@
         "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Comercial"
+        "tema": "Comercial",
+        "tema_grafico": "Comercial e innovación",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -888,7 +1277,10 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -897,15 +1289,20 @@
         "horas": null,
         "profesional": "Sin asignar",
         "modalidad": "Por reprogramar",
-        "tema": "Sin Definir / Pendiente"
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 31,
+    "id": "1054557123",
     "emprendimiento": "Galaxicar Kids",
-    "emprendedor": "YILVEY",
-    "nombre_completo": "Galaxicar Kids - YILVEY",
+    "emprendedor": "YILVEY PEREZ OCAMPO",
+    "nombre_completo": "Galaxicar Kids - YILVEY PEREZ OCAMPO",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -914,24 +1311,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
         "fecha": "2026-10-09",
         "hora_dia": "6:30 PM",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 32,
+    "id": "1056773400",
     "emprendimiento": "Kaida Bloom",
-    "emprendedor": "SARA JULIANA",
-    "nombre_completo": "Kaida Bloom - SARA JULIANA",
+    "emprendedor": "SARA JULIANA ESCUDERO GONGORA",
+    "nombre_completo": "Kaida Bloom - SARA JULIANA ESCUDERO GONGORA",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -940,7 +1345,10 @@
         "horas": 2.0,
         "profesional": "Girlesa",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -949,15 +1357,44 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
+      },
+      {
+        "ronda": 3,
+        "fecha": "2026-10-13",
+        "hora_dia": "18:00",
+        "horas": 2.0,
+        "profesional": "Paula",
+        "modalidad": "Virtual",
+        "tema": "Contabilidad",
+        "tema_grafico": "Contabilidad",
+        "isRealizada": false,
+        "isProgramada": true
+      },
+      {
+        "ronda": 4,
+        "fecha": "2026-10-19",
+        "hora_dia": "6:30 pm",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Virtual",
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": false,
+        "isProgramada": true
       }
     ]
   },
   {
-    "id": 33,
+    "id": "1002703143",
     "emprendimiento": "Ciaobella Burguer",
-    "emprendedor": "SANTIAGO",
-    "nombre_completo": "Ciaobella Burguer - SANTIAGO",
+    "emprendedor": "SANTIAGO CARDONA BARRANTES",
+    "nombre_completo": "Ciaobella Burguer - SANTIAGO CARDONA BARRANTES",
+    "estado_ruta": "1 de 4",
+    "horas_acumuladas": 2.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -966,15 +1403,20 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 34,
+    "id": "1056772389",
     "emprendimiento": "Emparepas de mimi",
-    "emprendedor": "KEVIN STEEK",
-    "nombre_completo": "Emparepas de mimi - KEVIN STEEK",
+    "emprendedor": "KEVIN STEEK MONTES MOSQUERA",
+    "nombre_completo": "Emparepas de mimi - KEVIN STEEK MONTES MOSQUERA",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -983,7 +1425,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Virtual",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -992,24 +1437,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
         "fecha": "2026-10-13",
         "hora_dia": "2 pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Ana",
         "modalidad": "Virtual",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": false,
+        "isProgramada": true
       }
     ]
   },
   {
-    "id": 35,
+    "id": "1056773023",
     "emprendimiento": "Esencia y Moda",
-    "emprendedor": "BRISETT DAYANA",
-    "nombre_completo": "Esencia y Moda - BRISETT DAYANA",
+    "emprendedor": "BRISETT DAYANA HENAO RIOS",
+    "nombre_completo": "Esencia y Moda - BRISETT DAYANA HENAO RIOS",
+    "estado_ruta": "2 de 4",
+    "horas_acumuladas": 4.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -1018,7 +1471,10 @@
         "horas": 2.0,
         "profesional": "Girlesa",
         "modalidad": "Presencial",
-        "tema": "Servicio al Cliente"
+        "tema": "Servicio al cliente",
+        "tema_grafico": "Servicio al cliente",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -1027,15 +1483,20 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 36,
+    "id": "1056774753",
     "emprendimiento": "Pauleta",
-    "emprendedor": "MARIA PAULA",
-    "nombre_completo": "Pauleta - MARIA PAULA",
+    "emprendedor": "MARIA PAULA QUINTERO WILCHES",
+    "nombre_completo": "Pauleta - MARIA PAULA QUINTERO WILCHES",
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -1044,7 +1505,10 @@
         "horas": 2.0,
         "profesional": "Merly",
         "modalidad": "Presencial",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 2,
@@ -1053,7 +1517,10 @@
         "horas": 2.0,
         "profesional": "Camilo",
         "modalidad": "Presencial",
-        "tema": "Marketing"
+        "tema": "Marketing",
+        "tema_grafico": "Marketing",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 3,
@@ -1062,24 +1529,32 @@
         "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Presencial",
-        "tema": "Finanzas"
+        "tema": "Finanzas",
+        "tema_grafico": "Finanzas",
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
         "fecha": "2026-10-07",
         "hora_dia": "4:00pm",
-        "horas": null,
+        "horas": 2.0,
         "profesional": "Sinthia",
         "modalidad": "Virtual",
-        "tema": "Redes Sociales"
+        "tema": "Redes sociales",
+        "tema_grafico": "Redes sociales, publicidad y portafolio",
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
   {
-    "id": 37,
+    "id": "1057095878",
     "emprendimiento": "Boutique Mondragon",
-    "emprendedor": "ERIK DEIBER",
-    "nombre_completo": "Boutique Mondragon - ERIK DEIBER",
+    "emprendedor": "ERIK DEIBER MONDRAGON BARRERA",
+    "nombre_completo": "Boutique Mondragon - ERIK DEIBER MONDRAGON BARRERA",
+    "estado_ruta": "1 de 4",
+    "horas_acumuladas": 2.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -1088,8 +1563,32 @@
         "horas": 2.0,
         "profesional": "Felipe",
         "modalidad": "Virtual",
-        "tema": "Modelo Canvas"
+        "tema": "Modelo Canvas",
+        "tema_grafico": "Modelo Canvas",
+        "isRealizada": true,
+        "isProgramada": false
+      },
+      {
+        "ronda": 2,
+        "fecha": null,
+        "hora_dia": "",
+        "horas": null,
+        "profesional": "Sin asignar",
+        "modalidad": "Por reprogramar",
+        "tema": "Sin dato",
+        "tema_grafico": "Sin dato",
+        "isRealizada": false,
+        "isProgramada": false
       }
     ]
+  },
+  {
+    "id": "1057095313",
+    "emprendimiento": "El punto De La Empanada",
+    "emprendedor": "OLIVER MADERA LOPEZ",
+    "nombre_completo": "El punto De La Empanada - OLIVER MADERA LOPEZ",
+    "estado_ruta": "Sin asesorías",
+    "horas_acumuladas": 0,
+    "asesorias": []
   }
 ]

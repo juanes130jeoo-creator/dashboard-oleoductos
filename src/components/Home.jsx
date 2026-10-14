@@ -6,7 +6,7 @@ import metasData from '../config/metas-proyecto.json'
 import asesoriasData from '../data/control_gestion_asesorias.json'
 import FuenteDato from './shared/FuenteDato'
 
-const CORTE_DATE = "2026-10-06"
+const CORTE_DATE = "2026-10-10"
 
 export default function Home() {
   const { selectedPopulationId } = usePopulation()
@@ -212,7 +212,7 @@ export default function Home() {
                   <td className="py-3 px-4 text-slate-700 max-w-[300px]">
                     <span className="font-medium">{row.componente}</span>
                     {row.componente.includes("Caracterización") && isEmprendedores && (
-                      <p className="text-xs text-amber-600 mt-1 italic leading-tight">La base de asesorías individuales registra 36 emprendimientos; la meta de caracterización es 30.</p>
+                      <p className="text-xs text-amber-600 mt-1 italic leading-tight">La base de asesorías individuales registra 37 emprendimientos; la meta de caracterización es 30.</p>
                     )}
                     {row.componente.includes("Acompañamiento técnico") && isEmprendedores && (
                       <p className="text-xs text-indigo-500 mt-1 italic leading-tight">Horas de asesoría individual registradas al {CORTE_DATE} (meta: 30 emprendimientos × 8 horas).</p>
