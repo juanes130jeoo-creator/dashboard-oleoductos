@@ -23,7 +23,7 @@ if hasattr(sys.stdout, 'reconfigure'):
 # ==============================================================================
 # PARÁMETROS CONFIGURABLES
 # ==============================================================================
-FECHA_CORTE = "2026-10-10"
+FECHA_CORTE = "2026-10-13"
 
 # Búsqueda automática del archivo en el Escritorio o ruta específica
 DESKTOP_DIR = os.path.expanduser(r"~\Desktop")

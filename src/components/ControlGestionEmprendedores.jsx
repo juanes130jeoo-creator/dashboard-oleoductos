@@ -12,7 +12,7 @@ import asesoriasData from '../data/control_gestion_asesorias.json'
 import FuenteDato from './shared/FuenteDato'
 
 // Constante principal de fecha de corte
-const FECHA_CORTE_DEFAULT = "2026-10-10"
+const FECHA_CORTE_DEFAULT = "2026-10-13"
 
 // Función auxiliar para agrupar semanas
 const getWeekRange = (dateStr) => {
@@ -439,7 +439,7 @@ export default function ControlGestionEmprendedores() {
         <div>
           <h2 className="text-2xl font-bold text-slate-800">Seguimiento y Control de Gestión de Asesorías</h2>
           <p className="text-slate-500 font-medium mt-1">
-            Información con corte al 10 de octubre de 2026
+            Información con corte al 13 de octubre de 2026
           </p>
         </div>
         <div className="flex flex-col items-start md:items-end gap-1.5 bg-slate-50 p-3 rounded-lg border border-slate-200">
@@ -478,7 +478,7 @@ export default function ControlGestionEmprendedores() {
             sub={`${p1}% de la meta`} 
             icon={CheckCircle2} 
             color="text-indigo-600"
-            badge="100% Meta"
+            badge={`${p1}%`}
           />
           <Card 
             title="Asesoría 2" 
@@ -486,7 +486,7 @@ export default function ControlGestionEmprendedores() {
             sub={`${p2}% de la meta`} 
             icon={CheckCircle2} 
             color="text-indigo-600"
-            badge="86.7%"
+            badge={`${p2}%`}
           />
           <Card 
             title="Asesoría 3" 
@@ -494,7 +494,7 @@ export default function ControlGestionEmprendedores() {
             sub={`${p3}% de la meta`} 
             icon={CheckCircle2} 
             color="text-indigo-600"
-            badge="53.3%"
+            badge={`${p3}%`}
           />
           <Card 
             title="Asesoría 4" 
@@ -502,7 +502,7 @@ export default function ControlGestionEmprendedores() {
             sub={`${p4}% de la meta`} 
             icon={CheckCircle2} 
             color="text-indigo-600"
-            badge="36.7%"
+            badge={`${p4}%`}
           />
           <Card 
             title="Total Realizadas" 
@@ -510,7 +510,7 @@ export default function ControlGestionEmprendedores() {
             sub="asesorías ejecutadas" 
             icon={Clock} 
             color="text-emerald-600"
-            badge="83 sesiones"
+            badge={`${totalRealizadas} sesiones`}
           />
           <Card 
             title="Horas Acumuladas" 
@@ -518,7 +518,7 @@ export default function ControlGestionEmprendedores() {
             sub={`${horasPerc}% de 240 h`} 
             icon={Clock} 
             color="text-purple-600"
-            badge="166 h"
+            badge={`${horasAcumuladas} h`}
           />
         </div>
 
@@ -706,7 +706,7 @@ export default function ControlGestionEmprendedores() {
           <div className="flex justify-between items-center mb-4">
             <h3 className="font-bold text-slate-800">Temáticas Abordadas (8 Categorías)</h3>
             <span className="text-xs bg-slate-100 text-slate-600 font-medium px-2 py-0.5 rounded">
-              83 sesiones
+              {totalRealizadas} sesiones
             </span>
           </div>
           <table className="w-full text-left text-sm whitespace-nowrap min-w-[480px]">
@@ -998,11 +998,11 @@ export default function ControlGestionEmprendedores() {
             </div>
           </div>
 
-          {/* 7 casos posteriores al corte */}
+          {/* Casos posteriores al corte */}
           <div className="border border-slate-200 rounded-lg p-4 bg-slate-50">
             <div className="flex justify-between items-center mb-3">
               <h4 className="font-bold text-sm text-slate-800">2. Asesorías con Fecha Posterior al Corte ({casosPosteriores.length} casos)</h4>
-              <span className="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">11/10 al 19/10</span>
+              <span className="text-xs bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">14/10 al 19/10</span>
             </div>
             <div className="overflow-x-auto max-h-72 overflow-y-auto">
               <table className="w-full text-left text-xs whitespace-nowrap">
@@ -1207,7 +1207,7 @@ export default function ControlGestionEmprendedores() {
 
       <FuenteDato 
         fuente="Base maestra de asesorías individuales (hoja Asesorías individuales 8 hora)" 
-        fecha={`Información con corte al 10 de octubre de 2026`} 
+        fecha={`Información con corte al 13 de octubre de 2026`} 
         n={`${nCohorte} emprendimientos, ${totalRealizadas} sesiones realizadas (${horasAcumuladas} horas)`} 
       />
     </div>

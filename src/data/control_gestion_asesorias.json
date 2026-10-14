@@ -291,8 +291,8 @@
     "emprendimiento": "Eliana Cañas Cejas & Pestañas",
     "emprendedor": "ELIANA ALEJANDRA CAÑAS ROMERO",
     "nombre_completo": "Eliana Cañas Cejas & Pestañas - ELIANA ALEJANDRA CAÑAS ROMERO",
-    "estado_ruta": "3 de 4",
-    "horas_acumuladas": 6.0,
+    "estado_ruta": "Ruta completa (4/4)",
+    "horas_acumuladas": 8.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -339,8 +339,8 @@
         "modalidad": "Virtual",
         "tema": "Finanzas",
         "tema_grafico": "Finanzas",
-        "isRealizada": false,
-        "isProgramada": true
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
@@ -383,8 +383,8 @@
     "emprendimiento": "Barbería el mello",
     "emprendedor": "FREDY GONZALO CASTAÑO SÁNCHEZ",
     "nombre_completo": "Barbería el mello - FREDY GONZALO CASTAÑO SÁNCHEZ",
-    "estado_ruta": "2 de 4",
-    "horas_acumuladas": 4.0,
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -419,8 +419,8 @@
         "modalidad": "Virtual",
         "tema": "Redes sociales",
         "tema_grafico": "Redes sociales, publicidad y portafolio",
-        "isRealizada": false,
-        "isProgramada": true
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
@@ -1335,8 +1335,8 @@
     "emprendimiento": "Kaida Bloom",
     "emprendedor": "SARA JULIANA ESCUDERO GONGORA",
     "nombre_completo": "Kaida Bloom - SARA JULIANA ESCUDERO GONGORA",
-    "estado_ruta": "2 de 4",
-    "horas_acumuladas": 4.0,
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -1371,8 +1371,8 @@
         "modalidad": "Virtual",
         "tema": "Contabilidad",
         "tema_grafico": "Contabilidad",
-        "isRealizada": false,
-        "isProgramada": true
+        "isRealizada": true,
+        "isProgramada": false
       },
       {
         "ronda": 4,
@@ -1415,8 +1415,8 @@
     "emprendimiento": "Emparepas de mimi",
     "emprendedor": "KEVIN STEEK MONTES MOSQUERA",
     "nombre_completo": "Emparepas de mimi - KEVIN STEEK MONTES MOSQUERA",
-    "estado_ruta": "2 de 4",
-    "horas_acumuladas": 4.0,
+    "estado_ruta": "3 de 4",
+    "horas_acumuladas": 6.0,
     "asesorias": [
       {
         "ronda": 1,
@@ -1451,8 +1451,8 @@
         "modalidad": "Virtual",
         "tema": "Modelo Canvas",
         "tema_grafico": "Modelo Canvas",
-        "isRealizada": false,
-        "isProgramada": true
+        "isRealizada": true,
+        "isProgramada": false
       }
     ]
   },
