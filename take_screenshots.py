@@ -26,11 +26,8 @@ def capture():
     server_thread.start()
     time.sleep(2)
 
-    url = f"http://localhost:{PORT}/#control"
+    # 1. Desktop screenshot (Control de Gestión)
     desktop_png = os.path.join(OUTPUT_DIR, "screenshot_desktop.png")
-    mobile_png = os.path.join(OUTPUT_DIR, "screenshot_mobile.png")
-
-    # Desktop screenshot
     print("Capturing Desktop screenshot...")
     cmd_desktop = [
         CHROME_PATH,
@@ -41,12 +38,13 @@ def capture():
         "--window-size=1280,1400",
         "--virtual-time-budget=3000",
         f"--screenshot={desktop_png}",
-        url
+        f"http://localhost:{PORT}/#control"
     ]
     subprocess.run(cmd_desktop, check=True)
     print(f"Desktop screenshot saved to {desktop_png}")
 
-    # Mobile screenshot
+    # 2. Mobile screenshot
+    mobile_png = os.path.join(OUTPUT_DIR, "screenshot_mobile.png")
     print("Capturing Mobile screenshot...")
     cmd_mobile = [
         CHROME_PATH,
@@ -58,10 +56,27 @@ def capture():
         "--virtual-time-budget=3000",
         "--user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1",
         f"--screenshot={mobile_png}",
-        url
+        f"http://localhost:{PORT}/#control"
     ]
     subprocess.run(cmd_mobile, check=True)
     print(f"Mobile screenshot saved to {mobile_png}")
+
+    # 3. Home screenshot (Avance del proyecto)
+    home_png = os.path.join(OUTPUT_DIR, "screenshot_home.png")
+    print("Capturing Home screenshot...")
+    cmd_home = [
+        CHROME_PATH,
+        "--headless",
+        "--disable-gpu",
+        "--no-sandbox",
+        "--hide-scrollbars",
+        "--window-size=1280,1200",
+        "--virtual-time-budget=3000",
+        f"--screenshot={home_png}",
+        f"http://localhost:{PORT}/#home"
+    ]
+    subprocess.run(cmd_home, check=True)
+    print(f"Home screenshot saved to {home_png}")
 
 if __name__ == '__main__':
     capture()
